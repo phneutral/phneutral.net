@@ -1,44 +1,44 @@
 @charset "UTF-8";
 
-/* phneutral 2016 */
+/* phneutral 2018 */
+@import "ignite/ignite";
 
 /* Color Set */
-@maincolor: #2b8c5f;
-@darkgrey: #5c5c5b;
-@font: #eee;
+@mainColor: #2b8c5f;
+@complementColor: #5c5c5b;
+@textColor: #eee;
+
+@backgroundColor: darken(@mainColor,20%);
 
 @success: #419839; /* Green */
 @fail: #D9A600; /* Orange */
 
+// Font Sizes
+@fontSizeSmall: 14px;
+@fontSizeMedium: 15px;
+@fontSizeLarge: 17px;
+@fontSizeExtraLarge: 18px;
+@defaultLineHeight: 1.5;
+
+
 /* FONT AND CSS IMPORT */
-@import url(reset.css);
+
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700);
 
 /*
     FUNDAMENTALS
 */
 
-body {
-  background-color:darken(@maincolor,20%);
-  overflow-y: scroll;
-  overflow-x: hidden;
-  font-size:100.01%;
-  line-height:1.5;
-  color:@font;
-  font-family: 'Source Sans Pro', "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
-  -webkit-text-size-adjust: 100%;
-}
 
 /* Links */
 
-    a, a:link, a:visited { color: darken(@font,10%); text-decoration: none; outline: 0; transition: all .7s ease; }
-    a:hover, a:focus, a:active { color: lighten(@font, 10%); }
+    a, a:link, a:visited { color: darken(@textColor,10%); text-decoration: none; outline: 0; transition: all .7s ease; }
+    a:hover, a:focus, a:active { color: lighten(@textColor, 10%); }
     p a, p a:visited { line-height: inherit; }
 
 /* Typography */
 
-    h1, h2, h3, h4, h5, h6 {font-family: 'Source Sans Pro', "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; color: @font;font-weight: normal; font-size: 1.2em; line-height: 1.6;}
+    h1, h2, h3, h4, h5, h6 {font-family: 'Source Sans Pro', "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; color: @textColor;font-weight: normal; font-size: 1.2em; line-height: 1.6;}
     h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {font-weight: inherit;}
 
     h1 {font-size:1.5em; margin-bottom: .7%;}
@@ -68,7 +68,7 @@ body {
       hyphenate-limit-chars: auto 5;
       hyphenate-limit-lines: 2;
       }
-    em {font-style:italic; color: @maincolor;}
+    em {font-style:italic; color: @mainColor;}
     strong {font-family: 'Source Sans Pro', "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;}
 /* Lists */
 
@@ -103,7 +103,7 @@ body {
 .logo-vSmall {width:7%; padding-bottom: 7%;}
 .logo img {display: none;}
 
-.wrapper {background: @maincolor;}
+.wrapper {background: @mainColor;}
 .wrapper-v100 {height:100vh;}
 .bind {max-width:1000px; margin: -3.5% auto 0; padding:3.5%;}
 .header {
@@ -121,9 +121,9 @@ body {
 }
 
 .sheet {
-  color:darken(@maincolor,10%);
+  color:darken(@mainColor,10%);
   background-color:#f4f4f4;
-  box-shadow: 20px 20px 0px fadeout(darken(@maincolor, 20%),0%);
+  box-shadow: 20px 20px 0px fadeout(darken(@mainColor, 20%),0%);
   margin-bottom:40px;
   padding:7% 14% 14%;
 /*  &:after {
@@ -144,15 +144,15 @@ body {
 }
 
 .sheet-title {
-  color:darken(@maincolor,10%);
+  color:darken(@mainColor,10%);
   font-size:2em;
-  border-bottom: 1px solid fadeout(@maincolor,50%);
+  border-bottom: 1px solid fadeout(@mainColor,50%);
 }
 
 .sheet-subtitle {
   font-size: .8em;
   font-style: italic;
-  color:lighten(@darkgrey,21%);
+  color:lighten(@complementColor,21%);
   margin-bottom: 7%;
 }
 
@@ -164,13 +164,13 @@ body {
       font-size: 3.3em;
       line-height: 1;
       color: #fff;
-      background-color: @maincolor;
+      background-color: @mainColor;
       display: block;
       float: left;
       padding: 7px 21px 2.8em 14px;
       margin: -14px 10px 0 0;
-      border-left:7px solid lighten(@maincolor,10%);
-      text-shadow: 2px 2px 0 darken(@maincolor,10%);
+      border-left:7px solid lighten(@mainColor,10%);
+      text-shadow: 2px 2px 0 darken(@mainColor,10%);
     }
     &:not(:first-of-type):first-letter{font-weight:600; font-size: 1.1em; margin-left: 14px;}
   }
@@ -186,7 +186,7 @@ body {
 .footnote {
   margin-top:10px;
   padding-top:10px;
-  border-top:1px solid fadeout(@maincolor,20%);
+  border-top:1px solid fadeout(@mainColor,20%);
   font-size:.8em;
 }
 .interludium {
@@ -228,10 +228,10 @@ ul.buttonlist {overflow: hidden;}
   transition: all .7s ease;
 }
 
-.buttonlist li > span {border-color:darken(@maincolor,10%); background-color: darken(@maincolor,5%)}
+.buttonlist li > span {border-color:darken(@mainColor,10%); background-color: darken(@mainColor,5%)}
 
-.buttonlist li:hover a {background-color: lighten(@maincolor,20%);}
-.buttonlist li:hover > span {background-color: darken(@maincolor,10%);}
+.buttonlist li:hover a {background-color: lighten(@mainColor,20%);}
+.buttonlist li:hover > span {background-color: darken(@mainColor,10%);}
 
 .where .buttonlist li {margin-right: .7%; clear:none;}
 
@@ -250,8 +250,8 @@ ul.buttonlist {overflow: hidden;}
   letter-spacing: normal;
   padding: 0 .45em;
   margin: -3px .5em 0 -2px;
-  color: contrast(darken(@maincolor,10%));
-  background: lighten(@maincolor,10%);
+  color: contrast(darken(@mainColor,10%));
+  background: lighten(@mainColor,10%);
   border-radius: .1em;
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.2), 0 1px rgba(0, 0, 0, 0.2);
 }
@@ -289,13 +289,13 @@ ul.buttonlist {overflow: hidden;}
 }
 .imagelist li:hover span:after {color:transparent;}
 
-.footer {overflow: hidden; padding:1.75% 3.5% 3.5%; background-color:darken(@maincolor,20%);}
+.footer {overflow: hidden; padding:1.75% 3.5% 3.5%; background-color:darken(@mainColor,20%);}
 .footer .whois {font-weight: 600;}
 .footer ul {float:left; margin-right:1.75%; width:21%;}
 .footer li {margin-bottom: 3.5%;}
 .footer li img {padding:3px 7px 0 0;}
 
-.omega {position: relative; width:100%; height: 100%;}
+.omega {position: relative; width:100%; height: 100vh;}
 .omega a {
 
   position: absolute;
