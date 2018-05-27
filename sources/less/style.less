@@ -74,12 +74,6 @@
 
     ul {padding:0; margin:0;}
 
-/* Clearfix */
-
-.clear{
-  clear:both;
-}
-
 /* Selection */
 ::-moz-selection {
     background-color: rgba(0,81,135,.75);
@@ -94,16 +88,15 @@
 }
 
 .logo {
-  width:14.2857%;
-  padding-bottom:14.2857%;
-  background-image: url(../images/phneutral_logo_weiss.svg);
-  background-size: cover;
 }
 
 .logo-vSmall {width:7%; padding-bottom: 7%;}
-.logo img {display: none;}
 
-.wrapper {background: @mainColor;}
+.wrapper {
+  background: @mainColor;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+}
 .wrapper-v100 {height:100vh;}
 .bind {max-width:1000px; margin: -3.5% auto 0; padding:3.5%;}
 .header {
@@ -126,15 +119,6 @@
   box-shadow: 20px 20px 0px fadeout(darken(@mainColor, 20%),0%);
   margin-bottom:40px;
   padding:7% 14% 14%;
-/*  &:after {
-    content:'';
-    background-image: url(../images/phneutral_logo_weiss.svg);
-    background-blend-mode: darken;
-    background-size: cover;
-    width: 7%;
-    padding-bottom: 7%;
-    margin:14px auto 0;
-  }*/
 }
 
 .sheet-header {
@@ -199,11 +183,7 @@ section {padding:0 3.5%; margin-bottom: 1.75%; overflow: hidden;}
 
 .textbox {
   max-width: 43.75%;
-  -webkit-column-count: 2; /* Chrome, Safari, Opera */
-  -moz-column-count: 2; /* Firefox */
   column-count: 2;
-  -webkit-column-gap: 21px; /* Chrome, Safari, Opera */
-  -moz-column-gap: 21px; /* Firefox */
   column-gap: 21px;
   margin-bottom: 1.75%;
 }
@@ -257,37 +237,64 @@ ul.buttonlist {overflow: hidden;}
 }
 
 .imagelist {width: 100%; display:flex; flex-wrap:wrap; margin:-7px;}
-.imagelist li {margin: 7px; position: relative; flex-basis: 7%; transition: all .7s ease;}
-.imagelist li span {
+.il-item {
+  margin: 7px;
+  position: relative;
+  flex-basis: 140px;
+  flex-grow:1;
+  transition: all .7s ease;
+  animation-name: scale-image;
+  animation-duration: .7s;
+  animation-fill-mode: forwards;
+  animation-play-state: paused;
+  animation-timing-function: ease-out;
+  display: flex;
+}
+.il-caption {
   width:100%;
-  padding-bottom: 100%;
-  display:block;
-  background-size:cover;
-  background-position: center center;
-  background-color: rgba(0,0,0,0.7);
-  background-blend-mode: multiply;
-  background-repeat: no-repeat;
-  transition: all .7s ease;
-}
-.imagelist li span:after {
-  content: attr(title);
   display: block;
-  position: absolute;
+  background-color: #000;
+  &:before {
+    content:'';
+    padding-bottom: 100%;
+    display: block;
+  }
+  &:after {
+    content: attr(title);
+    display: block;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    transform:translate(0,-50%);
+    overflow: visible;
+    line-height: 1.5;
+    font-weight: 600;
+    font-size: 1.5em;
+    transition: all .7s ease;
+  }
+}
+
+.il-image {
   width: 100%;
-  text-align: center;
-  top: 50%;
-  transform:translate(0,-50%);
-  overflow: visible;
-  line-height: 1.5;
-  font-weight: 600;
-  font-size: 1.5em;
+  height: 100%;
+  position: absolute;
+  top:0;
+  object-fit: cover;
   transition: all .7s ease;
+  opacity: .5;
 }
-.imagelist li:hover {width:15%;}
-.imagelist li:hover span {
-  background-color: #fff;
+
+.il-item:hover {
+  animation-play-state: running;
+  & .il-image {opacity: 1;}
+  & .il-caption:after {color:transparent;}
 }
-.imagelist li:hover span:after {color:transparent;}
+
+@keyframes scale-image {
+    0% {flex-basis: 140px;}
+    100% {flex-basis: 294px;}
+}
 
 .footer {overflow: hidden; padding:1.75% 3.5% 3.5%; background-color:darken(@mainColor,20%);}
 .footer .whois {font-weight: 600;}
@@ -446,9 +453,9 @@ ul.buttonlist {overflow: hidden;}
       box-sizing: border-box;
       font-size: .9em;
     }
-    .imagelist li {margin-bottom: 2em;}
-    .imagelist li span {background-color: transparent;}
-    .imagelist li span:after {top:100%; bottom: -1.3em; transform: none; text-align: left;}
+    .il-item {margin-bottom: 2em;}
+    .il-caption:after {top:100%; bottom: -1.3em; transform: none; text-align: left;}
+    .il-image {opacity: 1}
     section {margin-bottom: 3.5%;}
 
     .morpheus {
@@ -475,8 +482,6 @@ ul.buttonlist {overflow: hidden;}
   }
 
   @media only screen and (max-width: 590px) {
-    .imagelist {flex-direction: column;}
-    .imagelist li {min-width:100%;}
     .buttonlist li {width: 100%;}
   }
 
