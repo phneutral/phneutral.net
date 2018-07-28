@@ -27,7 +27,7 @@
 	<link rel="icon" href="static/meta/favicon.ico" type="image/x-icon"/>
 
 	<!-- CSS -->
-	<link rel="stylesheet" href="static/css/style.css"/>
+	<link rel="stylesheet" href="static/css/style.min.css"/>
 
 	<!-- JS -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
@@ -35,6 +35,7 @@
 
 </head>
 <body>
+	<div itemscope itemtype="http://schema.org/Person">
 	<div class="wrapper" id="alpha">
 		<header class="header">
 			<div class="logo" id="logo"><img src="static/images/phneutral_logo_weiss.svg" /></div>
@@ -43,7 +44,7 @@
 		<article>
 
 			<section>
-				<h1>Texte, Zeug und Ideen von Christopher Reinbothe</h1>
+				<h1>Texte, Zeug und Ideen von <span itemprop="name">Christopher Reinbothe</span></h1>
 
 				<div class="textbox">
 					<p>
@@ -63,29 +64,29 @@
 				<h2>Curriculum Vitae</h2>
 
 				<ul class="imagelist">
-					<li class="il-item"><span class="il-caption" title="1987"><img src="static/images/vita/ego_1987.jpg" alt="1987" class="il-image"/></span></li>
-					<li class="il-item"><span class="il-caption" title="1988"><img src="static/images/vita/ego_1988.jpg" alt="1988" class="il-image"/></span></li>
-					<li class="il-item"><span class="il-caption" title="2001"><img src="static/images/vita/ego_2001.jpg" alt="2001" class="il-image"/></span></li>
-					<li class="il-item"><span class="il-caption" title="2003"><img src="static/images/vita/ego_2003.jpg" alt="2003" class="il-image"/></span></li>
-					<li class="il-item"><span class="il-caption" title="2004"><img src="static/images/vita/ego_2004.jpg" alt="2004" class="il-image"/></span></li>
-					<li class="il-item"><span class="il-caption" title="2005"><img src="static/images/vita/ego_2005.jpg" alt="2005" class="il-image"/></span></li>
-					<li class="il-item"><span class="il-caption" title="2007"><img src="static/images/vita/ego_2007_scan.jpg" alt="2007" class="il-image"/></span></li>
-					<li class="il-item"><span class="il-caption" title="2007"><img src="static/images/vita/ego_2007_zunge.jpg" alt="2007" class="il-image"/></span></li>
-					<li class="il-item"><span class="il-caption" title="2008"><img src="static/images/vita/ego_2008_scan.jpg" alt="2008" class="il-image"/></span></li>
-					<li class="il-item"><span class="il-caption" title="2009"><img src="static/images/vita/ego_2009_06.jpg" alt="2009" class="il-image"/></span></li>
-					<li class="il-item"><span class="il-caption" title="2009"><img src="static/images/vita/ego_2009_11.jpg" alt="2009" class="il-image"/></span></li>
-					<li class="il-item"><span class="il-caption" title="2010"><img src="static/images/vita/ego_2010.jpg" alt="2010" class="il-image"/></span></li>
-					<li class="il-item"><span class="il-caption" title="2011"><img src="static/images/vita/ego_2011_loehde.jpg" alt="2011" class="il-image"/></span></li>
-					<li class="il-item"><span class="il-caption" title="2011"><img src="static/images/vita/ego_2011_usa_ava.jpg" alt="2011" class="il-image"/></span></li>
-					<li class="il-item"><span class="il-caption" title="2012"><img src="static/images/vita/ego_2012_d13.jpg" alt="2012" class="il-image"/></span></li>
-					<li class="il-item"><span class="il-caption" title="2012"><img src="static/images/vita/ego_2012_firestarter.gif" alt="2012" class="il-image"/></span></li>
-					<li class="il-item"><span class="il-caption" title="2013"><img src="static/images/vita/ego_2013_ava.jpg" alt="2013" class="il-image"/></span></li>
-					<li class="il-item"><span class="il-caption" title="2013"><img src="static/images/vita/ego_2013_gruen.png" alt="2013" class="il-image"/></span></li>
-					<li class="il-item"><span class="il-caption" title="2014"><img src="static/images/vita/ego_2014_capena.jpg" alt="2014" class="il-image"/></span></li>
-					<li class="il-item"><span class="il-caption" title="2015"><img src="static/images/vita/ego_2015.jpg" alt="2015" class="il-image"/></span></li>
-					<li class="il-item"><span class="il-caption" title="2015"><img src="static/images/vita/ego_2015_caffee.jpg" alt="2015" class="il-image"/></span></li>
-					<li class="il-item"><span class="il-caption" title="2016"><img src="static/images/vita/ego_2016_kreta.jpg" alt="2016" class="il-image"/></span></li>
-					<li class="il-item"><span class="il-caption" title="2017"><img src="static/images/vita/ego_2017_kreta.jpg" alt="2017" class="il-image"/></span></li>
+					<li class="il-item"><span class="il-caption" title="1987"><img itemprop="image" src="static/images/vita/ego_1987.jpg" alt="1987" class="il-image"/></span></li>
+					<li class="il-item"><span class="il-caption" title="1988"><img itemprop="image" src="static/images/vita/ego_1988.jpg" alt="1988" class="il-image"/></span></li>
+					<li class="il-item"><span class="il-caption" title="2001"><img itemprop="image" src="static/images/vita/ego_2001.jpg" alt="2001" class="il-image"/></span></li>
+					<li class="il-item"><span class="il-caption" title="2003"><img itemprop="image" src="static/images/vita/ego_2003.jpg" alt="2003" class="il-image"/></span></li>
+					<li class="il-item"><span class="il-caption" title="2004"><img itemprop="image" src="static/images/vita/ego_2004.jpg" alt="2004" class="il-image"/></span></li>
+					<li class="il-item"><span class="il-caption" title="2005"><img itemprop="image" src="static/images/vita/ego_2005.jpg" alt="2005" class="il-image"/></span></li>
+					<li class="il-item"><span class="il-caption" title="2007"><img itemprop="image" src="static/images/vita/ego_2007_scan.jpg" alt="2007" class="il-image"/></span></li>
+					<li class="il-item"><span class="il-caption" title="2007"><img itemprop="image" src="static/images/vita/ego_2007_zunge.jpg" alt="2007" class="il-image"/></span></li>
+					<li class="il-item"><span class="il-caption" title="2008"><img itemprop="image" src="static/images/vita/ego_2008_scan.jpg" alt="2008" class="il-image"/></span></li>
+					<li class="il-item"><span class="il-caption" title="2009"><img itemprop="image" src="static/images/vita/ego_2009_06.jpg" alt="2009" class="il-image"/></span></li>
+					<li class="il-item"><span class="il-caption" title="2009"><img itemprop="image" src="static/images/vita/ego_2009_11.jpg" alt="2009" class="il-image"/></span></li>
+					<li class="il-item"><span class="il-caption" title="2010"><img itemprop="image" src="static/images/vita/ego_2010.jpg" alt="2010" class="il-image"/></span></li>
+					<li class="il-item"><span class="il-caption" title="2011"><img itemprop="image" src="static/images/vita/ego_2011_loehde.jpg" alt="2011" class="il-image"/></span></li>
+					<li class="il-item"><span class="il-caption" title="2011"><img itemprop="image" src="static/images/vita/ego_2011_usa_ava.jpg" alt="2011" class="il-image"/></span></li>
+					<li class="il-item"><span class="il-caption" title="2012"><img itemprop="image" src="static/images/vita/ego_2012_d13.jpg" alt="2012" class="il-image"/></span></li>
+					<li class="il-item"><span class="il-caption" title="2012"><img itemprop="image" src="static/images/vita/ego_2012_firestarter.gif" alt="2012" class="il-image"/></span></li>
+					<li class="il-item"><span class="il-caption" title="2013"><img itemprop="image" src="static/images/vita/ego_2013_ava.jpg" alt="2013" class="il-image"/></span></li>
+					<li class="il-item"><span class="il-caption" title="2013"><img itemprop="image" src="static/images/vita/ego_2013_gruen.png" alt="2013" class="il-image"/></span></li>
+					<li class="il-item"><span class="il-caption" title="2014"><img itemprop="image" src="static/images/vita/ego_2014_capena.jpg" alt="2014" class="il-image"/></span></li>
+					<li class="il-item"><span class="il-caption" title="2015"><img itemprop="image" src="static/images/vita/ego_2015.jpg" alt="2015" class="il-image"/></span></li>
+					<li class="il-item"><span class="il-caption" title="2015"><img itemprop="image" src="static/images/vita/ego_2015_caffee.jpg" alt="2015" class="il-image"/></span></li>
+					<li class="il-item"><span class="il-caption" title="2016"><img itemprop="image" src="static/images/vita/ego_2016_kreta.jpg" alt="2016" class="il-image"/></span></li>
+					<li class="il-item"><span class="il-caption" title="2017"><img itemprop="image" src="static/images/vita/ego_2017_kreta.jpg" alt="2017" class="il-image"/></span></li>
 				</ul>
 			</section>
 
@@ -103,14 +104,14 @@
 				<ul class="buttonlist">
 					<li><span>Forscher und Entdecker im Labor 7</span></li>
 					<li><a href="texte.html"><span class="badge">NEU!</span> Geschichtenschreiber für die Bernsteinbibliothek</a></li>
-					<li><a href="http://www.mausbrand.de">Designer und Gesellschafter bei Mausbrand&nbsp;Informationssysteme&nbsp;GmbH</a></li>
-					<li><a href="http://www.projektspeicher.org">Kunstkurator im Projektspeicher</a></li>
-					<li><a href="http://neu.clownfisch.eu/utopiastadt-verein">Freies Radikal in Utopiastadt</a></li>
-					<li><a href="http://www.opendatal.de">Datenaktivist bei Opendatal</a></li>
-					<li><a href="http://www.oknrw.de"><span class="badge">NEU!</span> Mitgründer des OKNRW Instituts</a></li>
-					<li><a href="http://www.acteuropa.eu">Aktiver Europäer</a></li>
-					<li><a href="http://www.schweberingbahn.de">Betreiber der Schweberingbahn</a></li>
-					<li><a href="http://www.diebombe.org">Freund der Wasserstoffluftfahrt</a></li>
+					<li><a itemprop="memberOf" href="https://www.mausbrand.de">Designer und Gesellschafter bei Mausbrand&nbsp;Informationssysteme&nbsp;GmbH</a></li>
+					<li><a itemprop="memberOf" href="https://www.projektspeicher.org">Kunstkurator im Projektspeicher</a></li>
+					<li><a itemprop="memberOf" href="http://neu.clownfisch.eu/utopiastadt-verein">Freies Radikal in Utopiastadt</a></li>
+					<li><a itemprop="memberOf" href="https://www.opendatal.de">Datenaktivist bei Opendatal</a></li>
+					<li><a itemprop="memberOf" href="https://www.oknrw.de"><span class="badge">NEU!</span> Mitgründer des OKNRW Instituts</a></li>
+					<li><a itemprop="memberOf" href="http://www.acteuropa.eu">Aktiver Europäer</a></li>
+					<li><a itemprop="memberOf" href="https://www.schweberingbahn.de">Betreiber der Schweberingbahn</a></li>
+					<li><a itemprop="memberOf" href="https://www.diebombe.org">Freund der Wasserstoffluftfahrt</a></li>
 					<li><span>Handmodel</span></li>
 				</ul>
 			</section>
@@ -118,15 +119,16 @@
 			<section class="where">
 				<h2>Offizielle, verifizierte und vernetzte Außenstellen</h2>
 				<ul class="buttonlist">
-					<li><a href="https://tippentappen.de/people/a7e8ae40c4dc013350b2525400118482" target="_blank"><span class="badge">NEU!</span> Diaspora*</a></li>
-					<li><a href="https://twitter.com/phneutral" target="_blank">Twitter</a></li>
-					<li><a href="https://www.facebook.com/phsieben" target="_blank">Facebook</a></li>
-					<li><a href="https://plus.google.com/u/0/+ChristopherReinbothe" target="_blank">Google+</a></li>
-					<li><a href="https://www.xing.com/profile/Christopher_Reinbothe" target="_blank">Xing</a></li>
-					<li><a href="https://www.youtube.com/user/siebentedimension" target="_blank">Youtube</a></li>
-					<li><a href="https://vimeo.com/phneutral/likes" target="_blank">Vimeo</a></li>
-					<li><a href="https://github.com/phneutral" target="_blank">Github</a></li>
-					<li><a href="https://bitbucket.org/phneutral/" target="_blank">Bitbucket</a></li>
+					<li><a itemprop="sameAs" href="https://ruhr.social/@phneutral" rel="me" target="_blank"><span class="badge">NEU!</span> Mastodon</a></li>
+					<li><a itemprop="sameAs" href="https://tippentappen.de/u/phneutral" rel="me" target="_blank">Diaspora*</a></li>
+					<li><a itemprop="sameAs" href="https://twitter.com/phneutral" rel="me" target="_blank">Twitter</a></li>
+					<li><a itemprop="sameAs" href="https://www.facebook.com/phsieben" rel="me" target="_blank">Facebook</a></li>
+					<li><a itemprop="sameAs" href="https://plus.google.com/+ChristopherReinbothe" rel="me" target="_blank">Google+</a></li>
+					<li><a itemprop="sameAs" href="https://www.xing.com/profile/Christopher_Reinbothe" rel="me" target="_blank">Xing</a></li>
+					<li><a itemprop="sameAs" href="https://www.youtube.com/user/siebentedimension" rel="me" target="_blank">Youtube</a></li>
+					<li><a itemprop="sameAs" href="https://vimeo.com/phneutral" rel="me" target="_blank">Vimeo</a></li>
+					<li><a itemprop="sameAs" href="https://github.com/phneutral" rel="me" target="_blank">Github</a></li>
+					<li><a itemprop="sameAs" href="https://bitbucket.org/phneutral/" rel="me" target="_blank">Bitbucket</a></li>
 				</ul>
 			</section>
 
@@ -136,16 +138,16 @@
 		<ul>
 			<li class="whois">
 				<a class="title" href="&#109;&#097;&#105;&#108;&#116;&#111;&#058;&#099;&#104;&#114;&#105;&#115;&#116;&#111;&#112;&#104;&#101;&#114;&#114;&#101;&#105;&#110;&#098;&#111;&#116;&#104;&#101;&#064;&#112;&#104;&#110;&#101;&#117;&#116;&#114;&#097;&#108;&#046;&#110;&#101;&#116;" title="&#064;&#112;&#104;&#110;&#101;&#117;&#116;&#114;&#097;&#108;&#046;&#110;&#101;&#116;">christopherreinbothe</a><br>
-				<a class="title" href="http://www.twitter.com/phneutral" title=" bei Twitter">@phneutral</a><br>
-				<a class="titlebefore" href="http://www.phneutral.net" title="www.phneutral">.net</a>
+				<a class="title" href="https://www.twitter.com/phneutral" rel="me" title=" bei Twitter">@phneutral</a><br>
+				<a class="titlebefore" itemprop="url" href="https://www.phneutral.net" title="www.phneutral.net">.net</a>
 			</li>
 			<li>
 				Webseite, Graphikdesignlabor<br>
 				und Internetfundbüro<br>
 				von Christopher Reinbothe</li>
-			<li>
-				Katernberger Straße 72<br>
-				42115 Wuppertal
+			<li itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+				<span itemprop="streetAddress">Katernberger Straße 72</span><br>
+				<span itemprop="postalCode">42115</span> <span itemprop="addressLocality">Wuppertal</span>
 			</li>
 		</ul>
 		<ul>
@@ -159,7 +161,7 @@
 		</ul>
 
 	</footer>
-
+	</div>
 	<div class="omega">
 		<a href="#alpha" id="omega">
 			<strong>♹ Ende</strong><br>
