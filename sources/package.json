@@ -24,6 +24,5 @@
     "postcss-discard-comments": "^2.0.4",
     "postcss-focus": "^1.0.0",
     "postcss-zindex": "^2.0.1"
-  },
-  "dependencies": {}
+  }
 }
