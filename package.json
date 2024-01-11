@@ -1,0 +1,47 @@
+{
+  "name": "phneutral",
+  "version": "2.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+	"css-watch": "postcss sources/css/style.css -o deploy/static/css/style.css -w",
+    "css-dev": "postcss sources/css/style.css -o deploy/static/css/style.css",
+    "css-prod": "mode=prod postcss sources/css/style.css -o deploy/static/css/style.min.css",
+	"shoelace-watch": "rollup -c rollup-sl.config.js -w",
+    "shoelace-dev": "rollup -c rollup-sl.config.js",
+    "shoelace-prod": "mode=prod rollup -c rollup-sl.config.js",
+	"svgs-icons": "prefix=icon svgo -f sources/svgs -o deploy/static/svgs",
+	"images": "sharp -i './sources/images/**/*.{svg,png,jpg,jpeg,gif,webp}' --animated -o deploy/static/images/ --f webp"
+  },
+  "engines": {
+    "node": ">=18",
+    "npm": ">= 3.0.0"
+  },
+  "browserslist": [
+    "last 2 version",
+    "> 1%"
+  ],
+  "author": "phneutral",
+  "license": "ISC",
+  "devDependencies": {
+    "@viur/shoelace": "^0.7.0-v2.11.2",
+	"@csstools/postcss-bundler": "^1.0.6",
+    "@rollup/plugin-commonjs": "^14.0.0",
+    "@rollup/plugin-node-resolve": "^8.4.0",
+    "@rollup/plugin-terser": "^0.4.4",
+	"autoprefixer": "^10.4.16",
+	"cssnano": "^6.0.1",
+    "postcss": "^8.4.31",
+    "postcss-cli": "^10.1.0",
+    "postcss-discard-comments": "^6.0.0",
+    "postcss-focus": "^7.0.0",
+    "postcss-preset-env": "^8.5.1",
+    "postcss-sort-media-queries": "^5.2.0",
+	"rollup": "^2.68.0",
+    "rollup-plugin-copy": "^3.3.0",
+    "rollup-plugin-css-only": "^3.1.0",
+  	"sharp": "^0.33.1",
+    "sharp-cli": "^4.2.0",
+	"svgo": "^3.1.0"
+  }
+}

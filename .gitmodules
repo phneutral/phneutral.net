@@ -1,0 +1,3 @@
+[submodule "sources/css/ignite"]
+	path = sources/css/ignite
+	url = git@github.com:viur-framework/viur-ignite.git

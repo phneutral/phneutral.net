@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/phneutral
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://www.phneutral.net
+  * I am phneutral (https://keybase.io/phneutral) on keybase.
+  * I have a public key ASAQnlckQ5oTxpq14SB2itvwxWivEJEc0K4FXeSAl4syGAo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120109e5724439a13c69ab5e120768adbf0c568af10911cd0ae055de480978b32180a",
+      "host": "keybase.io",
+      "kid": "0120109e5724439a13c69ab5e120768adbf0c568af10911cd0ae055de480978b32180a",
+      "uid": "a36998555d598812f0cbd563281cda19",
+      "username": "phneutral"
+    },
+    "merkle_root": {
+      "ctime": 1575805691,
+      "hash": "4bb362cd36bf64c68987718021d9bdc3de72facc00883b4fba1e4b178a6c8edc3c00ade17f5140738ccf5584d4e40cae0dee4cd9eb316f6bbacfea6a739d34f7",
+      "hash_meta": "02ea92870890a33f30d259d5549779571465a3c4b0c616bcdd6afe95bf288ac9",
+      "seqno": 12814483
+    },
+    "service": {
+      "entropy": "Zr2HOWchFZeeCBQxUTIHnD7V",
+      "hostname": "www.phneutral.net",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.0.0"
+  },
+  "ctime": 1575805726,
+  "expire_in": 504576000,
+  "prev": "e9ac106dd7c24b3673a7eb52e5724cd92ad1e9b066f964368bb44ce2dd4b409b",
+  "seqno": 7,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgEJ5XJEOaE8aateEgdorb8MVorxCRHNCuBV3kgJeLMhgKp3BheWxvYWTESpcCB8Qg6awQbdfCSzZzp+tS5XJM2SrR6bBm+WQ2i7RM4t1LQJvEIFSxV9dIIyMuEkZ+s7i5O4p/8KDMphRR10uZ5Y8cfUY8AgHCo3NpZ8RAxCfdqt4dmJP/7z4xGmSnDQE4KYc0JJAj1hwVQumNz8oSktt94HDy4MjAatq20K9w5tL3HVW07TOz3PfjQ0J9AqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEII1WLrx9BYETAW5KP+7x6PRzn9HfDaRrB5aT1scaszN+o3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/phneutral
+
+==================================================================
