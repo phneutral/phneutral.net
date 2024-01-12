@@ -48,6 +48,7 @@
 
   p a, p a:visited {
     line-height: inherit;
+    border-bottom: .7px solid var(--ignt-color-primary-400);
   }
 
   /* Typography */
@@ -410,11 +411,14 @@
 
   .footer li {
     margin-bottom: 3.5%;
+    & a:not(:has(img)) {
+      border-bottom: .7px solid var(--ignt-color-primary-400);
+    }
+    & img {
+      padding: 3px 7px 0 0;
+    }
   }
 
-  .footer li img {
-    padding: 3px 7px 0 0;
-  }
 
   .omega {
     position: relative;
