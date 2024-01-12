@@ -564,6 +564,23 @@
   }
 }
 
+@layer elements.bernstein {
+  .bernstein {
+    --bernstein-ochre: #BD7511;
+    --bernstein-yellow: #E7C503;
+    --ignt-surface-dark: var(--bernstein-ochre);
+    --ignt-surface-light: color-mix(in srgb, var(--bernstein-ochre), var(--ignt-mix-color-down) 20%);
+    --ignt-basic-surface: color-mix(in srgb, var(--bernstein-ochre), var(--ignt-mix-color-down) 30%);;
+    --ignt-basic-color-text: var(--bernstein-yellow);
+    & .logo {color: var(--bernstein-yellow)}
+    & .backlink {
+      &, &:link, &:visited {
+        color: var(--bernstein-yellow)
+      }
+    }
+  }
+}
+
     /* #Supersize Subset Menu
 	================================================== */
 
