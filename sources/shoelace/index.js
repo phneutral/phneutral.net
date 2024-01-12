@@ -3,15 +3,15 @@
 import '@viur/shoelace/dist/themes/light.css';
 //import '@viur/shoelace/dist/themes/viur.css';
 //import '@viur/shoelace/dist/components/alert/alert.js';
-import '@viur/shoelace/dist/components/breadcrumb/breadcrumb.js';
-import '@viur/shoelace/dist/components/breadcrumb-item/breadcrumb-item.js';
-import '@viur/shoelace/dist/components/button/button.js';
-import '@viur/shoelace/dist/components/details/details.js';
+//import '@viur/shoelace/dist/components/breadcrumb/breadcrumb.js';
+//import '@viur/shoelace/dist/components/breadcrumb-item/breadcrumb-item.js';
+//import '@viur/shoelace/dist/components/button/button.js';
+//import '@viur/shoelace/dist/components/details/details.js';
 import '@viur/shoelace/dist/components/icon/icon.js'; // For SlSelect, SlAlert
 //import '@viur/shoelace/dist/components/menu/menu.js'; // For SlSelect
 //import '@viur/shoelace/dist/components/menu-item/menu-item.js';
 import '@viur/shoelace/dist/components/tooltip/tooltip.js';
-import '@viur/shoelace/dist/components/include/include.js';
+//import '@viur/shoelace/dist/components/include/include.js';
 //import '@viur/shoelace/dist/components/card/card.js';
 
 // Form-elements
@@ -24,13 +24,13 @@ import {setBasePath} from '@viur/shoelace/dist/utilities/base-path.js';
 import {registerIconLibrary} from '@viur/shoelace/dist/utilities/icon-library.js';
 
 // Set the base path to the folder you copied Shoelace's assets to
-setBasePath('/static/shoelace');
+setBasePath('static/shoelace');
 
 // Register a custom icon repository for this app
-// registerIconLibrary('icons', {
-//     resolver: name => `/static/svgs/icon-${name}.svg`,
-//     // resolver: name => `/static/shoelace/assets/icons/${name}.svg`,
-//     mutator: svg => svg.setAttribute('fill', 'currentColor'),
-// })
+registerIconLibrary('ph', {
+     resolver: name => `static/svgs/${name}.svg`,
+     // resolver: name => `/static/shoelace/assets/icons/${name}.svg`,
+     mutator: svg => svg.setAttribute('fill', 'currentColor'),
+})
 
 
