@@ -454,6 +454,18 @@
     --morpheusDark: #111b23;
     --morpheusYellow: #fffbe4;
     background-color: var(--morpheusDark);
+    & .logo {color: var(--morpheusYellow)}
+    & .backlink {
+      &, &:link, &:visited {
+        color: var(--morpheusYellow)
+      }
+    }
+    & .footer,
+    & .omega {
+      &, & a, & strong, & span {
+        color: var(--morpheusYellow);
+      }
+    }
     & em {color: color-mix(in srgb, var(--morpheus), var(--ignt-mix-color-up) 40%);}
     & .heinrich {font-weight: 600; color: color-mix(in srgb, var(--morpheus), var(--ignt-mix-color-up) 21%);}
     & .irene {font-style:italic; color: color-mix(in srgb, var(--morpheusYellow), var(--ignt-mix-color-up) 60%);}
