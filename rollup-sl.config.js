@@ -4,15 +4,15 @@ import copy from 'rollup-plugin-copy';
 import css from 'rollup-plugin-css-only'
 import resolve from '@rollup/plugin-node-resolve';
 import terser from '@rollup/plugin-terser';
-const enableProduction = process.env.mode === 'prod'
+const enableBuild = process.env.mode === 'build'
 
 export default {
   input: 'sources/shoelace/index.js',
-  output: [{ file: `deploy/static/shoelace/index${enableProduction ? '.min' : ''}.js`, format: 'es' }],
+  output: [{ file: `deploy/static/shoelace/index${enableBuild ? '.min' : ''}.js`, format: 'es' }],
   plugins: [
     resolve(),
     commonjs(),
-    enableProduction && terser(),
+    enableBuild && terser(),
     // Bundle styles into dist/bundle.css
     css({
       output: 'shoelace.css'

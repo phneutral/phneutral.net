@@ -6,10 +6,10 @@
   "scripts": {
     "css-watch": "postcss sources/css/style.css -o deploy/static/css/style.css -w",
     "css-dev": "postcss sources/css/style.css -o deploy/static/css/style.css",
-    "css-prod": "mode=prod postcss sources/css/style.css -o deploy/static/css/style.min.css",
+    "css-build": "mode=build postcss sources/css/style.css -o deploy/static/css/style.min.css",
     "shoelace-watch": "rollup -c rollup-sl.config.js -w",
     "shoelace-dev": "rollup -c rollup-sl.config.js",
-    "shoelace-prod": "mode=prod rollup -c rollup-sl.config.js",
+    "shoelace-build": "mode=build rollup -c rollup-sl.config.js",
     "svgs-icons": "prefix=icon svgo -f sources/svgs -o deploy/static/svgs",
     "images": "sharp -i './sources/images/**/*.{svg,png,jpg,jpeg,gif,webp}' --animated -o deploy/static/images/ --f webp"
   },

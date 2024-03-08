@@ -1,10 +1,10 @@
-const enableProduction = process.env.mode === 'prod'
+const enableBuild = process.env.mode === 'build'
 
 module.exports = ({ ctx }) => ({
-	map: enableProduction ? false : 'inline',
+	map: enableBuild ? false : 'inline',
 	plugins: {
     'postcss-import': {},
-		'postcss-discard-comments': enableProduction ? {} : false,
+		'postcss-discard-comments': enableBuild ? {} : false,
 		'@csstools/postcss-bundler': {},
 		'postcss-preset-env': {
 			stage: 3,
@@ -21,6 +21,6 @@ module.exports = ({ ctx }) => ({
 		},
 		'postcss-focus': {},
 		'postcss-sort-media-queries': {},
-		'cssnano': enableProduction ? {} : false,
+		'cssnano': enableBuild ? {} : false,
 	}
 })
