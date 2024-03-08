@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* phneutral 2023 */
-@import url('ignite/ignite.css');
+@import url('@viur/ignite/ignite.css');
 @import url('themes/dark.css') layer(themes.dark) (--ignt-mq-dark);
 @import url('themes/light.css') layer(themes.light) (--ignt-mq-light);
 
@@ -73,6 +73,10 @@
     margin-bottom: .7%;
   }
 
+  h3 {
+    font-size: .9em;
+  }
+
   em {
     font-style: italic;
     color: var(--ignt-color-primary);
@@ -81,6 +85,8 @@
   strong {
     font-family: var(--ignt-font-sans);
   }
+
+  .not-allowed {cursor: not-allowed;}
 
   /* Lists */
   ul {

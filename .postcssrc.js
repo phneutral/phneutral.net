@@ -3,6 +3,7 @@ const enableProduction = process.env.mode === 'prod'
 module.exports = ({ ctx }) => ({
 	map: enableProduction ? false : 'inline',
 	plugins: {
+    'postcss-import': {},
 		'postcss-discard-comments': enableProduction ? {} : false,
 		'@csstools/postcss-bundler': {},
 		'postcss-preset-env': {
