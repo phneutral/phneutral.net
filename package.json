@@ -14,7 +14,7 @@
     "images": "sharp -i './sources/images/**/*.{svg,png,jpg,jpeg,gif,webp}' --animated -o deploy/static/images/ --f webp"
   },
   "engines": {
-    "node": ">=21",
+    "node": ">=20",
     "npm": ">= 10.0.0"
   },
   "browserslist": [
@@ -29,7 +29,7 @@
     "@rollup/plugin-node-resolve": "^8.4.0",
     "@rollup/plugin-terser": "^0.4.4",
     "@viur/ignite": "^5.0.1",
-    "@viur/shoelace": "^0.7.0-v2.11.2",
+    "@viur/shoelace": "^1.0.8-v2.17.1",
     "autoprefixer": "^10.4.16",
     "cssnano": "^6.0.1",
     "postcss": "^8.4.31",
@@ -43,7 +43,7 @@
     "rollup-plugin-copy": "^3.3.0",
     "rollup-plugin-css-only": "^3.1.0",
     "sharp": "^0.33.1",
-    "sharp-cli": "^4.2.0",
+    "sharp-cli": "^5.1.0",
     "svgo": "^3.1.0"
   }
 }
