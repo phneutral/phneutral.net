@@ -86,8 +86,6 @@
     font-family: var(--ignt-font-sans);
   }
 
-  .not-allowed {cursor: not-allowed;}
-
   /* Lists */
   ul {
     padding: 0;
@@ -253,58 +251,54 @@
 
   section {
     padding: 0 3.5%;
-    margin-bottom: 1.75%;
     overflow: hidden;
+    & > * + * {
+      margin-top: var(--ignt-spacing-medium);
+    }
+    & + section {
+      margin-top: var(--ignt-spacing-2x-large);
+    }
   }
 
   .textbox {
     max-width: 50%;
     column-count: 2;
     column-gap: 21px;
-    margin-bottom: 1.75%;
   }
 
   ul.buttonlist {
     overflow: hidden;
-    --ignt-buttonlist-color: var(--ignt-color-text-invert);
-    --ignt-buttonlist-background: var(--ignt-color-primary);
-  }
-
-  .buttonlist li {
-    margin-bottom: .7%;
-    float: left;
-    clear: both;
   }
 
   .buttonlist li a,
   .buttonlist li > span {
+    margin-top: var(--ignt-spacing-2x-small);
     padding: 1px 7px 2px;
-    border: 1px dotted color-mix(in srgb, var(--ignt-buttonlist-background), var(--ignt-mix-color-up) 20%);
+    border: 1px dotted #53ca93;
     width: auto;
     position: relative;
     display: inline-block;
     overflow: hidden;
-    background-color: color-mix(in srgb, var(--ignt-buttonlist-background), var(--ignt-mix-color-up) 15%);
+    background-color: #31a06c;
     transition: all .7s ease;
-    color: color-mix(in srgb, var(--ignt-buttonlist-color), var(--ignt-mix-color-down) 30%);
+    color: color-mix(in srgb, var(--ignt-color-text-invert), var(--ignt-mix-color-down) 30%);
   }
 
   .buttonlist li > span {
-    border-color: color-mix(in srgb, var(--ignt-buttonlist-background), var(--ignt-mix-color-down) 10%);
-    background-color: color-mix(in srgb, var(--ignt-buttonlist-background), var(--ignt-mix-color-down) 5%)
+    border-color: color-mix(in srgb, var(--ignt-color-primary), var(--ignt-mix-color-up) 10%);
+    background-color: color-mix(in srgb, var(--ignt-color-primary), var(--ignt-mix-color-up) 5%)
   }
 
   .buttonlist li:hover a {
-    background-color: color-mix(in srgb, var(--ignt-buttonlist-background), var(--ignt-mix-color-down) 21%);
+    background-color: color-mix(in srgb, var(--ignt-color-primary), var(--ignt-mix-color-down) 21%);
   }
 
   .buttonlist li:hover > span {
-    background-color: color-mix(in srgb, var(--ignt-buttonlist-background), var(--ignt-mix-color-up) 10%);
+    background-color: color-mix(in srgb, var(--ignt-color-primary), var(--ignt-mix-color-up) 10%);
   }
 
   .where .buttonlist li {
-    margin-right: .7%;
-    clear: none;
+    display: inline-block;
   }
 
   .badge,
@@ -577,27 +571,6 @@
       }
     }
     & .article-title {margin-top:50%;}
-  }
-}
-
-@layer elements.bernstein {
-  .bernstein {
-    --bernstein-ochre: #9B400E;
-    --bernstein-yellow: #E7C503;
-    --ignt-surface-dark: color-mix(in srgb, var(--bernstein-ochre), var(--ignt-mix-color-down) 30%);
-    --ignt-surface-light: color-mix(in srgb, var(--bernstein-ochre), var(--ignt-mix-color-down) 20%);
-    --ignt-basic-surface: var(--bernstein-ochre);
-    --ignt-basic-color-text: var(--bernstein-yellow);
-    & .logo {color: var(--bernstein-yellow)}
-    & .backlink {
-      &, &:link, &:visited {
-        color: var(--bernstein-yellow)
-      }
-    }
-    ul.buttonlist {
-    --ignt-buttonlist-color: var(--bernstein-ochre);
-    --ignt-buttonlist-background: var(--bernstein-yellow);
-    }
   }
 }
 
