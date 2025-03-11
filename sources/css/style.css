@@ -182,6 +182,14 @@
   .sheet-title {
     color: color-mix(in srgb, var(--ignt-color-primary), var(--ignt-mix-color-up) 10%);
     font-size: 2em;
+  }
+
+  .sheet-title-addition {
+    color: color-mix(in srgb, var(--ignt-color-primary), var(--ignt-mix-color-up) 10%);
+    font-size: 1.5em;
+  }
+
+  .sheet-title-line {
     border-bottom: 1px solid color-mix(in srgb, var(--ignt-color-primary), transparent 50%);
   }
 
