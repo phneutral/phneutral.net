@@ -4,6 +4,8 @@
   "description": "",
   "main": "",
   "scripts": {
+	"test": "mode=build npx @11ty/eleventy",
+	"build": "npm run css-build && npm run shoelace-build && npm run svgs-icons && npm run images",
     "css-watch": "postcss sources/css/style.css -o deploy/static/css/style.css -w",
     "css-dev": "postcss sources/css/style.css -o deploy/static/css/style.css",
     "css-build": "mode=build postcss sources/css/style.css -o deploy/static/css/style.min.css",
@@ -45,5 +47,9 @@
     "sharp": "^0.33.1",
     "sharp-cli": "^5.1.0",
     "svgo": "^3.1.0"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^3.1.2",
+    "postcss-load-config": "^6.0.1"
   }
 }
