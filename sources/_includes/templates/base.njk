@@ -2,7 +2,7 @@
 <html lang="de">
 <head>
 	<meta charset="UTF-8">
-	<title>♹ phneutral.net — Texte, Zeug und Ideen von Christopher Reinbothe.</title>
+	<title>♹ phneutral.net — {{ title }}</title>
 
 	<!-- meta -->
 	<meta name="author" content="Christopher Reinbothe"/>
@@ -15,15 +15,10 @@
 
 	<!-- Mobile Specific Metas -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	<meta property="og:image" content="static/images/phneutral_logo.webp"/>
-	<meta name="twitter:image:src" content="static/images/phneutral_logo.webp"/>
-	<link href="static/images/phneutral_logo.webp" rel="apple-touch-icon"/>
-	<link rel="icon" href="static/meta/favicon.ico" type="image/x-icon">
-
-	<!-- Fonts -->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+	<meta property="og:image" content="/static/images/phneutral_logo.webp"/>
+	<meta name="twitter:image:src" content="/static/images/phneutral_logo.webp"/>
+	<link href="/static/images/phneutral_logo.webp" rel="apple-touch-icon"/>
+	<link rel="icon" href="/static/meta/favicon.ico" type="image/x-icon">
 
 	<!--<link rel="preload" href="static/shoelace/shoelace.css" as="style">
 	<link rel="stylesheet" href="static/shoelace/shoelace.css">-->
@@ -35,11 +30,19 @@
 	<link rel="stylesheet" href="/static/css/style.min.css">
 
 </head>
-<body>
-	{% include "components/header.njk" %}
-	<article>
-		{{ content | safe }}
-	</article>
-	{% include "components/footer.njk" %}
+<body class="{{ theme }}">
+	{% block header -%}
+		{% include "components/header.njk" %}
+	{% endblock -%}
+
+	{%- block content %}
+		<article>
+			{{ content | safe }}
+		</article>
+	{% endblock -%}
+
+	{% block footer -%}
+		{% include "components/footer.njk" %}
+	{% endblock -%}
 </body>
 </html>

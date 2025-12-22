@@ -15,15 +15,10 @@
 
 	<!-- Mobile Specific Metas -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	<meta property="og:image" content="static/images/phneutral_logo.webp"/>
-	<meta name="twitter:image:src" content="static/images/phneutral_logo.webp"/>
-	<link href="static/images/phneutral_logo.webp" rel="apple-touch-icon"/>
-	<link rel="icon" href="static/meta/favicon.ico" type="image/x-icon">
-
-	<!-- Fonts -->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+	<meta property="og:image" content="/static/images/phneutral_logo.webp"/>
+	<meta name="twitter:image:src" content="/static/images/phneutral_logo.webp"/>
+	<link href="/static/images/phneutral_logo.webp" rel="apple-touch-icon"/>
+	<link rel="icon" href="/static/meta/favicon.ico" type="image/x-icon">
 
 	<!--<link rel="preload" href="static/shoelace/shoelace.css" as="style">
 	<link rel="stylesheet" href="static/shoelace/shoelace.css">-->
@@ -35,16 +30,18 @@
 	<link rel="stylesheet" href="/static/css/style.min.css">
 
 </head>
-<body>
-	<header class="header">
+<body class="phneutral">
+	<header class="header" id="alpha">
 	<div class="logo" id="logo">
 		<sl-tooltip placement="bottom">
 			<div slot="content">Das Logo von phneutral.net:<br>Eine 7 im Siebeneck</div>
-			<sl-icon library="ph" name="phneutral_logo" label="Eine 7 im Siebeneck - Das Logo von phneutral.net"></sl-icon>
-		</sl-tooltip>
-	</div>
+			<a href="/">
+				<sl-icon library="ph" name="phneutral_logo" label="Eine 7 im Siebeneck - Das Logo von phneutral.net"></sl-icon>
+			</a>
+		</sl-tooltip></div>
 </header>
 
+	
 	<article>
 		
 <section>
@@ -121,8 +118,8 @@
 
 	<ul class="buttonlist">
 		<li><span>Forscher im Labor 7</span></li>
-		<li><a href="solarpunk.html"><span><em class="badge">NEU!</em>Solarpunk Evangelist</span></a></li>
-		<li><a href="texte.html">Geschichtenschreiber für die Bernsteinbibliothek</a></li>
+		<li><a href="/solarpunk"><span><em class="badge">NEU!</em>Solarpunk Evangelist</span></a></li>
+		<li><a href="/texts">Geschichtenschreiber für die Bernsteinbibliothek</a></li>
 		<li><a itemprop="memberOf" href="https://www.mausbrand.de">UX-Designer und Gesellschafter bei Mausbrand&nbsp;Informationssysteme&nbsp;GmbH</a></li>
 		<li><a itemprop="memberOf" href="https://www.projektspeicher.org">Hafenincubator im Projektspeicher</a></li>
 		<li><a itemprop="memberOf" href="https://www.utopiastadt.eu/foerderverein/">Freies Radikal in Utopiastadt</a></li>
@@ -197,7 +194,7 @@
 			<li><a class="no-print" href="/archiv">Mutige stöbern im Archiv.</a></li>
 			<li>
 				<!--<a href="http://datalove.me" target="_blank"><img src="static/images/datalove-s4.webp" alt="datalove <3" title="datalove <3" /></a>-->
-				<a href="https://trotzendorff.de/macht-und-geld/steig-aus/" target="_blank"><img src="static/images/exitnuke_micro1.webp" alt="atomkraft nein, nein!" title="atomkraft nein, nein!" /></a>
+				<a href="https://trotzendorff.de/macht-und-geld/steig-aus/" target="_blank"><img src="/static/images/exitnuke_micro1.webp" alt="atomkraft nein, nein!" title="atomkraft nein, nein!" /></a>
 			</li>
 		</ul>
 
@@ -211,5 +208,5 @@
 	<!-- Zeitreise. -->
 
 
-</body>
+	</body>
 </html>

@@ -1,0 +1,9 @@
+{% extends 'templates/base.njk' %}
+
+{%- block content %}
+	<article class="bind">
+		<section class="sheet">
+			{{ content | safe }}
+		</section>
+	</article>
+{% endblock -%}
