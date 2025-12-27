@@ -1,0 +1,22 @@
+{
+  "title": "♹ phneutral.net",
+  "url": "https://www.phneutral.net/",
+  "description": "Texte, Zeug und Ideen von Christopher Reinbothe.",
+  "image":"/static/images/phneutral_logo.webp",
+  "feed": {
+    "subtitle": "Texte, Zeug und Ideen von Christopher Reinbothe.",
+    "filename": "feed.xml",
+    "path": "/feed.xml",
+    "id": "https://www.phneutral.net/"
+  },
+  "jsonfeed": {
+    "path": "/feed.json",
+    "url": "https://www.phneutral.net/feed.json"
+  },
+  "author": {
+    "name": "Christopher Reinbothe",
+    "email": "christopherreinbothe@phneutral.net",
+    "url": "https://www.phneutral.net/",
+	"fediverse": "@phneutral@ruhr.social"
+  }
+}

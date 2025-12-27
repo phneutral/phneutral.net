@@ -4,8 +4,10 @@
   "description": "",
   "main": "",
   "scripts": {
-	"test": "mode=build npx @11ty/eleventy",
-	"build": "npm run css-build && npm run shoelace-build && npm run svgs-icons && npm run images",
+    "test": "mode=build npx @11ty/eleventy",
+    "build": "npm run css-build && npm run shoelace-build && npm run svgs-icons && npm run images",
+    "dev": "npm run css-dev && npm run shoelace-dev && npm run svgs-icons && npm run images",
+    "watch": "npm run css-watch && npm run shoelace-watch",
     "css-watch": "postcss sources/static/css/style.css -o deploy/static/css/style.css -w",
     "css-dev": "postcss sources/static/css/style.css -o deploy/static/css/style.css",
     "css-build": "mode=build postcss sources/static/css/style.css -o deploy/static/css/style.min.css",
@@ -27,6 +29,7 @@
   "license": "ISC",
   "devDependencies": {
     "@csstools/postcss-bundler": "^1.0.6",
+    "@quasibit/eleventy-plugin-schema": "^1.11.1",
     "@rollup/plugin-commonjs": "^14.0.0",
     "@rollup/plugin-node-resolve": "^8.4.0",
     "@rollup/plugin-terser": "^0.4.4",
@@ -50,6 +53,7 @@
   },
   "dependencies": {
     "@11ty/eleventy": "^3.1.2",
+    "@11ty/eleventy-plugin-rss": "^2.0.4",
     "postcss-load-config": "^6.0.1"
   }
 }

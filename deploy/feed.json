@@ -1,0 +1,15 @@
+{
+  "version": "https://jsonfeed.org/version/1.1",
+  "title": "♹ phneutral.net",
+  "language": "",
+  "home_page_url": "https://www.phneutral.net/",
+  "feed_url": "https://www.phneutral.net/feed.json",
+  "description": "Texte, Zeug und Ideen von Christopher Reinbothe.",
+  "authors": [
+    {
+      "name": "Christopher Reinbothe"
+    }
+  ],
+  "items": [
+  ]
+}
