@@ -12,6 +12,11 @@ theme: solarpunk
 			<h3 class="sheet-subtitle">2023</h3>
 		</header>
 		<div class="sheet-paragraph">
+			<ul>
+			{%- for post in collections.solarpunk -%}
+			  <li>{{ post.data.title }}</li>
+			{%- endfor -%}
+			</ul>
 			<p>
 				Solarpunk ist genau wie Cyberpunk ein Science-Fiction-Genre, das bereits existierende
 				Ideen und Technologien nutzt, sie einige Jahrzehnte in die Zukunft extrapoliert und

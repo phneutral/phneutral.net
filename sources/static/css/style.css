@@ -503,7 +503,7 @@
     --morpheusDark: #111b23;
     --morpheusYellow: #fffbe4;
     background-color: var(--morpheusDark);
-    & .logo {color: var(--morpheusYellow)}
+    & .logo sl-icon {color: var(--morpheusYellow)}
     & .backlink {
       &, &:link, &:visited {
         color: var(--morpheusYellow)

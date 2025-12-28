@@ -21,6 +21,12 @@ theme: bernstein
 		</div>
 	</section>
 
+	<ul>
+	{%- for post in collections.texts -%}
+	  <li>{{ post.data.title }}</li>
+	{%- endfor -%}
+	</ul>
+
 	<section class="shortstories">
 		<h2>Kurzgeschichten</h2>
 		<ul class="buttonlist">

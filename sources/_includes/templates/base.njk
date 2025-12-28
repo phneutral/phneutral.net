@@ -41,16 +41,17 @@
 
 </head>
 <body class="{{ theme }}">
-	{% block header -%}
-		{% include "components/header.njk" %}
-	{% endblock -%}
+	<div class="wrapper" id="alpha">
+		{% block header -%}
+			{% include "components/header.njk" %}
+		{% endblock -%}
 
-	{%- block content %}
-		<article>
-			{{ content | safe }}
-		</article>
-	{% endblock -%}
-
+		{%- block content %}
+			<article>
+				{{ content | safe }}
+			</article>
+		{% endblock -%}
+	</div>
 	{% block footer -%}
 		{% include "components/footer.njk" %}
 	{% endblock -%}

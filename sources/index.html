@@ -3,6 +3,7 @@ layout: templates/base.njk
 title: "Texte, Zeug und Ideen von Christopher Reinbothe."
 description: "Selbstbeschreibung: Graphikdesignlaborant und Internetarchivar — wahrscheinlich Zeitreisender. #utopist!"
 theme: phneutral
+templateEngineOverride: njk, md
 ---
 
 <section>
@@ -90,6 +91,17 @@ theme: phneutral
 		<li><span>Handmodell</span></li>
 	</ul>
 </section>
+
+  	<ul>
+{% for tagName, pages in collections %}
+  {% if tagName != "all" %}
+    <li>
+      <a href="/tags/{{ tagName | slugify }}/">{{ tagName }}</a>
+      ({{ pages.length }} Artikel)
+    </li>
+  {% endif %}
+{% endfor %}
+</ul>
 
 <section class="where">
 	<h2>Offizielle, verifizierte und vernetzte Außenstellen</h2>
