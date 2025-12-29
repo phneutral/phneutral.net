@@ -4,5 +4,6 @@ module.exports = {
     "posts"
   ],
   "layout": "templates/page.njk",
-  "title": "{{ title }}"
+  "title": "{{ title }}",
+  "theme": "bernstein"
 };

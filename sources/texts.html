@@ -2,6 +2,7 @@
 layout: ./templates/base.njk
 title: Christopher Reinbothe schreibt Texte.
 theme: bernstein
+templateEngineOverride: njk, md
 ---
 
 <article>
@@ -21,32 +22,32 @@ theme: bernstein
 		</div>
 	</section>
 
-	<ul>
-	{%- for post in collections.texts -%}
-	  <li>{{ post.data.title }}</li>
-	{%- endfor -%}
-	</ul>
-
 	<section class="shortstories">
 		<h2>Kurzgeschichten</h2>
 		<ul class="buttonlist">
-			<li><a href="karl.html" title="Karl trinkt Kaffee und raucht.">Karl (2004)</a></li>
-			<li><a href="abschied.html" title="Momente an Bahnhöfen können schwierig sein.">Abschied (2006)</a></li>
-			<li><a href="zettel.html" title="Hier geht es um Zeitreisen.">Zettel (2011)</a></li>
-			<li><a href="archivar.html" title="Deine Gedanken an Ihn werden so gleich vergessen sein.">Ein Archivar (2011)</a></li>
-			<li><a href="zeitloser-bahnhof.html" title="Schon wieder Bahnhöfe?">Der Zeitlose Bahnhof (2013)</a></li>
-			<li><a href="morpheus-flug.html" title="Schwere Kost im Raumanzug.">Flug der Morpheus (2012 - 2017)</a></li>
+			{%- for post in collections.shortstory -%}
+				<li>
+					<a href="{{ post.url }}"
+					   {% if post.data.description %}title="{{ post.data.description }}"{% endif %}>
+						{{ post.data.title | safe or post.page.fileSlug | safe }}{% if post.data.year %}&nbsp;({{ post.data.year }}){% endif %}
+					</a>
+				</li>
+			{%- endfor -%}
 		</ul>
 	</section>
 
 	<section class="essays">
 		<h2>Essays, Reden, Kommentare</h2>
 		<ul class="buttonlist">
-			<li><a href="gregor-eisenmann-arbeiten.html">Gregor Eisenmann &mdash; Arbeiten</a></li>
-			<li><a href="rahmenlos2014.html">Rahmenlos 2014</a></li>
-			<li><a href="rahmenlos2015.html">Rahmenlos 2015</a></li>
-			<li><a href="lage-der-kunst.html">Zur Lage der Kunst</a></li>
-			<li><a href="solarpunk.html"><em class="badge">NEU!</em> Solarpunk &mdash; Positive Narrative helfen die Zukunft zu gestalten</a></li>
+			{%- for post in collections.essay -%}
+				<li>
+					<a href="{{ post.url }}"
+					   {% if post.data.description %}title="{{ post.data.description }}"{% endif %}>
+						{{ post.data.title | safe or post.page.fileSlug | safe }}{% if post.data.year %}&nbsp;({{ post.data.year }}){% endif %}
+					</a>
+				</li>
+			{%- endfor -%}
+			<li><a href="/solarpunk"><em class="badge">NEU!</em> Solarpunk &mdash; Positive Narrative helfen die Zukunft zu gestalten</a></li>
 		</ul>
 	</section>
 

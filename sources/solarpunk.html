@@ -1,86 +1,34 @@
 ---
-layout: ./templates/base.njk
+layout: templates/base.njk
 title: Was ist Solarpunk?
+description: Christopher Reinbothe geht dieser Frage nach, schaut sich die unterschiedlichen Faszetten an und beantwortet sie umfangreich.
 theme: solarpunk
+templateEngineOverride: njk, md
 ---
+<article>
 
-<article class="bind">
-	<section class="sheet">
-		<header class="sheet-header">
-			<h1 class="sheet-title">Solarpunk</h1>
-			<h2 class="sheet-title-addition sheet-title-line">Positive Narrative helfen die Zukunft zu gestalten</h2>
-			<h3 class="sheet-subtitle">2023</h3>
-		</header>
-		<div class="sheet-paragraph">
-			<ul>
-			{%- for post in collections.solarpunk -%}
-			  <li>{{ post.data.title }}</li>
-			{%- endfor -%}
-			</ul>
+	<section>
+		<h1>Christopher Reinbothe ist Solarpunk Evangelist.</h1>
+		<div class="textbox">
 			<p>
-				Solarpunk ist genau wie Cyberpunk ein Science-Fiction-Genre, das bereits existierende
-				Ideen und Technologien nutzt, sie einige Jahrzehnte in die Zukunft extrapoliert und
-				passende Geschichten daraus spinnt. Im Gegensatz zum zynischen und dystopischen
-				Cyberpunk ist Solarpunk absolut utopisch. Natürlich sind Solar- und Cyberpunk nicht
-				diametral entgegengesetzt, dennoch liegen die Grundlagen weit auseinander. Cyberpunk
-				war immer als Warnung gedacht, nicht als Anleitung. Im Cyberpunk müssen die Rebellen
-				im Untergrund bleiben, Unternehmen nehmen eine staat-ähnliche Position ein. Es gibt
-				keine Alternative. Es kann ein kleines Refugium gebaut werden, aber die Welt gehört den
-				mächtigen, autoritären Konzernchefen. Bei Solarpunk geht es um Empowerment.
-				Gemeinsam ist es möglich, die Welt zum Besseren zu verändern. Solarpunk versucht sich
-				eine lebens- und liebenswerte Zukunft vorzustellen. Es stemmt sich mit dem beinahe
-				sprichwörtlichen Prinzip Hoffnung gegen den omnipräsenten Pessimismus und die
-				Verzweiflung der Polykrise. Das Prinzip Hoffnung als Hauptwerk des deutschen
-				Philosophen Ernst Bloch (1885–1977) entfaltet eine umfangreiche — von Hegel und Karl
-				Marx beeinflusste — Philosophie der Konkreten Utopie. Diese wiederum zeichnet sich
-				durch militanten Optimismus und die reale Möglichkeit des Werdens aus, die auch die
-				Basis der Solarpunk-Narrative bilden. Solarpunk bedient sich dabei bekannter Bausteine,
-				setzt sie zusammen und füllt sie dadurch mit Leben. Aus losen Ideen werden erreichbare
-				Ziele und gangbare Wege. Nicht nur fiktional, sondern ganz pragmatisch, denn Solarpunk
-				versteht sich nicht nur als Cli-Fi-Genre (Climate Fiction), sondern auch als (Meta-)
-				Bewegung. Es kann also synkretisch verstanden werden: die Synthese von Ideen und
-				Philosophien zu einem neuen System oder Weltbild.
-
-			<blockquote>
-				»We are unstoppable. Another world is possible.«<br> — Fridays for Future.
-			</blockquote>
-			Die prominentesten Bausteine des Solarpunks sind Bewegungen und Subkulturen, die
-			bereits versuchen, die Welt zum Besseren zu verändern. Diese Bewegungen sind von
-			Natur aus inherent progressiv und betreffen alle Bereiche des Lebens. Hier sind einige
-			Beispiele: Chaos Computer Club, Black Lives Matter, Critical Mass, Bürger-Energie-
-			Genossenschaften, For-Future-Bewegung, Extinction Rebellion, Sea Shepherd, Antifa,
-			MeToo, Hacker- und Maker-Spaces, Gewerkschaften, Urban Gardening Bewegung und
-			unzählige weitere.
-
-			Viele dieser Bewegungen gibt es schon seit Jahren oder sogar Jahrzehnten, ohne dass sie
-			direkt miteinander in Kontakt gekommen wären. Bei vielen von ihnen gibt es
-			Überschneidungen (z. B. Radfahrer, die ihre Fahrräder in einer offenen Werkstatt
-			reparieren usw.). In letzter Zeit entsteht der Eindruck, dass das Interesse und die Solidarität
-			zwischen diesen verschiedenen Gruppen auf einer höheren Ebene zu wachsen beginnt.
-			Diese Solidarität ist entscheidend für Solarpunk als fiktionalem Genre und als reale
-			Bewegung von Bewegungen, die versuchen, eine bessere Zukunft zu schaffen. Soziale
-			Gerechtigkeit, Klimawandel und Digitalisierung sind übergreifend.
-			<blockquote>
-				»Es geht nur ökosozial!«<br> — Ulrich Schneider (Paritätischer Wohlfahrtsverband)
-			</blockquote>
-			Als Vorläufer des Genres können Ernest Callenbachs »Ökotopia« (1975) und auch einige
-			Erzählungen von Ursula K. Le Guin gewertet werden. Seinen Ursprung hat der Begriff
-			»Solarpunk« 2008 in einem Beitrag auf dem Blog »Republic of the Bees« in dem es um
-			ein reales Containerschiff geht, das von einem Kite (Zugdrachen) angetrieben wird. Die
-			Idee ist revolutionär, das Unternehmen geht auf Grund des günstigen Ölpreises dennoch
-			insolvent. Es bleibt ein zentrales Thema des Genres: Lowtech trifft Hightech — und die
-			Erkenntnis: Technologie kann uns helfen, aber nicht retten, wenn wir nicht selbst etwas
-			tun.
-			Darum geht es bei »Punk«: Dinge einfach anpacken und Spaß dabei haben. Episoden zu
-			schreiben auf dem Weg in eine bessere, grüne Zukunft.
+				Sie sind es leid »den Gürtel enger schnallen« zu müssen? Sie hassen die »Alternativlosigkeit«? Sie
+				möchten eine gute Zukunft und keine voller Krisen und Katastrophen? Dann geht es Ihnen wie mir!
+				Begleiten Sie mich deshalb gern auf meiner Reise durch die Ideen des Solarpunk.
 			</p>
-
 		</div>
-		<footer class="footnote">
-			Zuerst erschienen im
-			<a href="https://oknrw.de/oknrw-barcamp-2023-science-track-sammelband/" target="_blank">
-				OKNRW Barcamp 2023 – Science Track-Sammelband
-			</a>
-		</footer>
 	</section>
+
+	<section>
+		<ul class="buttonlist">
+			{%- for post in collections.solarpunk -%}
+				<li>
+					<a href="{{ post.url }}"
+					   title="{{ post.data.description | safe or post.data.title | safe }}">
+						{{ post.data.title | safe or post.page.fileSlug | safe }}{% if post.data.year %}&nbsp;({{ post.data.year }}){% endif %}
+					</a>
+				</li>
+			{%- endfor -%}
+		</ul>
+	</section>
+
 </article>

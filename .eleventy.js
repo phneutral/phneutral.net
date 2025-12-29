@@ -1,9 +1,12 @@
+//const { eleventyImageTransformPlugin } = require("@11ty/eleventy-img");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const schema = require("@quasibit/eleventy-plugin-schema");
+const footnote_plugin = require('markdown-it-footnote');
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(schema);
+
 
   eleventyConfig.addLiquidFilter("dateToRfc3339", pluginRss.dateToRfc3339);
   // New in RSS 1.2.0
@@ -15,6 +18,26 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter('iso8601', (dateObj) => {
     return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toISO()
   })
+
+  eleventyConfig.amendLibrary("md", (mdLib) => mdLib.use(footnote_plugin));
+
+
+  // eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
+	// 	// output image formats
+	// 	formats: ["webp"],
+  //
+	// 	// output image widths
+	// 	widths: ["auto"],
+  //
+	// 	// optional, attributes assigned on <img> nodes override these values
+	// 	htmlOptions: {
+	// 		imgAttributes: {
+	// 			loading: "lazy",
+	// 			decoding: "async",
+	// 		},
+	// 		pictureAttributes: {}
+	// 	},
+	// });
 
   eleventyConfig.addPassthroughCopy("./sources/static/webfonts");
   eleventyConfig.addWatchTarget("./deploy/static/css/style.css");
