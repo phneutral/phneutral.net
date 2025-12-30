@@ -19,12 +19,9 @@ templateEngineOverride: njk, md
 				<li class="article">
 					<a class="article-link" href="{{ post.url }}"
 					   title="{{ post.data.description | safe or post.data.title | safe }}">
-						{{ post.data.title | safe or post.page.fileSlug | safe }}{% if post.data.year %}&nbsp;({{ post.data.year }}){% endif %}
+						<span class="article-title">{{ post.data.title | safe or post.page.fileSlug | safe }}</span>
 					</a>
 				</li>
 			{%- endfor -%}
-			<li class="article"><a class="article-link" href="hibernation.html"><span class="article-title">Hibernation</span></a></li>
-			<li class="article"><a class="article-link" href="insomnia.html"><span class="article-title">Insomnia</span></a></li>
-			<li class="article"><a class="article-link" href="koma.html"><span class="article-title">Koma</span></a></li>
 		</ul>
 </section>

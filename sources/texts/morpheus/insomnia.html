@@ -1,14 +1,13 @@
 ---
 layout: ./templates/page.njk
 title: "Insomnia"
+description: Der Flug der Morpheus &mdash; Teil II
 year: 2015
 date: 2015-01-01
 theme: morpheus
+templateEngineOverride: njk, md
 ---
-<header class="sheet-header">
-	<h1 class="sheet-title sheet-title-line">Insomnia</h1>
-	<h2 class="sheet-subtitle">Der Flug der Morpheus &mdash; Teil II (2015)</h2>
-</header>
+
 <div class="sheet-paragraph">
 	<p>
 		Sie beobachten ihn. Dessen ist er sich sicher. <em>›Bloß nichts anmerken lassen.‹</em> Übertrieben gelangweilt
@@ -117,7 +116,10 @@ theme: morpheus
 
 	</p>
 	<footer class="footnote">
-		<a href="koma.html">» Weiterlesen.
-		</a>
+		{% set nextPost = collections.morpheus | getNextCollectionItem %}
+		{% if not nextPost %}
+  			{% set nextPost = collections.morpheus | first %}
+		{% endif %}
+		{% if nextPost %}<a href="{{ nextPost.url }}">» Weiterlesen: {{ nextPost.data.title | safe }}</a>{% endif %}
 	</footer>
 </div>

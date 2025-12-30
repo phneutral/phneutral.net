@@ -1,20 +1,14 @@
 ---
-title: Eine Anleitung zum kollektiven Handeln für eine lebenswerte Zukunft
-description: Mögliche Bausteine einer Solarpunk-Zukunft
+title: Bausteine einer Solarpunk-Zukunft
+description: Kollektives Handeln für eine lebenswerte Zukunft
 year: 2025
 date: 2025-11-22
 ---
 
-# Solarpunk: Eine Anleitung zum kollektiven Handeln für eine lebenswerte Zukunft
-
----
-
-## Abstract
-
 Dieser Artikel ist der zweite Teil unserer Auseinandersetzung mit **Solarpunk**, jenem radikal optimistischen
 Science-Fiction-Genre und der gleichzeitig wachsenden (Meta-)Bewegung, die sich mutig dem allgegenwärtigen Pessimismus
 entgegenstemmt. Aufbauend auf dem vorherigen
-Text^[Christopher Reinbothe. Solarpunk — Positive Narrative helfen die Zukunft zu gestalten. OKNRW Barcamp – Science Track-Sammelband, 2023. https://oknrw.de/wp-content/uploads/2024/01/Sammelband_ScienceTrack_2023_v11.pdf],
+Text^[[Christopher Reinbothe. Solarpunk — Positive Narrative helfen die Zukunft zu gestalten. OKNRW Barcamp – Science Track-Sammelband, 2023.](/solarpunk/solarpunk-narrative-oknrw-2023)],
 in dem wir Solarpunk als utopischen Gegenentwurf zum zynischen Cyberpunk und als Verkörperung von Ernst Blochs "Prinzip
 Hoffnung"^[Ernst Bloch. Das Prinzip Hoffnung. Suhrkamp, 1985.] beleuchtet haben, tauchen wir nun tiefer in die *
 *konkreten Bausteine und Praktiken** ein, die eine Solarpunk-Zukunft nicht nur denkbar, sondern auch greifbar machen. Es
@@ -43,22 +37,22 @@ Hier kommen Konzepte ins Spiel, die Solarpunk als Bewegung des kollektiven Hande
 
 > Was wäre, wenn wir die Wirtschaft als die Art und Weise definieren würden, wie wir füreinander sorgen?
 
-— David Graeber^[David Graeber Institute. https://davidgraeber.org/]
+— David Graeber^[[David Graeber Institute.](https://davidgraeber.org/)]
 
 Im Herzen des Solarpunk liegen die Prinzipien der **Gemeinwohlorientierung statt Profitmaximierung, Demokratisierung und
 Teilhabe, Kollektives Eigentum/Nutzung** und **Zugangsgleichheit**. Diese manifestieren sich in verschiedenen
 non-reformistischen
-Reformmodellen^[André Gorz. Zur Strategie der Arbeiterbewegung im Neokapitalismus. Frankfurt/M.: Europ. Verl.-Anstalt., 1969. https://www.agpolitischetheorie.de/offene-textrunde-iii-andre-gorz-strategie-der-arbeiterbewegung/]:
+Reformmodellen^[[André Gorz. Zur Strategie der Arbeiterbewegung im Neokapitalismus. Frankfurt/M.: Europ. Verl.-Anstalt., 1969.](https://www.agpolitischetheorie.de/offene-textrunde-iii-andre-gorz-strategie-der-arbeiterbewegung/)]:
 
-### Genossenschaften^[Genoverband. Genossenschaft als Rechtsform. https://www.genoverband.de/genossenschaft-gruenden/genossenschaft-als-rechtsform/] ^[\#GenoDigital https://genossenschaften.digital] (Cooperatives)
+### Genossenschaften^[[Genoverband. Genossenschaft als Rechtsform.](https://www.genoverband.de/genossenschaft-gruenden/genossenschaft-als-rechtsform/)] ^[[\#GenoDigital](https://genossenschaften.digital)] (Cooperatives)
 
 Als bewährtes Modell der kollektiven Selbstorganisation sind Genossenschaften ein Eckpfeiler der Solarpunk-Vision. Sie
 ermöglichen es Menschen, gemeinsame wirtschaftliche, soziale und kulturelle Bedürfnisse durch ein gemeinschaftlich
 geführtes Unternehmen zu erfüllen. Es ist kein Zufall, dass **2025 das Internationale Jahr der Genossenschaften
-**^[International Co-operative Alliance (ICA) https://2025.coop] ist – ein Zeichen für ihre wachsende Bedeutung in der
+**^[[International Co-operative Alliance (ICA)](https://2025.coop)] ist – ein Zeichen für ihre wachsende Bedeutung in der
 Gestaltung einer gerechteren Wirtschaft.
 
-### Plattform-Kooperativismus^[Trebor Scholz. Uberworked and Underpaid: How Workers Are Shaping the Future of Work. Polity Press, 2016. http://pombo.free.fr/treborscholz.pdf] ^[Trebor Scholz. Plattform-Kooperativismus: Wie wir uns die Sharing Economy zurückholen können. Rosa Luxemburg Stiftung, 2016. https://www.rosalux.de/publikation/id/8813/plattform-kooperativismus] ^[Platform Coops eG https://platformcoop.de] ^[Platform Cooperativism Consortium https://platform.coop] (Platform Cooperatives)
+### Plattform-Kooperativismus^[[Trebor Scholz. Uberworked and Underpaid: How Workers Are Shaping the Future of Work. Polity Press, 2016.](http://pombo.free.fr/treborscholz.pdf)] ^[[Trebor Scholz. Plattform-Kooperativismus: Wie wir uns die Sharing Economy zurückholen können. Rosa Luxemburg Stiftung, 2016.](https://www.rosalux.de/publikation/id/8813/plattform-kooperativismus)] ^[[Platform Coops eG](https://platformcoop.de)] ^[[Platform Cooperativism Consortium](https://platform.coop)] (Platform Cooperatives)
 
 Er baut auf der Idee der Genossenschaft, um die Solarpunk-Antwort auf die monopolistische Macht der Tech-Giganten zu
 geben und schlägt vor, digitale Plattformen (wie Social Media, Lieferdienste oder Fahrdienste) genossenschaftlich oder
@@ -224,19 +218,17 @@ Nachhaltigkeit und Gerechtigkeit basiert.
 
 Daneben bleibt Solarpunk auch ein vitales künstlerisches und literarisches Genre. Es ist der Ort, an dem die **konkreten
 Utopien** in Geschichten, Bildern und Visionen lebendig werden. Autor\*innen und Künstler\*innen bieten uns die mentalen
-Werkzeuge, um uns eine lebenswerte Zukunft überhaupt vorstellen zu können. Persönlichkeiten wie **Becky Chambers
-**^[[Becky Chambers.](https://www.otherscribbles.com)] mit ihrer einfühlsamen "Monk & Robot"-Reihe oder **Cory Doctorow
-**^[[Cory Doctorow.](https://craphound.com)] mit seinen Werken wie "The Lost Cause" oder "Walkaway", die sich mit radikaler
-Technologie und sozialen Alternativen beschäftigen. Auch Initiativen wie die **Story Seed Library
-**^[[Paweł 'alxd' Ngei et al.](https://storyseedlibrary.org)] oder **Climate Fiction Writers League**^[Wren James and the
-Climate Fiction Writers League. The Climate-Conscious Writers Handbook.
-2025 https://climate-fiction.org/the-climate-conscious-writers-handbook/] fördern das gemeinsame Erschaffen von
-Narrativen, und Kollektive wie das **Post-Carbon Institute**^[Post-Carbon
-Institute https://www.postcarbon.org/] arbeiten an der Schnittstelle von Wissenschaft und Kommunikation, um post-fossile
+Werkzeuge, um uns eine lebenswerte Zukunft überhaupt vorstellen zu können. Persönlichkeiten wie **Becky Chambers**
+^[[Becky Chambers.](https://www.otherscribbles.com)] mit ihrer einfühlsamen "Monk & Robot"-Reihe oder **Cory Doctorow**
+^[[Cory Doctorow.](https://craphound.com)] mit seinen Werken wie "The Lost Cause" oder "Walkaway", die sich mit radikaler
+Technologie und sozialen Alternativen beschäftigen. Auch Initiativen wie die **Story Seed Library**
+^[[Paweł 'alxd' Ngei et al.](https://storyseedlibrary.org)] oder **Climate Fiction Writers League**
+^[[Wren James and the Climate Fiction Writers League. The Climate-Conscious Writers Handbook.
+2025](https://climate-fiction.org/the-climate-conscious-writers-handbook/] fördern)] das gemeinsame Erschaffen von
+Narrativen, und Kollektive wie das **Post-Carbon Institute**
+^[[Post-Carbon Institute](https://www.postcarbon.org/)] arbeiten an der Schnittstelle von Wissenschaft und Kommunikation, um post-fossile
 Zukünfte greifbar zu machen. Diese Stimmen füllen die theoretischen Konzepte mit menschlichem Leben und zeigen, wie eine
 bessere Welt aussehen, sich anfühlen und funktionieren könnte.
 
 Solarpunk gibt uns die Ideen und die Geschichten, um genau diese Welt zu visualisieren und zu bauen. Es ist der
 militante Optimismus, der uns antreibt, und die konkrete Utopie, die wir gemeinsam erreichen können.
-
-#Solarpunk #OKNRW

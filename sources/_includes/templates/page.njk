@@ -1,9 +1,14 @@
 ---
 layout: templates/base.njk
 ---
-{%- block content %}
+{%- block main %}
 	<article class="bind">
 		<section class="sheet">
+			<header class="sheet-header">
+				<h1 class="sheet-title">{{ title | safe }}</h1>
+				<h2 class="sheet-title-addition sheet-title-line">{{ description | safe }}</h2>
+				<h3 class="sheet-subtitle">{{ year }}</h3>
+			</header>
 			{{ content | safe }}
 		</section>
 	</article>

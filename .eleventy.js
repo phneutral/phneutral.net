@@ -18,7 +18,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter('iso8601', (dateObj) => {
     return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toISO()
   })
-
+  eleventyConfig.addFilter("isItemInCollection", function(collection, url) {
+    return collection.some(item => item.url === url);
+  });
   eleventyConfig.amendLibrary("md", (mdLib) => mdLib.use(footnote_plugin));
 
 

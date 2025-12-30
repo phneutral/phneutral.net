@@ -34,7 +34,7 @@
     "@rollup/plugin-node-resolve": "^8.4.0",
     "@rollup/plugin-terser": "^0.4.4",
     "@viur/ignite": "^5.0.1",
-    "@viur/shoelace": "^1.0.8-v2.17.1",
+    "@viur/shoelace": "^1.0.12-v2.20.1",
     "autoprefixer": "^10.4.16",
     "cssnano": "^6.0.1",
     "postcss": "^8.4.31",

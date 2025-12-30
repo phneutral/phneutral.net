@@ -1,15 +1,13 @@
 ---
 layout: ./templates/page.njk
 title: "Koma"
+description: Der Flug der Morpheus &mdash; Teil III
 year: 2017
 date: 2017-01-01
 theme: morpheus
+templateEngineOverride: njk, md
 ---
 
-<header class="sheet-header">
-	<h1 class="sheet-title sheet-title-line">Koma</h1>
-	<h2 class="sheet-subtitle">Der Flug der Morpheus &mdash; Teil III (2017)</h2>
-</header>
 <div class="sheet-paragraph">
 	<p>
 		Die Anfangssingularität liegt ungefähr 13,8 Milliarden Erdenjahre hinter uns. Der Urknall. Der Urpunkt ohne
@@ -46,7 +44,7 @@ theme: morpheus
 		Wir spielten, denn ernst würde die Welt schnell genug werden. Im Paradies war die Menschheit eins.
 	</p>
 </div>
-</div>
+</section>
 
 <p class="interludium"><em>Das Kaninchen hatte den Einschlag überlebt. Faszinierend wie zäh diese kleinen Viecher sind.
 	Amüsiert schaute Heinrich zu wie es vorüber hoppelte. Er lehnte am Rahmen der groben Holztür. Dieses Haus hatten
@@ -54,7 +52,7 @@ theme: morpheus
 	dass ihr Urenkel irgendwann durch den Kosmos reisen würde. Heinrich schmunzelte. Stolz wären sie. Die Zeit hatte sie
 	längst mit sich gerissen.</em>
 </p>
-<div class="sheet">
+<section class="sheet">
 	<div class="sheet-paragraph">
 		<p>
 
@@ -125,8 +123,10 @@ theme: morpheus
 
 		</p>
 		<footer class="footnote">
-			<a href="hibernation.html">» Weiterlesen.
-			</a>
+		{% set nextPost = collections.morpheus | getNextCollectionItem %}
+		{% if not nextPost %}
+  			{% set nextPost = collections.morpheus | first %}
+		{% endif %}
+		{% if nextPost %}<a href="{{ nextPost.url }}">» Weiterlesen: {{ nextPost.data.title | safe }}</a>{% endif %}
 		</footer>
 	</div>
-</div>

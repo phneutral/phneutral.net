@@ -6,7 +6,7 @@
 				<sl-icon library="ph" name="phneutral_logo" label="Eine 7 im Siebeneck - Das Logo von phneutral.net"></sl-icon>
 			</a>
 		</sl-tooltip>
-		{%- if theme===("bernstein" or "morpheus") -%}
+		{%- if collections.texts | isItemInCollection(page.url) -%}
 			<sl-tooltip placement="bottom">
 				<div slot="content">Das Logo der Bernstein-Biblothek:<br>Eine im Bernstein eingeschlossene Mücke</div>
 				<a href="/texts">
@@ -15,4 +15,11 @@
 			</sl-tooltip>
 		{%- endif -%}
 	</div>
+	{% if collections.morpheus | isItemInCollection(page.url) %}
+		<a class="backlink" href="/texts/morpheus-flug" title="Zurück zur Shuttlerampe">Zurück zur Shuttlerampe</a>
+	{%- elif collections.solarpunk | isItemInCollection(page.url) -%}
+		<a class="backlink" href="/solarpunk" title="Zurück zur Übersicht">Zurück zur Übersicht</a>
+	{%- elif collections.texts | isItemInCollection(page.url) -%}
+		<a class="backlink" href="/texts" title="Zurück zur Bernsteinbibliothek">Zurück zur Bernsteinbibliothek</a>
+	{% endif %}
 </header>
