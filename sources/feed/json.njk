@@ -9,7 +9,7 @@ permalink: "/feed.json"
   "feed_url": "{{ permalink | htmlBaseUrl(metadata.url) }}",
   "description": "{{ metadata.description }}",
   "icon": "{{ metadata.logo | htmlBaseUrl(metadata.url) }}",
-  "favicon": "{{ metadata.icon | htmlBaseUrl(metadata.url) }}",
+  "favicon": "{{ metadata.favicon | htmlBaseUrl(metadata.url) }}",
   "authors": [
     {
       "name": "{{ metadata.author.name }}",

@@ -8,3 +8,4 @@ My personal website.
 - [x] Template for texts
 - [ ] Template for solarpunk
 - [x] Template for morpheus
+- [ ] Image support for posts
