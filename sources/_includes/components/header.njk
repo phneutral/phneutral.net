@@ -15,11 +15,31 @@
 			</sl-tooltip>
 		{%- endif -%}
 	</div>
-	{% if collections.morpheus | isItemInCollection(page.url) %}
-		<a class="backlink" href="/texts/morpheus-flug" title="Zurück zur Shuttlerampe">Zurück zur Shuttlerampe</a>
-	{%- elif collections.solarpunk | isItemInCollection(page.url) -%}
-		<a class="backlink" href="/solarpunk" title="Zurück zur Übersicht">Zurück zur Übersicht</a>
-	{%- elif collections.texts | isItemInCollection(page.url) -%}
-		<a class="backlink" href="/texts" title="Zurück zur Bernsteinbibliothek">Zurück zur Bernsteinbibliothek</a>
-	{% endif %}
+	<div class="backlink">
+		{% if collections.morpheus | isItemInCollection(page.url) %}
+			<a href="/texts/morpheus-flug" title="Zurück zur Shuttlerampe">Zurück zur Shuttlerampe</a>
+			{% set currentCollection = collections.morpheus %}
+		{%- elif collections.solarpunk | isItemInCollection(page.url) -%}
+			<a href="/solarpunk" title="Zurück zur Übersicht">Zurück zur Solarpunk-Übersicht</a>
+			{% set currentCollection = collections.solarpunk %}
+		{%- elif collections.texts | isItemInCollection(page.url) -%}
+			<a href="/texts" title="Zurück zur Bernsteinbibliothek">Zurück zur Bernsteinbibliothek</a>
+			{% set currentCollection = collections.texts %}
+		{% else %}
+			<a href="/texts">Geschichten und Essays</a><br>
+			<a href="/solarpunk">Solarpunk</a>
+		{% endif %}
+		{% if currentCollection %}
+			{% set nextPost = currentCollection | getNextCollectionItem %}
+			{% if not nextPost %}
+				{% set nextPost = currentCollection | first %}
+			{% endif %}
+		{% endif %}
+		{% if nextPost %}
+			<br><a href="{{ nextPost.url }}">
+				Nächste Seite: {{ nextPost.data.title | safe }}
+			</a>
+		{% endif %}
+	</div>
 </header>
+

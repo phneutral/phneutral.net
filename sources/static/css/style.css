@@ -192,10 +192,12 @@
 
   .backlink {
     margin-left: auto;
-    border-bottom: 1px solid color-mix(in srgb, var(--ignt-color-neutral-0), transparent 70%);
     align-self: flex-start;
-
-    &:hover {
+    text-align: right;
+    & a {
+      border-bottom: 1px solid color-mix(in srgb, var(--ignt-color-neutral-0), transparent 70%);
+    }
+    & a:hover {
       border-bottom: 1px solid #fff;
     }
   }
@@ -521,7 +523,7 @@
     background-color: var(--morpheusDark);
     & .logo sl-icon {color: var(--morpheusYellow)}
     & .backlink {
-      &, &:link, &:visited {
+      & a, & a:link, & a:visited {
         color: var(--morpheusYellow)
       }
     }
