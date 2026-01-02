@@ -42,6 +42,8 @@ module.exports = function (eleventyConfig) {
 	// });
 
   eleventyConfig.addPassthroughCopy("./sources/keybase.txt");
+  eleventyConfig.addPassthroughCopy("./sources/static/meta");
+  eleventyConfig.addPassthroughCopy("./sources/static/images/phneutral_logo_pixel.png");
   eleventyConfig.addPassthroughCopy("./sources/static/webfonts");
   eleventyConfig.addWatchTarget("./deploy/static/css/style.css");
   eleventyConfig.addWatchTarget("./deploy/static/css/style.min.css");

@@ -8,9 +8,13 @@ permalink: "/feed.json"
   "home_page_url": "{{ metadata.url | addPathPrefixToFullUrl }}",
   "feed_url": "{{ permalink | htmlBaseUrl(metadata.url) }}",
   "description": "{{ metadata.description }}",
+  "icon": "{{ metadata.logo | htmlBaseUrl(metadata.url) }}",
+  "favicon": "{{ metadata.icon | htmlBaseUrl(metadata.url) }}",
   "authors": [
     {
-      "name": "{{ metadata.author.name }}"
+      "name": "{{ metadata.author.name }}",
+      "url": "{{ metadata.url | addPathPrefixToFullUrl }}",
+      "avatar": "{{ metadata.logo | htmlBaseUrl(metadata.url) }}",
     }
   ],
   "items": [

@@ -3,6 +3,8 @@
   "url": "https://www.phneutral.net/",
   "description": "Texte, Zeug und Ideen von Christopher Reinbothe.",
   "image":"/static/images/phneutral_logo.webp",
+  "favicon":"/static/meta/favicon.ico",
+  "logo":"/static/images/phneutral_logo_pixel.png",
   "feed": {
     "subtitle": "Texte, Zeug und Ideen von Christopher Reinbothe.",
     "filename": "feed.xml",
