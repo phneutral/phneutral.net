@@ -60,33 +60,33 @@ anderweitig demokratisch zu organisieren. Gewinne werden fair geteilt, Entscheid
 Algorithmen sind transparent. Es geht darum, die Kontrolle über unsere digitalen Werkzeuge zurückzugewinnen und sie zum
 Wohle der Gemeinschaft einzusetzen.
 
-### Solidarökonomie^[Solidarity Economy Association, Rory Robertson-Shaw, Colm Massey, Jo Taylor. The Solidarity Economy (a visual guide). Dog Section Press, 2024. https://roryrobertsonshaw.net/The-Solidarity-Economy-book] (Solidarity Economy)
+### Solidarökonomie^[[Solidarity Economy Association, Rory Robertson-Shaw, Colm Massey, Jo Taylor. The Solidarity Economy (a visual guide). Dog Section Press, 2024.](https://roryrobertsonshaw.net/The-Solidarity-Economy-book)] (Solidarity Economy)
 
 Dieser breit gefasste Ansatz umfasst eine Vielzahl von Aktivitäten, die wirtschaftliche Produktion, Verteilung und
 Konsum auf demokratische, partizipatorische und ethische Weise organisieren. Sie stellt Kooperation, soziale
 Gerechtigkeit und ökologische Nachhaltigkeit in den Mittelpunkt, anstatt nur Profit zu generieren. Dazu gehören
 beispielsweise Sozialunternehmen,
-Tauschringe^[Beispielhaft: Maschinenringe in der Landwirtschaft https://www.maschinenring.de] oder
-gemeinschaftsgetragene Landwirtschaft^[Netzwerk Solidarische Landwirtschaft. Was ist Solidarische
-Landwirtschaft? https://www.solidarische-landwirtschaft.org/das-konzept/was-ist-solawi/] (SoLaWi). Sie ist die konkrete
+Tauschringe^[[Beispielhaft: Maschinenringe in der Landwirtschaft](https://www.maschinenring.de)] oder
+gemeinschaftsgetragene Landwirtschaft^[[Netzwerk Solidarische Landwirtschaft. Was ist Solidarische
+Landwirtschaft?](https://www.solidarische-landwirtschaft.org/das-konzept/was-ist-solawi/)] (SoLaWi). Sie ist die konkrete
 Umsetzung einer Wirtschaft, die dem Menschen dient, nicht umgekehrt.
 
-### Geschenkwirtschaft^[Lewis Hyde. The Gift: Creativity and the Artist in the Modern World. Vintage Books, 2007 https://newsgrist.typepad.com/files/hyde-the-gift-creativity-and-the-artist-in-the-modern-world-2007.pdf] (Gift Economy)
+### Geschenkwirtschaft^[[Lewis Hyde. The Gift: Creativity and the Artist in the Modern World. Vintage Books, 2007](https://newsgrist.typepad.com/files/hyde-the-gift-creativity-and-the-artist-in-the-modern-world-2007.pdf)] (Gift Economy)
 
 Im Kern dieses Modells stehen Austauschbeziehungen, die nicht primär auf monetärem Profit oder direkter Gegenleistung
 basieren, sondern auf Vertrauen, Beziehungspflege und dem Wunsch, einen Beitrag zum Gemeinwohl zu leisten. File-sharing,
 Crowd-Funding, Peer-Production, Nachbarschaftshilfe oder Open-Source-Entwicklung sind Beispiele. Die Geschenkwirtschaft
 ist die Antithese zur Logik des Mangels und der Knappheit; sie lebt vom Überfluss und der Freude am
-Geben^[Michael Hutter (Hg.), Birger P. Priddat (Hg.) et al. Geben, Nehmen, Teilen: Gabenwirtschaft im Horizont der Digitalisierung. Campus Verlag, 2023. https://www.campus.de/buecher-campus-verlag/wissenschaft/soziologie/geben_nehmen_teilen-17577.html].
+Geben^[[Michael Hutter (Hg.), Birger P. Priddat (Hg.) et al. Geben, Nehmen, Teilen: Gabenwirtschaft im Horizont der Digitalisierung. Campus Verlag, 2023.](https://www.campus.de/buecher-campus-verlag/wissenschaft/soziologie/geben_nehmen_teilen-17577.html)].
 
-### Kreislaufwirtschaft^[Ellen MacArthur Foundation. What is a circular economy? https://www.ellenmacarthurfoundation.org/topics/circular-economy-introduction/overview] (Circular Economy)
+### Kreislaufwirtschaft^[[Ellen MacArthur Foundation. What is a circular economy?](https://www.ellenmacarthurfoundation.org/topics/circular-economy-introduction/overview)] (Circular Economy)
 
 Im Gegensatz zur linearen "Nehmen-Machen-Entsorgen"-Wirtschaft zielt die Kreislaufwirtschaft darauf ab, Ressourcen so
 lange wie möglich im Kreislauf zu halten. Produkte und Materialien werden wiederverwendet, repariert, aufgearbeitet und
 recycelt, um Abfall zu minimieren und den Verbrauch neuer Ressourcen zu reduzieren. Dies ist ein fundamentales Prinzip
 für eine nachhaltige Solarpunk-Zukunft, in der Effizienz und Ressourcenschonung im Mittelpunkt stehen.
 
-### Postwachstum^[Jason Hickel. Less Is More: How Degrowth Will Save the World. Windmill Books, 2020. https://www.jasonhickel.org] ^[Nathan Barlow, Livia Regen et al. Degrowth & Strategy: how to bring about social-ecological transformation. Mayfly Books, 2022 https://www.degrowthstrategy.org] ^[Nick King. What Energy Paradigm Might Underpin Degrowth and Steady State Economies? Resilience.org, 2024. https://www.resilience.org/stories/2024-02-06/what-energy-paradigm-might-underpin-degrowth-and-steady-state-economies/] (Degrowth)
+### Postwachstum^[[Jason Hickel. Less Is More: How Degrowth Will Save the World. Windmill Books, 2020.](https://www.jasonhickel.org)] ^[[Nathan Barlow, Livia Regen et al. Degrowth & Strategy: how to bring about social-ecological transformation. Mayfly Books, 2022](https://www.degrowthstrategy.org)] ^[[Nick King. What Energy Paradigm Might Underpin Degrowth and Steady State Economies? Resilience.org, 2024.](https://www.resilience.org/stories/2024-02-06/what-energy-paradigm-might-underpin-degrowth-and-steady-state-economies/)] (Degrowth)
 
 Dieses Konzept fordert eine bewusste und demokratisch geplante Reduzierung des materiellen und energetischen Verbrauchs
 in wohlhabenden Gesellschaften, um innerhalb der planetaren Grenzen zu leben und gleichzeitig soziale Gerechtigkeit und
@@ -95,27 +95,26 @@ Wachstumszwang hin zu einem Fokus auf Suffizienz, Lebensqualität und die Neudef
 radikale Antwort auf die ökologische Krise, die über bloße Effizienzsteigerung hinausgeht und eine grundlegende
 Neuordnung unserer Beziehung zu Ressourcen und Produktion anstrebt.
 
-### Bibliothek-Sozialismus^[Library Socialism 101. Foundational principles. https://librarysocialism.org] ^[Aaron Moritz, Shawn Vulliez. Library Socialism & Usufruct. Srsly Wrong Podcast #189, 2019. https://srslywrong.com/podcast/189-library-socialism-usufruct/] ^[Andrewism. We Need A Library Economy. Youtube, 2022. https://www.youtube.com/watch?v=NOYa3YzVtyk&t=1289s] (Library Socialism)
+### Bibliothek-Sozialismus^[[Library Socialism 101. Foundational principles.](https://librarysocialism.org)] ^[[Aaron Moritz, Shawn Vulliez. Library Socialism & Usufruct. Srsly Wrong Podcast #189, 2019.](https://srslywrong.com/podcast/189-library-socialism-usufruct/)] ^[[Andrewism. We Need A Library Economy. Youtube, 2022.](https://www.youtube.com/watch?v=NOYa3YzVtyk)] (Library Socialism)
 
 Diese Philosophie stellt sich eine Gesellschaft vor, die nach dem Modell einer öffentlichen Bibliothek
-funktioniert^[Shannon Mattern. Library as Infrastructure: Reading room, social service center, innovation lab. How far can we stretch the public library? Places Journal, 2014. https://placesjournal.org/article/library-as-infrastructure/].
+funktioniert^[[Shannon Mattern. Library as Infrastructure: Reading room, social service center, innovation lab. How far can we stretch the public library? Places Journal, 2014.](https://placesjournal.org/article/library-as-infrastructure/)].
 Das **Nutzungsrecht (Nießbrauch, Usufruct)** – das Recht, Dinge zu nutzen, ohne sie dauerhaft zu besitzen – steht im
-Vordergrund. Ein **unreduzierbares Minimum** an Gütern und Dienstleistungen wird für alle garantiert. Die *
-*Komplementarität** bedeutet, dass die Handlungen der Nutzer das System ergänzen und verbessern, anstatt es zu
+Vordergrund. Ein **unreduzierbares Minimum** an Gütern und Dienstleistungen wird für alle garantiert. Die
+**Komplementarität** bedeutet, dass die Handlungen der Nutzer das System ergänzen und verbessern, anstatt es zu
 erschöpfen. So werden Güter von Werkzeugen bis zu Wohnraum als gemeinsame Ressourcen verstanden, die geteilt und
 ausgeliehen werden können, um Überproduktion zu vermeiden und Bedürfnisse effizient zu decken.
 
-### Öko-Sozialismus^[Netzwerk Ökosozialismus. https://netzwerk-oekosozialismus.de] (Eco Socialism)
+### Öko-Sozialismus^[[Netzwerk Ökosozialismus.](https://netzwerk-oekosozialismus.de)] (Eco Socialism)
 
-Diese Strömung verbindet ökologische Nachhaltigkeit mit sozialer Gerechtigkeit. Konzepte wie **Rewilding**^[Simone
+Diese Strömung verbindet ökologische Nachhaltigkeit mit sozialer Gerechtigkeit. Konzepte wie **Rewilding**^[[Simone
 Böcker. Rewilding: Auf der Suche nach einem Gleichgewicht zwischen Mensch und Natur. Aufbau,
-2023 http://unkultiviert.com/rewilding/] (die Wiederherstellung natürlicher Ökosysteme) und **Half Earth Socialism
-**^[Troy Vettese, Drew Pendergrass. Half-Earth Socialism: A Plan to Save the Future from Extinction, Climate Change and Pandemics. Verso, 2022 https://www.half.earth] (
+2023](http://unkultiviert.com/rewilding/)] (die Wiederherstellung natürlicher Ökosysteme) und **Half Earth Socialism** ^[[Troy Vettese, Drew Pendergrass. Half-Earth Socialism: A Plan to Save the Future from Extinction, Climate Change and Pandemics. Verso, 2022](https://www.half.earth)] (
 eine Vision, die Hälfte der Erde der Natur zu widmen, während die andere Hälfte nachhaltig von Menschen bewohnt wird)
 sind integrale Bestandteile. Sie zeigen, wie eine Solarpunk-Zukunft die Menschheit wieder in Harmonie mit der Natur
 bringt, basierend auf einer fairen Verteilung von Ressourcen und Verantwortung.
 
-### Vergesellschaftung^[Sabine Nuss. Wessen Freiheit, welche Gleichheit? Das Versprechen einer anderen Vergesellschaftung. Karl Dietz Verlag Berlin, 2024. https://dietzberlin.de/produkt/wessen-freiheit-welche-gleichheit/]
+### Vergesellschaftung^[[Sabine Nuss. Wessen Freiheit, welche Gleichheit? Das Versprechen einer anderen Vergesellschaftung. Karl Dietz Verlag Berlin, 2024.](https://dietzberlin.de/produkt/wessen-freiheit-welche-gleichheit/)]
 
 Diese Initiativen zielen darauf ab, große private Vermögenswerte, insbesondere in Bereichen der Grundversorgung wie
 Wohnraum, in kollektives oder gemeinwohlorientiertes Eigentum zu überführen. Prominente Beispiele wie "Deutsche Wohnen &
@@ -125,7 +124,7 @@ Spekulationsobjekt, sondern ein Gemeingut wird, das allen zugänglich ist.
 
 ### Verantwortungseigentum (Steward-Ownership)
 
-Auch die sogenannte **Purpose-Bewegung**^[Purpose Ventures e.G. https://purpose-economy.org/de/]  passt hier ins Bild.
+Auch die sogenannte **Purpose-Bewegung**^[[Purpose Ventures e.G.](https://purpose-economy.org/de/)] passt hier ins Bild.
 Von Unternehmen wie Zeiss oder Bosch vor über hundert Jahren entwickelt, wird die Idee heutzutage von Start Ups wie
 Ecosia, Waschbär oder Open Petition mit neuem Leben erfüllt. Die Firmen sind dazu angelegt sich selbst zu gehören. Sie
 dienen ihrem Zweck und im Sinne des Stakeholder-Values den Menschen, die aktuell mit ihnen zu tun haben. So verkörpern
@@ -138,9 +137,9 @@ aufrechterhalten.
 
 ## Commoning: Der Kern der Transformation
 
-All diese Bausteine werden durch das **Commoning**^[David Bollier, Silke Helfrich. _Patterns of
-Commoning_. The Commons Strategies Group, 2014. https://patternsofcommoning.org] ^[Katja Schubel. Mit einem Recht für
-Commons zur Stadt für alle? Dissens Podcast #307, 2025. https://podcast.dissenspodcast.de/307-commons] zusammengehalten
+All diese Bausteine werden durch das **Commoning**^[[David Bollier, Silke Helfrich. Patterns of
+Commoning. The Commons Strategies Group, 2014.](https://patternsofcommoning.org)] ^[[Katja Schubel. Mit einem Recht für
+Commons zur Stadt für alle? Dissens Podcast #307, 2025.](https://podcast.dissenspodcast.de/307-commons)] zusammengehalten
 und zum Leben erweckt. **Commoning** bezeichnet die **selbstorganisierten, bedürfnisorientierten sozialen Praktiken des
 Produzierens, Verwaltens, Pflegens und/oder Nutzens von Ressourcen durch eine Gemeinschaft**. Es ist ein dynamischer
 Prozess, bei dem die Beteiligten ihre Fähigkeiten und ihr Wissen einbringen, um gemeinsame Werte und Ziele zu
@@ -164,21 +163,21 @@ im Hier und Jetzt.
 
 ## Wartung und Pflege: Das Herzstück des Solarpunk
 
-Im Solarpunk sind **Wartung und Pflege**^[Shannon Mattern. Maintenance and Care: A working guide to the repair of rust,
+Im Solarpunk sind **Wartung und Pflege**^[[Shannon Mattern. Maintenance and Care: A working guide to the repair of rust,
 dust, cracks, and corrupted code in our cities, our homes, and our social relations. Places Journal,
-2018. https://placesjournal.org/article/maintenance-and-care/] (Maintenance and Care) nicht bloße Nebensächlichkeiten,
-sondern die **Kernprinzipien eines nachhaltigen Zusammenlebens**. Es geht weit über die Reparatur von Geräten^[Crawford,
-Matthew B. _Shop Class as Soulcraft: An Inquiry into the Value of Work_. Penguin Press,
-2009. https://www.thenewatlantis.com/wp-content/uploads/legacy-pdfs/20090526_TNA13Crawford2009.pdf] hinaus. Maintenance
+2018.](https://placesjournal.org/article/maintenance-and-care/)] (Maintenance and Care) nicht bloße Nebensächlichkeiten,
+sondern die **Kernprinzipien eines nachhaltigen Zusammenlebens**. Es geht weit über die Reparatur von Geräten^[[Crawford,
+Matthew B. Shop Class as Soulcraft: An Inquiry into the Value of Work. Penguin Press,
+2009.](https://www.thenewatlantis.com/wp-content/uploads/legacy-pdfs/20090526_TNA13Crawford2009.pdf)] hinaus. Maintenance
 und Care umfassen die kontinuierliche Sorge um unsere Infrastrukturen – seien es digitale Plattformen, Versorgung,
 Gebäude und Bauwerke, soziale Netzwerke oder ökologische Systeme. Es ist die Anerkennung, dass nichts ewig von selbst
 läuft und dass alles, was Wert hat, ständiger Aufmerksamkeit und gemeinschaftlicher Anstrengung
-bedarf^[Andrea Baier et al. Die Welt reparieren: Open Source und Selbermachen als postkapitalistische Praxis. transcript Verlag, 2016 https://www.transcript-verlag.de/978-3-8376-3377-1/die-welt-reparieren/].
+bedarf^[[Andrea Baier et al. Die Welt reparieren: Open Source und Selbermachen als postkapitalistische Praxis. transcript Verlag, 2016](https://www.transcript-verlag.de/978-3-8376-3377-1/die-welt-reparieren/)].
 
 Diese "Lowtech^[[Julia Watson. Lo—TEK: Design by Radical Indigenism. TASCHEN, 2019.](https://www.lo-tek.com)] trifft
 Hightech"-Mentalität, bei der Technologie dazu dient, das Pflegen und Warten von Ressourcen zu optimieren, ist
 entscheidend. Es geht darum, **Dinge zu schaffen, die halten, reparierbar sind** (Right to
-Repair)^[Right to Repair Europe. https://repair.eu] und die von den Menschen, die sie nutzen, verstanden und gepflegt
+Repair)^[[Right to Repair Europe.](https://repair.eu)] und die von den Menschen, die sie nutzen, verstanden und gepflegt
 werden können. Es ist eine Abkehr von der Wegwerfgesellschaft hin zu einer Kultur der Wertschätzung und Dauerhaftigkeit,
 die eng mit den Prinzipien der Circular Economy und Degrowth verbunden ist.
 
@@ -190,14 +189,13 @@ ihre Bewohnenden, für die sozialen Beziehungen und für die Umwelt im Vordergru
 aller dient – von Kindern und Senioren bis zu Menschen mit besonderen Bedürfnissen. Caring Cities sind gelebtes
 Maintenance und Care auf urbaner Ebene, wo die Stadt selbst zum pflegenden Akteur wird.
 
-Ein weiterer essenzieller Aspekt von Wartung und Pflege ist die **Neudefinition von Zeit und Arbeit
-**^[[Theresa Bücker. Alle\_Zeit: Eine neue Zeitrechnung für gutes Leben. Ullstein, 2022.](https://teresabuecker.de/)].
+Ein weiterer essenzieller Aspekt von Wartung und Pflege ist die **Neudefinition von Zeit und Arbeit**
+^[[Theresa Bücker. Alle\_Zeit: Eine neue Zeitrechnung für gutes Leben. Ullstein, 2022.](https://teresabuecker.de/)].
 Eine Solarpunk-Zukunft hinterfragt die dominante Rolle der Lohnarbeit in unserem Leben. Stattdessen wird die Zeit als
 eine wertvolle, endliche Ressource verstanden, die **gerecht und bedürfnisorientiert verteilt** werden sollte. Konzepte
-wie der **4-in-1-Ansatz**^[Frigga Haug. Die Vier-in-Einem-Perspektive – Eine Utopie von Frauen, die eine Utopie für alle
-ist. Blog Postwachstum,
-2011. https://www.postwachstum.de/die-vier-in-einem-perspektive-eine-utopie-von-frauen-die-eine-utopie-fur-alle-ist-20110828] schlagen
-vor, die Lebenszeit gleichmäßiger auf vier Bereiche aufzuteilen: bezahlte Arbeit, Sorgearbeit (Care-Arbeit), politische
+wie der **4-in-1-Ansatz**^[[Frigga Haug. Die Vier-in-Einem-Perspektive – Eine Utopie von Frauen, die eine Utopie für alle
+ist. Blog Postwachstum, 2011.](https://www.postwachstum.de/die-vier-in-einem-perspektive-eine-utopie-von-frauen-die-eine-utopie-fur-alle-ist-20110828)]
+schlagen vor, die Lebenszeit gleichmäßiger auf vier Bereiche aufzuteilen: bezahlte Arbeit, Sorgearbeit (Care-Arbeit), politische
 und zivilgesellschaftliche Partizipation (Commoning) sowie persönliche Entwicklung und Muße. Dies schafft Raum für
 Gemeinwesen, Kreativität, Fürsorge und Erholung – essenziell für Wohlbefinden und die aktive Gestaltung einer
 nachhaltigen Gesellschaft. Eine Reduzierung der Lohnarbeitszeit wird hier nicht als Verzicht, sondern als Gewinn an
@@ -224,7 +222,7 @@ Werkzeuge, um uns eine lebenswerte Zukunft überhaupt vorstellen zu können. Per
 Technologie und sozialen Alternativen beschäftigen. Auch Initiativen wie die **Story Seed Library**
 ^[[Paweł 'alxd' Ngei et al.](https://storyseedlibrary.org)] oder **Climate Fiction Writers League**
 ^[[Wren James and the Climate Fiction Writers League. The Climate-Conscious Writers Handbook.
-2025](https://climate-fiction.org/the-climate-conscious-writers-handbook/] fördern)] das gemeinsame Erschaffen von
+2025](https://climate-fiction.org/the-climate-conscious-writers-handbook/)] fördern das gemeinsame Erschaffen von
 Narrativen, und Kollektive wie das **Post-Carbon Institute**
 ^[[Post-Carbon Institute](https://www.postcarbon.org/)] arbeiten an der Schnittstelle von Wissenschaft und Kommunikation, um post-fossile
 Zukünfte greifbar zu machen. Diese Stimmen füllen die theoretischen Konzepte mit menschlichem Leben und zeigen, wie eine

@@ -4,7 +4,7 @@ My personal website.
 
 ## TODO 2025 / 2026:
 - [x] Move font from Google to static
-- [ ] Port index
-- [ ] Template for texts
+- [x] Port index
+- [x] Template for texts
 - [ ] Template for solarpunk
-- [ ] Template for morpheus
+- [x] Template for morpheus

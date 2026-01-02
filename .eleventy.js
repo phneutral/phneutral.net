@@ -41,6 +41,7 @@ module.exports = function (eleventyConfig) {
 	// 	},
 	// });
 
+  eleventyConfig.addPassthroughCopy("./sources/keybase.txt");
   eleventyConfig.addPassthroughCopy("./sources/static/webfonts");
   eleventyConfig.addWatchTarget("./deploy/static/css/style.css");
   eleventyConfig.addWatchTarget("./deploy/static/css/style.min.css");
