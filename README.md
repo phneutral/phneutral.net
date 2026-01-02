@@ -9,3 +9,5 @@ My personal website.
 - [ ] Template for solarpunk
 - [x] Template for morpheus
 - [ ] Image support for posts
+- [ ] A 'real' menu
+- [ ] Port 'archive' to 11ty

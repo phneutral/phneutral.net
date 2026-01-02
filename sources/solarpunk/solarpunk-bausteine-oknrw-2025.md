@@ -10,8 +10,8 @@ Science-Fiction-Genre und der gleichzeitig wachsenden (Meta-)Bewegung, die sich 
 entgegenstemmt. Aufbauend auf dem vorherigen
 Text^[[Christopher Reinbothe. Solarpunk — Positive Narrative helfen die Zukunft zu gestalten. OKNRW Barcamp – Science Track-Sammelband, 2023.](/solarpunk/solarpunk-narrative-oknrw-2023)],
 in dem wir Solarpunk als utopischen Gegenentwurf zum zynischen Cyberpunk und als Verkörperung von Ernst Blochs "Prinzip
-Hoffnung"^[Ernst Bloch. Das Prinzip Hoffnung. Suhrkamp, 1985.] beleuchtet haben, tauchen wir nun tiefer in die *
-*konkreten Bausteine und Praktiken** ein, die eine Solarpunk-Zukunft nicht nur denkbar, sondern auch greifbar machen. Es
+Hoffnung"^[Ernst Bloch. Das Prinzip Hoffnung. Suhrkamp, 1985.] beleuchtet haben, tauchen wir nun tiefer in die
+**konkreten Bausteine und Praktiken** ein, die eine Solarpunk-Zukunft nicht nur denkbar, sondern auch greifbar machen. Es
 geht darum, aus abstrakten Idealen erreichbare Ziele und gangbare Wege zu schmieden.
 
 Solarpunk – verstanden als **Synkretismus**, also eine Synthese bestehender Ideen und Bewegungen, die sich zu einem

@@ -241,7 +241,8 @@
     margin-bottom: 7%;
   }
 
-  & p {
+  .sheet > p,
+  .sheet-paragraph > p {
     line-height: 1.8;
     font-size: 1.1em;
 

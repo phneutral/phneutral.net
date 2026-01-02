@@ -4,9 +4,8 @@
   "description": "",
   "main": "",
   "scripts": {
-    "test": "mode=build npx @11ty/eleventy",
-    "build": "npm run css-build && npm run shoelace-build && npm run svgs-icons && npm run images",
-    "dev": "npm run css-dev && npm run shoelace-dev && npm run svgs-icons && npm run images",
+    "build": "mode=build npx @11ty/eleventy && npm run css-build && npm run shoelace-build && npm run svgs-icons && npm run images",
+    "dev": "mode=dev npm run css-dev && npm run shoelace-dev && npm run svgs-icons && npm run images",
     "watch": "npm run css-watch && npm run shoelace-watch",
     "css-watch": "postcss sources/static/css/style.css -o deploy/static/css/style.css -w",
     "css-dev": "postcss sources/static/css/style.css -o deploy/static/css/style.css",
