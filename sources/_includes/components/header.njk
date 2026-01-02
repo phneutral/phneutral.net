@@ -1,0 +1,45 @@
+<header class="header" id="alpha">
+	<div class="logo" id="logo">
+		<sl-tooltip placement="bottom">
+			<div slot="content">Das Logo von phneutral.net:<br>Eine 7 im Siebeneck</div>
+			<a href="/">
+				<sl-icon library="ph" name="phneutral_logo" label="Eine 7 im Siebeneck - Das Logo von phneutral.net"></sl-icon>
+			</a>
+		</sl-tooltip>
+		{%- if collections.texts | isItemInCollection(page.url) -%}
+			<sl-tooltip placement="bottom">
+				<div slot="content">Das Logo der Bernstein-Biblothek:<br>Eine im Bernstein eingeschlossene Mücke</div>
+				<a href="/texts">
+					<sl-icon library="ph" name="bernstein" label="Illustration einer im Bernstein eingeschlossenen Mücke - Das Logo der Bernstein-Biblothek"></sl-icon>
+				</a>
+			</sl-tooltip>
+		{%- endif -%}
+	</div>
+	<div class="backlink">
+		{% if collections.morpheus | isItemInCollection(page.url) %}
+			<a href="/texts/morpheus-flug" title="Zurück zur Shuttlerampe">Zurück zur Shuttlerampe</a>
+			{% set currentCollection = collections.morpheus %}
+		{%- elif collections.solarpunk | isItemInCollection(page.url) -%}
+			<a href="/solarpunk" title="Zurück zur Übersicht">Zurück zur Solarpunk-Übersicht</a>
+			{% set currentCollection = collections.solarpunk %}
+		{%- elif collections.texts | isItemInCollection(page.url) -%}
+			<a href="/texts" title="Zurück zur Bernsteinbibliothek">Zurück zur Bernsteinbibliothek</a>
+			{% set currentCollection = collections.texts %}
+		{% else %}
+			<a href="/texts">Geschichten und Essays</a><br>
+			<a href="/solarpunk">Solarpunk</a>
+		{% endif %}
+		{% if currentCollection %}
+			{% set nextPost = currentCollection | getNextCollectionItem %}
+			{% if not nextPost %}
+				{% set nextPost = currentCollection | first %}
+			{% endif %}
+		{% endif %}
+		{% if nextPost %}
+			<br><a href="{{ nextPost.url }}">
+				Nächste Seite: {{ nextPost.data.title | safe }}
+			</a>
+		{% endif %}
+	</div>
+</header>
+

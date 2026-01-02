@@ -1,0 +1,27 @@
+---
+layout: templates/base.njk
+theme: morpheus
+tags:
+  - shortstory
+title: Der Flug der Morpheus
+description: Schwere Kost im Raumanzug.
+year: 2012 - 2017
+date: 2017-01-01
+templateEngineOverride: njk, md
+---
+<section>
+		<header class="list-header">
+			<h1 class="list-title">Der Flug der Morpheus</h1>
+			<h2 class="list-subtitle">SciFi-Ring von 2012 - 2017</h2>
+		</header>
+		<ul class="articleList">
+			{%- for post in collections.morpheus -%}
+				<li class="article">
+					<a class="article-link" href="{{ post.url }}"
+					   title="{{ post.data.description | safe or post.data.title | safe }}">
+						<span class="article-title">{{ post.data.title | safe or post.page.fileSlug | safe }}</span>
+					</a>
+				</li>
+			{%- endfor -%}
+		</ul>
+</section>

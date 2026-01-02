@@ -1,0 +1,54 @@
+---
+layout: ./templates/base.njk
+title: Christopher Reinbothe schreibt Texte.
+theme: bernstein
+templateEngineOverride: njk, md
+---
+
+<article>
+
+	<section>
+		<h1>Christopher Reinbothe schreibt Texte.</h1>
+		<div class="textbox">
+			<p>
+				Ich weiß nicht wie es Ihnen geht &mdash; ich hoffe doch gut! &mdash;
+				aber manche Themen faszinieren mich der Art, dass sie mich nicht mehr loslassen.
+				Dann lese und denke ich mich daran fest.
+				Oft sind es komplexe Komplexe &mdash; das Gehirn, Bewusstsein, Realität, Zeit(reisen) &mdash;
+				oder sie sind geradezu banal: Zettel, Hände, Kinderlieder und all die Kleinigkeiten des Alltags, die gern übersehen werden.
+				Bevor oder während so ein Motiv zu große Schleifen in meinem Kopf dreht, schreibe ich die Dinge auf und raus.
+				Einige dieser Texte, Essays und Kurzgeschichten finden sich jetzt und in Zukunft hier.
+			</p>
+		</div>
+	</section>
+
+	<section class="shortstories">
+		<h2>Kurzgeschichten</h2>
+		<ul class="buttonlist">
+			{%- for post in collections.shortstory -%}
+				<li>
+					<a href="{{ post.url }}"
+					   {% if post.data.description %}title="{{ post.data.description }}"{% endif %}>
+						{{ post.data.title | safe or post.page.fileSlug | safe }}{% if post.data.year %}&nbsp;({{ post.data.year }}){% endif %}
+					</a>
+				</li>
+			{%- endfor -%}
+		</ul>
+	</section>
+
+	<section class="essays">
+		<h2>Essays, Reden, Kommentare</h2>
+		<ul class="buttonlist">
+			{%- for post in collections.essay -%}
+				<li>
+					<a href="{{ post.url }}"
+					   {% if post.data.description %}title="{{ post.data.description }}"{% endif %}>
+						{{ post.data.title | safe or post.page.fileSlug | safe }}{% if post.data.year %}&nbsp;({{ post.data.year }}){% endif %}
+					</a>
+				</li>
+			{%- endfor -%}
+			<li><a href="/solarpunk"><em class="badge">NEU!</em> Solarpunk</a></li>
+		</ul>
+	</section>
+
+</article>

@@ -1,0 +1,34 @@
+---
+layout: templates/base.njk
+title: Was ist Solarpunk?
+description: Christopher Reinbothe geht dieser Frage nach, schaut sich die unterschiedlichen Faszetten an und beantwortet sie umfangreich.
+theme: solarpunk
+templateEngineOverride: njk, md
+---
+<article>
+
+	<section>
+		<h1>Christopher Reinbothe denkt über Solarpunk nach.</h1>
+		<div class="textbox">
+			<p>
+				Sie hassen die »Alternativlosigkeit«? Sie sind es leid »den Gürtel enger schnallen« zu müssen? Sie
+				möchten eine gute Zukunft und keine voller Krisen und Katastrophen? Dann geht es Ihnen wie mir!
+				Begleiten Sie mich deshalb gern auf meiner Reise durch die Ideen des Solarpunk.
+			</p>
+		</div>
+	</section>
+
+	<section>
+		<ul class="buttonlist">
+			{%- for post in collections.solarpunk -%}
+				<li>
+					<a href="{{ post.url }}"
+					   title="{{ post.data.description | safe or post.data.title | safe }}">
+						{{ post.data.title | safe or post.page.fileSlug | safe }}{% if post.data.year %}&nbsp;({{ post.data.year }}){% endif %}
+					</a>
+				</li>
+			{%- endfor -%}
+		</ul>
+	</section>
+
+</article>

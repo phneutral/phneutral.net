@@ -7,7 +7,7 @@ import terser from '@rollup/plugin-terser';
 const enableBuild = process.env.mode === 'build'
 
 export default {
-  input: 'sources/shoelace/index.js',
+  input: 'sources/static/shoelace/index.js',
   output: [{ file: `deploy/static/shoelace/index${enableBuild ? '.min' : ''}.js`, format: 'es' }],
   plugins: [
     resolve(),
