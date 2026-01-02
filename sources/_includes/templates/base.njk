@@ -13,6 +13,14 @@
 	<meta name="robots" content="index, follow, noarchive"/>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 
+	<link rel="alternate" type="application/rss+xml"
+		  title="RSS Feed für {{ metadata.title }}"
+		  href="{{ '/feed.xml' | url | htmlBaseUrl(metadata.url) }}">
+
+	<link rel="alternate" type="application/json"
+		  title="JSON Feed für {{ metadata.title }}"
+		  href="{{ '/feed.json' | url | htmlBaseUrl(metadata.url) }}">
+
 	<!-- Mobile Specific Metas -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<meta property="og:image" content="{{ metadata.image }}"/>
