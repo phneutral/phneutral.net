@@ -264,6 +264,9 @@ var __getOwnPropDescs = Object.getOwnPropertyDescriptors;
 var __getOwnPropSymbols = Object.getOwnPropertySymbols;
 var __hasOwnProp = Object.prototype.hasOwnProperty;
 var __propIsEnum = Object.prototype.propertyIsEnumerable;
+var __typeError = (msg) => {
+  throw TypeError(msg);
+};
 var __defNormalProp = (obj, key, value) => key in obj ? __defProp(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
 var __spreadValues = (a, b) => {
   for (var prop in b || (b = {}))
@@ -282,28 +285,13 @@ var __decorateClass = (decorators, target, key, kind) => {
   for (var i = decorators.length - 1, decorator; i >= 0; i--)
     if (decorator = decorators[i])
       result = (kind ? decorator(target, key, result) : decorator(result)) || result;
-  if (kind && result)
-    __defProp(target, key, result);
+  if (kind && result) __defProp(target, key, result);
   return result;
 };
-var __accessCheck = (obj, member, msg) => {
-  if (!member.has(obj))
-    throw TypeError("Cannot " + msg);
-};
-var __privateGet = (obj, member, getter) => {
-  __accessCheck(obj, member, "read from private field");
-  return getter ? getter.call(obj) : member.get(obj);
-};
-var __privateAdd = (obj, member, value) => {
-  if (member.has(obj))
-    throw TypeError("Cannot add the same private member more than once");
-  member instanceof WeakSet ? member.add(obj) : member.set(obj, value);
-};
-var __privateSet = (obj, member, value, setter) => {
-  __accessCheck(obj, member, "write to private field");
-  setter ? setter.call(obj, value) : member.set(obj, value);
-  return value;
-};
+var __accessCheck = (obj, member, msg) => member.has(obj) || __typeError("Cannot " + msg);
+var __privateGet = (obj, member, getter) => (__accessCheck(obj, member, "read from private field"), getter ? getter.call(obj) : member.get(obj));
+var __privateAdd = (obj, member, value) => member.has(obj) ? __typeError("Cannot add the same private member more than once") : member instanceof WeakSet ? member.add(obj) : member.set(obj, value);
+var __privateSet = (obj, member, value, setter) => (__accessCheck(obj, member, "write to private field"), setter ? setter.call(obj, value) : member.set(obj, value), value);
 
 // src/internal/watch.ts
 function watch(propertyName, options) {
@@ -429,7 +417,7 @@ var ShoelaceElement = class extends r$2 {
 _hasRecordedInitialProperties = new WeakMap();
 /* eslint-disable */
 // @ts-expect-error This is auto-injected at build time.
-ShoelaceElement.version = "1.0.8-v2.17.1";
+ShoelaceElement.version = "1.0.12-v2.20.1";
 ShoelaceElement.dependencies = {};
 __decorateClass([
   n()
@@ -487,8 +475,7 @@ var SlIcon = class extends ShoelaceElement {
     }
     try {
       fileData = await fetch(url, { mode: "cors" });
-      if (!fileData.ok)
-        return fileData.status === 410 ? CACHEABLE_ERROR : RETRYABLE_ERROR;
+      if (!fileData.ok) return fileData.status === 410 ? CACHEABLE_ERROR : RETRYABLE_ERROR;
     } catch (e) {
       return RETRYABLE_ERROR;
     }
@@ -496,14 +483,11 @@ var SlIcon = class extends ShoelaceElement {
       const div = document.createElement("div");
       div.innerHTML = await fileData.text();
       const svg = div.firstElementChild;
-      if (((_a = svg == null ? void 0 : svg.tagName) == null ? void 0 : _a.toLowerCase()) !== "svg")
-        return CACHEABLE_ERROR;
-      if (!parser)
-        parser = new DOMParser();
+      if (((_a = svg == null ? void 0 : svg.tagName) == null ? void 0 : _a.toLowerCase()) !== "svg") return CACHEABLE_ERROR;
+      if (!parser) parser = new DOMParser();
       const doc = parser.parseFromString(svg.outerHTML, "text/html");
       const svgEl = doc.body.querySelector("svg");
-      if (!svgEl)
-        return CACHEABLE_ERROR;
+      if (!svgEl) return CACHEABLE_ERROR;
       svgEl.part.add("svg");
       return document.adoptNode(svgEl);
     } catch (e) {
@@ -515,8 +499,7 @@ var SlIcon = class extends ShoelaceElement {
     watchIcon(this);
   }
   firstUpdated() {
-    if (!this.sprite)
-      this.setIcon();
+    if (!this.sprite) this.setIcon();
     this.initialRender = true;
     this.setIcon();
   }
@@ -543,8 +526,7 @@ var SlIcon = class extends ShoelaceElement {
   }
   // Fetches the icon and redraws it. Used to handle library registrations.
   redraw() {
-    if (!this.sprite)
-      this.setIcon();
+    if (!this.sprite) this.setIcon();
   }
   handleLabelChange() {
     const hasLabel = typeof this.label === "string" && this.label.length > 0;
@@ -605,8 +587,7 @@ var SlIcon = class extends ShoelaceElement {
     }
   }
   handleChange() {
-    if (!this.sprite)
-      this.setIcon();
+    if (!this.sprite) this.setIcon();
   }
   render() {
     return x`
@@ -762,6 +743,159 @@ var popup_styles_default = i$4`
   }
 `;
 
+const connectedElements = new Set();
+const translations = new Map();
+let fallback;
+let documentDirection = 'ltr';
+let documentLanguage = 'en';
+const isClient = (typeof MutationObserver !== "undefined" && typeof document !== "undefined" && typeof document.documentElement !== "undefined");
+if (isClient) {
+    const documentElementObserver = new MutationObserver(update);
+    documentDirection = document.documentElement.dir || 'ltr';
+    documentLanguage = document.documentElement.lang || navigator.language;
+    documentElementObserver.observe(document.documentElement, {
+        attributes: true,
+        attributeFilter: ['dir', 'lang']
+    });
+}
+function registerTranslation(...translation) {
+    translation.map(t => {
+        const code = t.$code.toLowerCase();
+        if (translations.has(code)) {
+            translations.set(code, Object.assign(Object.assign({}, translations.get(code)), t));
+        }
+        else {
+            translations.set(code, t);
+        }
+        if (!fallback) {
+            fallback = t;
+        }
+    });
+    update();
+}
+function update() {
+    if (isClient) {
+        documentDirection = document.documentElement.dir || 'ltr';
+        documentLanguage = document.documentElement.lang || navigator.language;
+    }
+    [...connectedElements.keys()].map((el) => {
+        if (typeof el.requestUpdate === 'function') {
+            el.requestUpdate();
+        }
+    });
+}
+class LocalizeController$1 {
+    constructor(host) {
+        this.host = host;
+        this.host.addController(this);
+    }
+    hostConnected() {
+        connectedElements.add(this.host);
+    }
+    hostDisconnected() {
+        connectedElements.delete(this.host);
+    }
+    dir() {
+        return `${this.host.dir || documentDirection}`.toLowerCase();
+    }
+    lang() {
+        return `${this.host.lang || documentLanguage}`.toLowerCase();
+    }
+    getTranslationData(lang) {
+        var _a, _b;
+        const locale = new Intl.Locale(lang.replace(/_/g, '-'));
+        const language = locale === null || locale === void 0 ? void 0 : locale.language.toLowerCase();
+        const region = (_b = (_a = locale === null || locale === void 0 ? void 0 : locale.region) === null || _a === void 0 ? void 0 : _a.toLowerCase()) !== null && _b !== void 0 ? _b : '';
+        const primary = translations.get(`${language}-${region}`);
+        const secondary = translations.get(language);
+        return { locale, language, region, primary, secondary };
+    }
+    exists(key, options) {
+        var _a;
+        const { primary, secondary } = this.getTranslationData((_a = options.lang) !== null && _a !== void 0 ? _a : this.lang());
+        options = Object.assign({ includeFallback: false }, options);
+        if ((primary && primary[key]) ||
+            (secondary && secondary[key]) ||
+            (options.includeFallback && fallback && fallback[key])) {
+            return true;
+        }
+        return false;
+    }
+    term(key, ...args) {
+        const { primary, secondary } = this.getTranslationData(this.lang());
+        let term;
+        if (primary && primary[key]) {
+            term = primary[key];
+        }
+        else if (secondary && secondary[key]) {
+            term = secondary[key];
+        }
+        else if (fallback && fallback[key]) {
+            term = fallback[key];
+        }
+        else {
+            console.error(`No translation found for: ${String(key)}`);
+            return String(key);
+        }
+        if (typeof term === 'function') {
+            return term(...args);
+        }
+        return term;
+    }
+    date(dateToFormat, options) {
+        dateToFormat = new Date(dateToFormat);
+        return new Intl.DateTimeFormat(this.lang(), options).format(dateToFormat);
+    }
+    number(numberToFormat, options) {
+        numberToFormat = Number(numberToFormat);
+        return isNaN(numberToFormat) ? '' : new Intl.NumberFormat(this.lang(), options).format(numberToFormat);
+    }
+    relativeTime(value, unit, options) {
+        return new Intl.RelativeTimeFormat(this.lang(), options).format(value, unit);
+    }
+}
+
+// src/translations/en.ts
+var translation = {
+  $code: "en",
+  $name: "English",
+  $dir: "ltr",
+  carousel: "Carousel",
+  clearEntry: "Clear entry",
+  close: "Close",
+  copied: "Copied",
+  copy: "Copy",
+  currentValue: "Current value",
+  error: "Error",
+  goToSlide: (slide, count) => `Go to slide ${slide} of ${count}`,
+  hidePassword: "Hide password",
+  loading: "Loading",
+  nextMonth: "Next month",
+  nextSlide: "Next slide",
+  numOptionsSelected: (num) => {
+    if (num === 0) return "No options selected";
+    if (num === 1) return "1 option selected";
+    return `${num} options selected`;
+  },
+  previousMonth: "Previous month",
+  previousSlide: "Previous slide",
+  progress: "Progress",
+  remove: "Remove",
+  resize: "Resize",
+  scrollToEnd: "Scroll to end",
+  scrollToStart: "Scroll to start",
+  selectAColorFromTheScreen: "Select a color from the screen",
+  showPassword: "Show password",
+  slideNum: (slide) => `Slide ${slide}`,
+  toggleColorFormat: "Toggle color format"
+};
+registerTranslation(translation);
+var en_default = translation;
+
+var LocalizeController = class extends LocalizeController$1 {
+};
+registerTranslation(en_default);
+
 /**
  * Custom positioning reference element.
  * @see https://floating-ui.com/docs/virtual-elements
@@ -806,8 +940,9 @@ function getOppositeAxis(axis) {
 function getAxisLength(axis) {
   return axis === 'y' ? 'height' : 'width';
 }
+const yAxisSides = /*#__PURE__*/new Set(['top', 'bottom']);
 function getSideAxis(placement) {
-  return ['top', 'bottom'].includes(getSide(placement)) ? 'y' : 'x';
+  return yAxisSides.has(getSide(placement)) ? 'y' : 'x';
 }
 function getAlignmentAxis(placement) {
   return getOppositeAxis(getSideAxis(placement));
@@ -832,19 +967,19 @@ function getExpandedPlacements(placement) {
 function getOppositeAlignmentPlacement(placement) {
   return placement.replace(/start|end/g, alignment => oppositeAlignmentMap[alignment]);
 }
+const lrPlacement = ['left', 'right'];
+const rlPlacement = ['right', 'left'];
+const tbPlacement = ['top', 'bottom'];
+const btPlacement = ['bottom', 'top'];
 function getSideList(side, isStart, rtl) {
-  const lr = ['left', 'right'];
-  const rl = ['right', 'left'];
-  const tb = ['top', 'bottom'];
-  const bt = ['bottom', 'top'];
   switch (side) {
     case 'top':
     case 'bottom':
-      if (rtl) return isStart ? rl : lr;
-      return isStart ? lr : rl;
+      if (rtl) return isStart ? rlPlacement : lrPlacement;
+      return isStart ? lrPlacement : rlPlacement;
     case 'left':
     case 'right':
-      return isStart ? tb : bt;
+      return isStart ? tbPlacement : btPlacement;
     default:
       return [];
   }
@@ -1367,16 +1502,22 @@ const flip$1 = function (options) {
         const nextIndex = (((_middlewareData$flip2 = middlewareData.flip) == null ? void 0 : _middlewareData$flip2.index) || 0) + 1;
         const nextPlacement = placements[nextIndex];
         if (nextPlacement) {
-          // Try next placement and re-run the lifecycle.
-          return {
-            data: {
-              index: nextIndex,
-              overflows: overflowsData
-            },
-            reset: {
-              placement: nextPlacement
-            }
-          };
+          const ignoreCrossAxisOverflow = checkCrossAxis === 'alignment' ? initialSideAxis !== getSideAxis(nextPlacement) : false;
+          if (!ignoreCrossAxisOverflow ||
+          // We leave the current main axis only if every placement on that axis
+          // overflows the main axis.
+          overflowsData.every(d => getSideAxis(d.placement) === initialSideAxis ? d.overflows[0] > 0 : true)) {
+            // Try next placement and re-run the lifecycle.
+            return {
+              data: {
+                index: nextIndex,
+                overflows: overflowsData
+              },
+              reset: {
+                placement: nextPlacement
+              }
+            };
+          }
         }
 
         // First, find the candidates that fit on the mainAxis side of overflow,
@@ -1622,6 +1763,8 @@ const inline = function (options) {
   };
 };
 
+const originSides = /*#__PURE__*/new Set(['left', 'top']);
+
 // For type backwards-compatibility, the `OffsetOptions` type was also
 // Derivable.
 
@@ -1635,7 +1778,7 @@ async function convertValueToCoords(state, options) {
   const side = getSide(placement);
   const alignment = getAlignment(placement);
   const isVertical = getSideAxis(placement) === 'y';
-  const mainAxisMulti = ['left', 'top'].includes(side) ? -1 : 1;
+  const mainAxisMulti = originSides.has(side) ? -1 : 1;
   const crossAxisMulti = rtl && isVertical ? -1 : 1;
   const rawValue = evaluate(options, state);
 
@@ -1835,7 +1978,7 @@ const limitShift = function (options) {
       if (checkCrossAxis) {
         var _middlewareData$offse, _middlewareData$offse2;
         const len = mainAxis === 'y' ? 'width' : 'height';
-        const isOriginSide = ['top', 'left'].includes(getSide(placement));
+        const isOriginSide = originSides.has(getSide(placement));
         const limitMin = rects.reference[crossAxis] - rects.floating[len] + (isOriginSide ? ((_middlewareData$offse = middlewareData.offset) == null ? void 0 : _middlewareData$offse[crossAxis]) || 0 : 0) + (isOriginSide ? 0 : computedOffset.crossAxis);
         const limitMax = rects.reference[crossAxis] + rects.reference[len] + (isOriginSide ? 0 : ((_middlewareData$offse2 = middlewareData.offset) == null ? void 0 : _middlewareData$offse2[crossAxis]) || 0) - (isOriginSide ? computedOffset.crossAxis : 0);
         if (crossAxisCoord < limitMin) {
@@ -1980,6 +2123,7 @@ function isShadowRoot(value) {
   }
   return value instanceof ShadowRoot || value instanceof getWindow(value).ShadowRoot;
 }
+const invalidOverflowDisplayValues = /*#__PURE__*/new Set(['inline', 'contents']);
 function isOverflowElement(element) {
   const {
     overflow,
@@ -1987,26 +2131,32 @@ function isOverflowElement(element) {
     overflowY,
     display
   } = getComputedStyle$1(element);
-  return /auto|scroll|overlay|hidden|clip/.test(overflow + overflowY + overflowX) && !['inline', 'contents'].includes(display);
+  return /auto|scroll|overlay|hidden|clip/.test(overflow + overflowY + overflowX) && !invalidOverflowDisplayValues.has(display);
 }
+const tableElements = /*#__PURE__*/new Set(['table', 'td', 'th']);
 function isTableElement(element) {
-  return ['table', 'td', 'th'].includes(getNodeName(element));
+  return tableElements.has(getNodeName(element));
 }
+const topLayerSelectors = [':popover-open', ':modal'];
 function isTopLayer(element) {
-  return [':popover-open', ':modal'].some(selector => {
+  return topLayerSelectors.some(selector => {
     try {
       return element.matches(selector);
-    } catch (e) {
+    } catch (_e) {
       return false;
     }
   });
 }
+const transformProperties = ['transform', 'translate', 'scale', 'rotate', 'perspective'];
+const willChangeValues = ['transform', 'translate', 'scale', 'rotate', 'perspective', 'filter'];
+const containValues = ['paint', 'layout', 'strict', 'content'];
 function isContainingBlock(elementOrCss) {
   const webkit = isWebKit();
   const css = isElement(elementOrCss) ? getComputedStyle$1(elementOrCss) : elementOrCss;
 
   // https://developer.mozilla.org/en-US/docs/Web/CSS/Containing_block#identifying_the_containing_block
-  return css.transform !== 'none' || css.perspective !== 'none' || (css.containerType ? css.containerType !== 'normal' : false) || !webkit && (css.backdropFilter ? css.backdropFilter !== 'none' : false) || !webkit && (css.filter ? css.filter !== 'none' : false) || ['transform', 'perspective', 'filter'].some(value => (css.willChange || '').includes(value)) || ['paint', 'layout', 'strict', 'content'].some(value => (css.contain || '').includes(value));
+  // https://drafts.csswg.org/css-transforms-2/#individual-transforms
+  return transformProperties.some(value => css[value] ? css[value] !== 'none' : false) || (css.containerType ? css.containerType !== 'normal' : false) || !webkit && (css.backdropFilter ? css.backdropFilter !== 'none' : false) || !webkit && (css.filter ? css.filter !== 'none' : false) || willChangeValues.some(value => (css.willChange || '').includes(value)) || containValues.some(value => (css.contain || '').includes(value));
 }
 function getContainingBlock(element) {
   let currentNode = getParentNode(element);
@@ -2024,8 +2174,9 @@ function isWebKit() {
   if (typeof CSS === 'undefined' || !CSS.supports) return false;
   return CSS.supports('-webkit-backdrop-filter', 'none');
 }
+const lastTraversableNodeNames = /*#__PURE__*/new Set(['html', 'body', '#document']);
 function isLastTraversableNode(node) {
-  return ['html', 'body', '#document'].includes(getNodeName(node));
+  return lastTraversableNodeNames.has(getNodeName(node));
 }
 function getComputedStyle$1(element) {
   return getWindow(element).getComputedStyle(element);
@@ -2215,6 +2366,26 @@ function getBoundingClientRect(element, includeScale, isFixedStrategy, offsetPar
   });
 }
 
+// If <html> has a CSS width greater than the viewport, then this will be
+// incorrect for RTL.
+function getWindowScrollBarX(element, rect) {
+  const leftScroll = getNodeScroll(element).scrollLeft;
+  if (!rect) {
+    return getBoundingClientRect(getDocumentElement(element)).left + leftScroll;
+  }
+  return rect.left + leftScroll;
+}
+
+function getHTMLOffset(documentElement, scroll) {
+  const htmlRect = documentElement.getBoundingClientRect();
+  const x = htmlRect.left + scroll.scrollLeft - getWindowScrollBarX(documentElement, htmlRect);
+  const y = htmlRect.top + scroll.scrollTop;
+  return {
+    x,
+    y
+  };
+}
+
 function convertOffsetParentRelativeRectToViewportRelativeRect(_ref) {
   let {
     elements,
@@ -2246,26 +2417,17 @@ function convertOffsetParentRelativeRectToViewportRelativeRect(_ref) {
       offsets.y = offsetRect.y + offsetParent.clientTop;
     }
   }
+  const htmlOffset = documentElement && !isOffsetParentAnElement && !isFixed ? getHTMLOffset(documentElement, scroll) : createCoords(0);
   return {
     width: rect.width * scale.x,
     height: rect.height * scale.y,
-    x: rect.x * scale.x - scroll.scrollLeft * scale.x + offsets.x,
-    y: rect.y * scale.y - scroll.scrollTop * scale.y + offsets.y
+    x: rect.x * scale.x - scroll.scrollLeft * scale.x + offsets.x + htmlOffset.x,
+    y: rect.y * scale.y - scroll.scrollTop * scale.y + offsets.y + htmlOffset.y
   };
 }
 
 function getClientRects(element) {
   return Array.from(element.getClientRects());
-}
-
-// If <html> has a CSS width greater than the viewport, then this will be
-// incorrect for RTL.
-function getWindowScrollBarX(element, rect) {
-  const leftScroll = getNodeScroll(element).scrollLeft;
-  if (!rect) {
-    return getBoundingClientRect(getDocumentElement(element)).left + leftScroll;
-  }
-  return rect.left + leftScroll;
 }
 
 // Gets the entire size of the scrollable document area, even extending outside
@@ -2289,6 +2451,10 @@ function getDocumentRect(element) {
   };
 }
 
+// Safety check: ensure the scrollbar space is reasonable in case this
+// calculation is affected by unusual styles.
+// Most scrollbars leave 15-18px of space.
+const SCROLLBAR_MAX = 25;
 function getViewportRect(element, strategy) {
   const win = getWindow(element);
   const html = getDocumentElement(element);
@@ -2306,6 +2472,24 @@ function getViewportRect(element, strategy) {
       y = visualViewport.offsetTop;
     }
   }
+  const windowScrollbarX = getWindowScrollBarX(html);
+  // <html> `overflow: hidden` + `scrollbar-gutter: stable` reduces the
+  // visual width of the <html> but this is not considered in the size
+  // of `html.clientWidth`.
+  if (windowScrollbarX <= 0) {
+    const doc = html.ownerDocument;
+    const body = doc.body;
+    const bodyStyles = getComputedStyle(body);
+    const bodyMarginInline = doc.compatMode === 'CSS1Compat' ? parseFloat(bodyStyles.marginLeft) + parseFloat(bodyStyles.marginRight) || 0 : 0;
+    const clippingStableScrollbarWidth = Math.abs(html.clientWidth - body.clientWidth - bodyMarginInline);
+    if (clippingStableScrollbarWidth <= SCROLLBAR_MAX) {
+      width -= clippingStableScrollbarWidth;
+    }
+  } else if (windowScrollbarX <= SCROLLBAR_MAX) {
+    // If the <body> scrollbar is on the left, the width needs to be extended
+    // by the scrollbar amount so there isn't extra space on the right.
+    width += windowScrollbarX;
+  }
   return {
     width,
     height,
@@ -2314,6 +2498,7 @@ function getViewportRect(element, strategy) {
   };
 }
 
+const absoluteOrFixed = /*#__PURE__*/new Set(['absolute', 'fixed']);
 // Returns the inner client rect, subtracting scrollbars if present.
 function getInnerBoundingClientRect(element, strategy) {
   const clientRect = getBoundingClientRect(element, true, strategy === 'fixed');
@@ -2342,9 +2527,10 @@ function getClientRectFromClippingAncestor(element, clippingAncestor, strategy) 
   } else {
     const visualOffsets = getVisualOffsets(element);
     rect = {
-      ...clippingAncestor,
       x: clippingAncestor.x - visualOffsets.x,
-      y: clippingAncestor.y - visualOffsets.y
+      y: clippingAncestor.y - visualOffsets.y,
+      width: clippingAncestor.width,
+      height: clippingAncestor.height
     };
   }
   return rectToClientRect(rect);
@@ -2377,7 +2563,7 @@ function getClippingElementAncestors(element, cache) {
     if (!currentNodeIsContaining && computedStyle.position === 'fixed') {
       currentContainingBlockComputedStyle = null;
     }
-    const shouldDropCurrentNode = elementIsFixed ? !currentNodeIsContaining && !currentContainingBlockComputedStyle : !currentNodeIsContaining && computedStyle.position === 'static' && !!currentContainingBlockComputedStyle && ['absolute', 'fixed'].includes(currentContainingBlockComputedStyle.position) || isOverflowElement(currentNode) && !currentNodeIsContaining && hasFixedPositionAncestor(element, currentNode);
+    const shouldDropCurrentNode = elementIsFixed ? !currentNodeIsContaining && !currentContainingBlockComputedStyle : !currentNodeIsContaining && computedStyle.position === 'static' && !!currentContainingBlockComputedStyle && absoluteOrFixed.has(currentContainingBlockComputedStyle.position) || isOverflowElement(currentNode) && !currentNodeIsContaining && hasFixedPositionAncestor(element, currentNode);
     if (shouldDropCurrentNode) {
       // Drop non-containing blocks.
       result = result.filter(ancestor => ancestor !== currentNode);
@@ -2440,6 +2626,12 @@ function getRectRelativeToOffsetParent(element, offsetParent, strategy) {
     scrollTop: 0
   };
   const offsets = createCoords(0);
+
+  // If the <body> scrollbar appears on the left (e.g. RTL systems). Use
+  // Firefox with layout.scrollbar.side = 3 in about:config to test this.
+  function setLeftRTLScrollbarOffset() {
+    offsets.x = getWindowScrollBarX(documentElement);
+  }
   if (isOffsetParentAnElement || !isOffsetParentAnElement && !isFixed) {
     if (getNodeName(offsetParent) !== 'body' || isOverflowElement(documentElement)) {
       scroll = getNodeScroll(offsetParent);
@@ -2449,22 +2641,15 @@ function getRectRelativeToOffsetParent(element, offsetParent, strategy) {
       offsets.x = offsetRect.x + offsetParent.clientLeft;
       offsets.y = offsetRect.y + offsetParent.clientTop;
     } else if (documentElement) {
-      // If the <body> scrollbar appears on the left (e.g. RTL systems). Use
-      // Firefox with layout.scrollbar.side = 3 in about:config to test this.
-      offsets.x = getWindowScrollBarX(documentElement);
+      setLeftRTLScrollbarOffset();
     }
   }
-  let htmlX = 0;
-  let htmlY = 0;
-  if (documentElement && !isOffsetParentAnElement && !isFixed) {
-    const htmlRect = documentElement.getBoundingClientRect();
-    htmlY = htmlRect.top + scroll.scrollTop;
-    htmlX = htmlRect.left + scroll.scrollLeft -
-    // RTL <body> scrollbar.
-    getWindowScrollBarX(documentElement, htmlRect);
+  if (isFixed && !isOffsetParentAnElement && documentElement) {
+    setLeftRTLScrollbarOffset();
   }
-  const x = rect.left + scroll.scrollLeft - offsets.x - htmlX;
-  const y = rect.top + scroll.scrollTop - offsets.y - htmlY;
+  const htmlOffset = documentElement && !isOffsetParentAnElement && !isFixed ? getHTMLOffset(documentElement, scroll) : createCoords(0);
+  const x = rect.left + scroll.scrollLeft - offsets.x - htmlOffset.x;
+  const y = rect.top + scroll.scrollTop - offsets.y - htmlOffset.y;
   return {
     x,
     y,
@@ -2555,6 +2740,10 @@ const platform = {
   isRTL
 };
 
+function rectsAreEqual(a, b) {
+  return a.x === b.x && a.y === b.y && a.width === b.width && a.height === b.height;
+}
+
 // https://samthor.au/2021/observing-dom/
 function observeMove(element, onMove) {
   let io = null;
@@ -2574,12 +2763,13 @@ function observeMove(element, onMove) {
       threshold = 1;
     }
     cleanup();
+    const elementRectForRootMargin = element.getBoundingClientRect();
     const {
       left,
       top,
       width,
       height
-    } = element.getBoundingClientRect();
+    } = elementRectForRootMargin;
     if (!skip) {
       onMove();
     }
@@ -2612,6 +2802,16 @@ function observeMove(element, onMove) {
           refresh(false, ratio);
         }
       }
+      if (ratio === 1 && !rectsAreEqual(elementRectForRootMargin, element.getBoundingClientRect())) {
+        // It's possible that even though the ratio is reported as 1, the
+        // element is not actually fully within the IntersectionObserver's root
+        // area anymore. This can happen under performance constraints. This may
+        // be a bug in the browser's IntersectionObserver implementation. To
+        // work around this, we compare the element's bounding rect now with
+        // what it was at the time we created the IntersectionObserver. If they
+        // are not equal then the element moved, so we refresh.
+        refresh();
+      }
       isFirstUpdate = false;
     }
 
@@ -2623,7 +2823,7 @@ function observeMove(element, onMove) {
         // Handle <iframe>s
         root: root.ownerDocument
       });
-    } catch (e) {
+    } catch (_e) {
       io = new IntersectionObserver(handleObserve, options);
     }
     io.observe(element);
@@ -2689,7 +2889,7 @@ function autoUpdate(reference, floating, update, options) {
   }
   function frameLoop() {
     const nextRefRect = getBoundingClientRect(reference);
-    if (prevRefRect && (nextRefRect.x !== prevRefRect.x || nextRefRect.y !== prevRefRect.y || nextRefRect.width !== prevRefRect.width || nextRefRect.height !== prevRefRect.height)) {
+    if (prevRefRect && !rectsAreEqual(prevRefRect, nextRefRect)) {
       update();
     }
     prevRefRect = nextRefRect;
@@ -2813,7 +3013,6 @@ const t={ATTRIBUTE:1,CHILD:2,PROPERTY:3,BOOLEAN_ATTRIBUTE:4,EVENT:5,ELEMENT:6},e
  * SPDX-License-Identifier: BSD-3-Clause
  */const e=e$1(class extends i{constructor(t$1){if(super(t$1),t$1.type!==t.ATTRIBUTE||"class"!==t$1.name||t$1.strings?.length>2)throw Error("`classMap()` can only be used in the `class` attribute and must be the only part in the attribute.")}render(t){return " "+Object.keys(t).filter((s=>t[s])).join(" ")+" "}update(s,[i]){if(void 0===this.st){this.st=new Set,void 0!==s.strings&&(this.nt=new Set(s.strings.join(" ").split(/\s/).filter((t=>""!==t))));for(const t in i)i[t]&&!this.nt?.has(t)&&this.st.add(t);return this.render(i)}const r=s.element.classList;for(const t of this.st)t in i||(r.remove(t),this.st.delete(t));for(const t in i){const s=!!i[t];s===this.st.has(t)||this.nt?.has(t)||(s?(r.add(t),this.st.add(t)):(r.remove(t),this.st.delete(t)));}return T}});
 
-/* eslint-disable @typescript-eslint/ban-types */
 function offsetParent(element) {
     return offsetParentPolyfill(element);
 }
@@ -2841,11 +3040,11 @@ function offsetParentPolyfill(element) {
             continue;
         }
         const style = getComputedStyle(ancestor);
-        // Display:contents nodes aren't in the layout tree so they should be skipped.
+        // Display:contents nodes aren't in the layout tree, so they should be skipped.
         if (style.display === 'contents') {
             continue;
         }
-        if (style.position !== 'static' || style.filter !== 'none') {
+        if (style.position !== 'static' || isContainingBlock(style)) {
             return ancestor;
         }
         if (ancestor.tagName === 'BODY') {
@@ -2856,11 +3055,12 @@ function offsetParentPolyfill(element) {
 }
 
 function isVirtualElement(e) {
-  return e !== null && typeof e === "object" && "getBoundingClientRect" in e && ("contextElement" in e ? e instanceof Element : true);
+  return e !== null && typeof e === "object" && "getBoundingClientRect" in e && ("contextElement" in e ? e.contextElement instanceof Element : true);
 }
 var SlPopup = class extends ShoelaceElement {
   constructor() {
     super(...arguments);
+    this.localize = new LocalizeController(this);
     this.active = false;
     this.placement = "top";
     this.strategy = "absolute";
@@ -2986,7 +3186,7 @@ var SlPopup = class extends ShoelaceElement {
     }
   }
   start() {
-    if (!this.anchorEl) {
+    if (!this.anchorEl || !this.active) {
       return;
     }
     this.cleanup = autoUpdate(this.anchorEl, this.popup, () => {
@@ -3090,7 +3290,7 @@ var SlPopup = class extends ShoelaceElement {
         getOffsetParent
       })
     }).then(({ x, y, middlewareData, placement }) => {
-      const isRtl = this.matches(":dir(rtl)");
+      const isRtl = this.localize.dir() === "rtl";
       const staticSide = { top: "bottom", right: "left", bottom: "top", left: "right" }[placement.split("-")[0]];
       this.setAttribute("data-current-placement", placement);
       Object.assign(this.popup.style, {
@@ -3327,161 +3527,6 @@ function stopAnimations(el) {
   );
 }
 
-const connectedElements = new Set();
-const translations = new Map();
-let fallback;
-let documentDirection = 'ltr';
-let documentLanguage = 'en';
-const isClient = (typeof MutationObserver !== "undefined" && typeof document !== "undefined" && typeof document.documentElement !== "undefined");
-if (isClient) {
-    const documentElementObserver = new MutationObserver(update);
-    documentDirection = document.documentElement.dir || 'ltr';
-    documentLanguage = document.documentElement.lang || navigator.language;
-    documentElementObserver.observe(document.documentElement, {
-        attributes: true,
-        attributeFilter: ['dir', 'lang']
-    });
-}
-function registerTranslation(...translation) {
-    translation.map(t => {
-        const code = t.$code.toLowerCase();
-        if (translations.has(code)) {
-            translations.set(code, Object.assign(Object.assign({}, translations.get(code)), t));
-        }
-        else {
-            translations.set(code, t);
-        }
-        if (!fallback) {
-            fallback = t;
-        }
-    });
-    update();
-}
-function update() {
-    if (isClient) {
-        documentDirection = document.documentElement.dir || 'ltr';
-        documentLanguage = document.documentElement.lang || navigator.language;
-    }
-    [...connectedElements.keys()].map((el) => {
-        if (typeof el.requestUpdate === 'function') {
-            el.requestUpdate();
-        }
-    });
-}
-class LocalizeController$1 {
-    constructor(host) {
-        this.host = host;
-        this.host.addController(this);
-    }
-    hostConnected() {
-        connectedElements.add(this.host);
-    }
-    hostDisconnected() {
-        connectedElements.delete(this.host);
-    }
-    dir() {
-        return `${this.host.dir || documentDirection}`.toLowerCase();
-    }
-    lang() {
-        return `${this.host.lang || documentLanguage}`.toLowerCase();
-    }
-    getTranslationData(lang) {
-        var _a, _b;
-        const locale = new Intl.Locale(lang.replace(/_/g, '-'));
-        const language = locale === null || locale === void 0 ? void 0 : locale.language.toLowerCase();
-        const region = (_b = (_a = locale === null || locale === void 0 ? void 0 : locale.region) === null || _a === void 0 ? void 0 : _a.toLowerCase()) !== null && _b !== void 0 ? _b : '';
-        const primary = translations.get(`${language}-${region}`);
-        const secondary = translations.get(language);
-        return { locale, language, region, primary, secondary };
-    }
-    exists(key, options) {
-        var _a;
-        const { primary, secondary } = this.getTranslationData((_a = options.lang) !== null && _a !== void 0 ? _a : this.lang());
-        options = Object.assign({ includeFallback: false }, options);
-        if ((primary && primary[key]) ||
-            (secondary && secondary[key]) ||
-            (options.includeFallback && fallback && fallback[key])) {
-            return true;
-        }
-        return false;
-    }
-    term(key, ...args) {
-        const { primary, secondary } = this.getTranslationData(this.lang());
-        let term;
-        if (primary && primary[key]) {
-            term = primary[key];
-        }
-        else if (secondary && secondary[key]) {
-            term = secondary[key];
-        }
-        else if (fallback && fallback[key]) {
-            term = fallback[key];
-        }
-        else {
-            console.error(`No translation found for: ${String(key)}`);
-            return String(key);
-        }
-        if (typeof term === 'function') {
-            return term(...args);
-        }
-        return term;
-    }
-    date(dateToFormat, options) {
-        dateToFormat = new Date(dateToFormat);
-        return new Intl.DateTimeFormat(this.lang(), options).format(dateToFormat);
-    }
-    number(numberToFormat, options) {
-        numberToFormat = Number(numberToFormat);
-        return isNaN(numberToFormat) ? '' : new Intl.NumberFormat(this.lang(), options).format(numberToFormat);
-    }
-    relativeTime(value, unit, options) {
-        return new Intl.RelativeTimeFormat(this.lang(), options).format(value, unit);
-    }
-}
-
-// src/translations/en.ts
-var translation = {
-  $code: "en",
-  $name: "English",
-  $dir: "ltr",
-  carousel: "Carousel",
-  clearEntry: "Clear entry",
-  close: "Close",
-  copied: "Copied",
-  copy: "Copy",
-  currentValue: "Current value",
-  error: "Error",
-  goToSlide: (slide, count) => `Go to slide ${slide} of ${count}`,
-  hidePassword: "Hide password",
-  loading: "Loading",
-  nextMonth: "Next month",
-  nextSlide: "Next slide",
-  numOptionsSelected: (num) => {
-    if (num === 0)
-      return "No options selected";
-    if (num === 1)
-      return "1 option selected";
-    return `${num} options selected`;
-  },
-  previousMonth: "Previous month",
-  previousSlide: "Previous slide",
-  progress: "Progress",
-  remove: "Remove",
-  resize: "Resize",
-  scrollToEnd: "Scroll to end",
-  scrollToStart: "Scroll to start",
-  selectAColorFromTheScreen: "Select a color from the screen",
-  showPassword: "Show password",
-  slideNum: (slide) => `Slide ${slide}`,
-  toggleColorFormat: "Toggle color format"
-};
-registerTranslation(translation);
-var en_default = translation;
-
-var LocalizeController = class extends LocalizeController$1 {
-};
-registerTranslation(en_default);
-
 var SlTooltip = class extends ShoelaceElement {
   constructor() {
     super();
@@ -3541,6 +3586,7 @@ var SlTooltip = class extends ShoelaceElement {
   }
   disconnectedCallback() {
     var _a;
+    super.disconnectedCallback();
     (_a = this.closeWatcher) == null ? void 0 : _a.destroy();
     document.removeEventListener("keydown", this.handleDocumentKeyDown);
   }
