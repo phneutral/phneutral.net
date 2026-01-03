@@ -6,7 +6,7 @@
 				<sl-icon library="ph" name="phneutral_logo" label="Eine 7 im Siebeneck - Das Logo von phneutral.net"></sl-icon>
 			</a>
 		</sl-tooltip>
-		{%- if collections.texts | isItemInCollection(page.url) -%}
+		{%- if collections.texts | isItemInCollection(page.url) or theme === "bernstein" -%}
 			<sl-tooltip placement="bottom">
 				<div slot="content">Das Logo der Bernstein-Biblothek:<br>Eine im Bernstein eingeschlossene Mücke</div>
 				<a href="/texts">

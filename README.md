@@ -8,6 +8,7 @@ My personal website.
 - [x] Template for texts
 - [ ] Template for solarpunk
 - [x] Template for morpheus
-- [ ] Image support for posts
-- [ ] A 'real' menu
-- [ ] Port 'archive' to 11ty
+- [x] Image support for posts
+- [ ] A 'real' main menu
+- [ ] Port 'archive' to 11ty (see feature branch)
+- [ ] Add tag pages

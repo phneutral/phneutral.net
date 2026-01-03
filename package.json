@@ -1,11 +1,11 @@
 {
   "name": "phneutral",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "",
   "main": "",
   "scripts": {
-    "build": "mode=build npx @11ty/eleventy && npm run css-build && npm run shoelace-build && npm run svgs-icons && npm run images",
-    "dev": "mode=dev npm run css-dev && npm run shoelace-dev && npm run svgs-icons && npm run images",
+    "build": "mode=build npx @11ty/eleventy && npm run css-build && npm run shoelace-build && npm run svgs-icons",
+    "dev": "mode=dev npm run css-dev && npm run shoelace-dev && npm run svgs-icons",
     "watch": "npm run css-watch && npm run shoelace-watch",
     "css-watch": "postcss sources/static/css/style.css -o deploy/static/css/style.css -w",
     "css-dev": "postcss sources/static/css/style.css -o deploy/static/css/style.css",
@@ -14,7 +14,7 @@
     "shoelace-dev": "rollup -c rollup-sl.config.js",
     "shoelace-build": "mode=build rollup -c rollup-sl.config.js",
     "svgs-icons": "prefix=icon svgo -f sources/static/svgs -o deploy/static/svgs",
-    "images": "sharp -i './sources/static/images/**/*.{svg,png,jpg,jpeg,gif,webp}' --animated -o deploy/static/images/ --f webp"
+    "images": "glob-run sharp \"./sources/static/images/**/*.{svg,png,jpg,jpeg,gif,webp}\" --animated -o \"deploy/static/images/:relpath/:basename.webp\""
   },
   "engines": {
     "node": ">=20",
@@ -36,6 +36,8 @@
     "@viur/shoelace": "^1.0.12-v2.20.1",
     "autoprefixer": "^10.4.16",
     "cssnano": "^6.0.1",
+    "glob-run": "^0.1.7",
+    "markdown-it-eleventy-img": "^0.10.2",
     "postcss": "^8.4.31",
     "postcss-cli": "^10.1.0",
     "postcss-discard-comments": "^6.0.0",
