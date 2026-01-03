@@ -117,6 +117,10 @@
     font-family: var(--ignt-font-sans);
   }
 
+  figcaption {
+    font-size: .8rem;
+  }
+
   a[href^="http"]:not([href*="phneutral.net"]):not([href*="localhost"])::after {
     content: "\2197\FE0E";
     margin-left: 0.3em;

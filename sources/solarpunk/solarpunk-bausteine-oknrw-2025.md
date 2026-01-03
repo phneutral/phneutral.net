@@ -17,7 +17,10 @@ geht darum, aus abstrakten Idealen erreichbare Ziele und gangbare Wege zu schmie
 Solarpunk – verstanden als **Synkretismus**, also eine Synthese bestehender Ideen und Bewegungen, die sich zu einem
 neuen Weltbild verbinden – ist der ultimative Aufruf zum **Empowerment**: gemeinsam die Welt zum Besseren zu verändern.
 
----
+<figure>
+  <img src="/static/images/solarpunk/berlin-utopia-2048.jpg" alt="Berlin Friedrichstraße Utopia 2048">
+  <figcaption>Berlin Friedrichstraße Utopia 2048 – Bild: Lino Zeddies - Aerroscape - Alex Rommel (CC BY-SA 4.0)</figcaption>
+</figure>
 
 ## Das Fundament: Gemeinsam die Welt gestalten
 
@@ -30,8 +33,6 @@ Solarpunk – fiktional wie real. Denn soziale Gerechtigkeit, Klimawandel und Di
 trennen; sie sind die überlappenden Herausforderungen, denen wir gemeinsam begegnen müssen.
 
 Hier kommen Konzepte ins Spiel, die Solarpunk als Bewegung des kollektiven Handelns konkretisieren:
-
----
 
 ## Bausteine der Solarpunk-Zukunft
 
@@ -46,6 +47,11 @@ Reformmodellen^[[André Gorz. Zur Strategie der Arbeiterbewegung im Neokapitalis
 
 ### Genossenschaften^[[Genoverband. Genossenschaft als Rechtsform.](https://www.genoverband.de/genossenschaft-gruenden/genossenschaft-als-rechtsform/)] ^[[\#GenoDigital](https://genossenschaften.digital)] (Cooperatives)
 
+<figure>
+  <img src="/static/images/solarpunk/KOLA-Leipzig-Folientunnel_Kohlrabiernte_Sommer2021-scaled.jpg" alt="Kohlrabiernte KOLA Leipzig">
+  <figcaption>KOLA Leipzig Folientunnel Kohlrabiernte – Bild: KOLA Leipzig</figcaption>
+</figure>
+
 Als bewährtes Modell der kollektiven Selbstorganisation sind Genossenschaften ein Eckpfeiler der Solarpunk-Vision. Sie
 ermöglichen es Menschen, gemeinsame wirtschaftliche, soziale und kulturelle Bedürfnisse durch ein gemeinschaftlich
 geführtes Unternehmen zu erfüllen. Es ist kein Zufall, dass **2025 das Internationale Jahr der Genossenschaften
@@ -54,6 +60,11 @@ Gestaltung einer gerechteren Wirtschaft.
 
 ### Plattform-Kooperativismus^[[Trebor Scholz. Uberworked and Underpaid: How Workers Are Shaping the Future of Work. Polity Press, 2016.](http://pombo.free.fr/treborscholz.pdf)] ^[[Trebor Scholz. Plattform-Kooperativismus: Wie wir uns die Sharing Economy zurückholen können. Rosa Luxemburg Stiftung, 2016.](https://www.rosalux.de/publikation/id/8813/plattform-kooperativismus)] ^[[Platform Coops eG](https://platformcoop.de)] ^[[Platform Cooperativism Consortium](https://platform.coop)] (Platform Cooperatives)
 
+<figure>
+  <img src="/static/images/solarpunk/wechange-eG.webp" alt="wechange eG">
+  <figcaption>Bild: wechange eG</figcaption>
+</figure>
+
 Er baut auf der Idee der Genossenschaft, um die Solarpunk-Antwort auf die monopolistische Macht der Tech-Giganten zu
 geben und schlägt vor, digitale Plattformen (wie Social Media, Lieferdienste oder Fahrdienste) genossenschaftlich oder
 anderweitig demokratisch zu organisieren. Gewinne werden fair geteilt, Entscheidungen fallen demokratisch, und
@@ -61,6 +72,11 @@ Algorithmen sind transparent. Es geht darum, die Kontrolle über unsere digitale
 Wohle der Gemeinschaft einzusetzen.
 
 ### Solidarökonomie^[[Solidarity Economy Association, Rory Robertson-Shaw, Colm Massey, Jo Taylor. The Solidarity Economy (a visual guide). Dog Section Press, 2024.](https://roryrobertsonshaw.net/The-Solidarity-Economy-book)] (Solidarity Economy)
+
+<figure>
+  <img src="/static/images/solarpunk/Roryrobertson-Shaw+workers+migrant+struggles.jpg" alt="Workers Migrant Struggles">
+  <figcaption>Workers Migrant Struggel – Bild: Rory Robertson-Shaw</figcaption>
+</figure>
 
 Dieser breit gefasste Ansatz umfasst eine Vielzahl von Aktivitäten, die wirtschaftliche Produktion, Verteilung und
 Konsum auf demokratische, partizipatorische und ethische Weise organisieren. Sie stellt Kooperation, soziale
@@ -73,6 +89,11 @@ Umsetzung einer Wirtschaft, die dem Menschen dient, nicht umgekehrt.
 
 ### Geschenkwirtschaft^[[Lewis Hyde. The Gift: Creativity and the Artist in the Modern World. Vintage Books, 2007](https://newsgrist.typepad.com/files/hyde-the-gift-creativity-and-the-artist-in-the-modern-world-2007.pdf)] (Gift Economy)
 
+<figure>
+  <img src="/static/images/solarpunk/How-to-build-a-Solarpunk-City---Sean-Bodley-CC-BY-SA-4.0.jpg" alt="How to build a Solarpunk City">
+  <figcaption>How to build a Solarpunk City – Bild: Sean Bodley (CC BY-SA 4.0)</figcaption>
+</figure>
+
 Im Kern dieses Modells stehen Austauschbeziehungen, die nicht primär auf monetärem Profit oder direkter Gegenleistung
 basieren, sondern auf Vertrauen, Beziehungspflege und dem Wunsch, einen Beitrag zum Gemeinwohl zu leisten. File-sharing,
 Crowd-Funding, Peer-Production, Nachbarschaftshilfe oder Open-Source-Entwicklung sind Beispiele. Die Geschenkwirtschaft
@@ -81,12 +102,22 @@ Geben^[[Michael Hutter (Hg.), Birger P. Priddat (Hg.) et al. Geben, Nehmen, Teil
 
 ### Kreislaufwirtschaft^[[Ellen MacArthur Foundation. What is a circular economy?](https://www.ellenmacarthurfoundation.org/topics/circular-economy-introduction/overview)] (Circular Economy)
 
+<figure>
+  <img src="/static/images/solarpunk/tild6465-3863-4533-a639-653966653737__startups_gescol_show.jpg" alt="Gescol at Start Up DemoDay">
+  <figcaption>Gescol at Start Up DemoDay – Bild: Pressematerial Circular Valley</figcaption>
+</figure>
+
 Im Gegensatz zur linearen "Nehmen-Machen-Entsorgen"-Wirtschaft zielt die Kreislaufwirtschaft darauf ab, Ressourcen so
 lange wie möglich im Kreislauf zu halten. Produkte und Materialien werden wiederverwendet, repariert, aufgearbeitet und
 recycelt, um Abfall zu minimieren und den Verbrauch neuer Ressourcen zu reduzieren. Dies ist ein fundamentales Prinzip
 für eine nachhaltige Solarpunk-Zukunft, in der Effizienz und Ressourcenschonung im Mittelpunkt stehen.
 
 ### Postwachstum^[[Jason Hickel. Less Is More: How Degrowth Will Save the World. Windmill Books, 2020.](https://www.jasonhickel.org)] ^[[Nathan Barlow, Livia Regen et al. Degrowth & Strategy: how to bring about social-ecological transformation. Mayfly Books, 2022](https://www.degrowthstrategy.org)] ^[[Nick King. What Energy Paradigm Might Underpin Degrowth and Steady State Economies? Resilience.org, 2024.](https://www.resilience.org/stories/2024-02-06/what-energy-paradigm-might-underpin-degrowth-and-steady-state-economies/)] (Degrowth)
+
+<figure>
+  <img src="/static/images/solarpunk/Climate-Resilience-Yurt-Sean-Bodley-CC-BY-SA-4.0.jpg" alt="Climate Resilience Yurt">
+  <figcaption>Climate Resilience Yurt – Bild: Sean Bodley (CC BY-SA 4.0)</figcaption>
+</figure>
 
 Dieses Konzept fordert eine bewusste und demokratisch geplante Reduzierung des materiellen und energetischen Verbrauchs
 in wohlhabenden Gesellschaften, um innerhalb der planetaren Grenzen zu leben und gleichzeitig soziale Gerechtigkeit und
@@ -96,6 +127,11 @@ radikale Antwort auf die ökologische Krise, die über bloße Effizienzsteigerun
 Neuordnung unserer Beziehung zu Ressourcen und Produktion anstrebt.
 
 ### Bibliothek-Sozialismus^[[Library Socialism 101. Foundational principles.](https://librarysocialism.org)] ^[[Aaron Moritz, Shawn Vulliez. Library Socialism & Usufruct. Srsly Wrong Podcast #189, 2019.](https://srslywrong.com/podcast/189-library-socialism-usufruct/)] ^[[Andrewism. We Need A Library Economy. Youtube, 2022.](https://www.youtube.com/watch?v=NOYa3YzVtyk)] (Library Socialism)
+
+<figure>
+  <img src="/static/images/solarpunk/library-of-everything.jpg" alt="The Library of Everything">
+  <figcaption>The Library of Everything – Bild: Sean Bodley (CC BY-SA 4.0)</figcaption>
+</figure>
 
 Diese Philosophie stellt sich eine Gesellschaft vor, die nach dem Modell einer öffentlichen Bibliothek
 funktioniert^[[Shannon Mattern. Library as Infrastructure: Reading room, social service center, innovation lab. How far can we stretch the public library? Places Journal, 2014.](https://placesjournal.org/article/library-as-infrastructure/)].
@@ -107,6 +143,11 @@ ausgeliehen werden können, um Überproduktion zu vermeiden und Bedürfnisse eff
 
 ### Öko-Sozialismus^[[Netzwerk Ökosozialismus.](https://netzwerk-oekosozialismus.de)] (Eco Socialism)
 
+<figure>
+  <img src="/static/images/solarpunk/European-Bison-Daniel-Mirlea-Rewilding-Europe.jpg" alt="European Bison">
+  <figcaption>European Bison – Bild: Daniel Mirlea (Rewilding Europe)</figcaption>
+</figure>
+
 Diese Strömung verbindet ökologische Nachhaltigkeit mit sozialer Gerechtigkeit. Konzepte wie **Rewilding**^[[Simone
 Böcker. Rewilding: Auf der Suche nach einem Gleichgewicht zwischen Mensch und Natur. Aufbau,
 2023](http://unkultiviert.com/rewilding/)] (die Wiederherstellung natürlicher Ökosysteme) und **Half Earth Socialism** ^[[Troy Vettese, Drew Pendergrass. Half-Earth Socialism: A Plan to Save the Future from Extinction, Climate Change and Pandemics. Verso, 2022](https://www.half.earth)] (
@@ -116,6 +157,11 @@ bringt, basierend auf einer fairen Verteilung von Ressourcen und Verantwortung.
 
 ### Vergesellschaftung^[[Sabine Nuss. Wessen Freiheit, welche Gleichheit? Das Versprechen einer anderen Vergesellschaftung. Karl Dietz Verlag Berlin, 2024.](https://dietzberlin.de/produkt/wessen-freiheit-welche-gleichheit/)]
 
+<figure>
+  <img src="/static/images/solarpunk/Redebeitrag.JPG" alt="Redebeitrag">
+  <figcaption>Redebeitrag – Bild: Pressematerial Deutsche Wohnen und Co. Enteignen</figcaption>
+</figure>
+
 Diese Initiativen zielen darauf ab, große private Vermögenswerte, insbesondere in Bereichen der Grundversorgung wie
 Wohnraum, in kollektives oder gemeinwohlorientiertes Eigentum zu überführen. Prominente Beispiele wie "Deutsche Wohnen &
 Co. Enteignen" in Berlin zeigen den Versuch, die Kontrolle über essenzielle Ressourcen dem Markt zu entziehen und sie
@@ -123,6 +169,11 @@ einer demokratischen Verwaltung zu unterstellen. Dies schafft die Voraussetzunge
 Spekulationsobjekt, sondern ein Gemeingut wird, das allen zugänglich ist.
 
 ### Verantwortungseigentum (Steward-Ownership)
+
+<figure>
+  <img src="/static/images/solarpunk/Ane-Caroline_Instituto-Espinhaço_Brazil.jpg" alt="Ane Caroline Instituto Espinhaço Brazil">
+  <figcaption>Ane Caroline Instituto Espinhaço Brazil – Bild: Pressematerial Ecosia</figcaption>
+</figure>
 
 Auch die sogenannte **Purpose-Bewegung**^[[Purpose Ventures e.G.](https://purpose-economy.org/de/)] passt hier ins Bild.
 Von Unternehmen wie Zeiss oder Bosch vor über hundert Jahren entwickelt, wird die Idee heutzutage von Start Ups wie
@@ -137,6 +188,11 @@ aufrechterhalten.
 
 ## Commoning: Der Kern der Transformation
 
+<figure>
+  <img src="/static/images/solarpunk/Kenya_1.jpg" alt="Kenia">
+  <figcaption>Kenia – Bild: Pressematerial Ecosia</figcaption>
+</figure>
+
 All diese Bausteine werden durch das **Commoning**^[[David Bollier, Silke Helfrich. Patterns of
 Commoning. The Commons Strategies Group, 2014.](https://patternsofcommoning.org)] ^[[Katja Schubel. Mit einem Recht für
 Commons zur Stadt für alle? Dissens Podcast #307, 2025.](https://podcast.dissenspodcast.de/307-commons)] zusammengehalten
@@ -145,6 +201,11 @@ Produzierens, Verwaltens, Pflegens und/oder Nutzens von Ressourcen durch eine Ge
 Prozess, bei dem die Beteiligten ihre Fähigkeiten und ihr Wissen einbringen, um gemeinsame Werte und Ziele zu
 verwirklichen. Entscheidungen werden dabei oft dezentral und konsensorientiert getroffen, und der Fokus liegt auf der
 Befriedigung von Bedürfnissen und nicht auf Profitmaximierung.
+
+<figure>
+  <img src="/static/images/solarpunk/Water-Karl-Schulschenk-CC-BY-NC-ND-4.0.jpg" alt="Water">
+  <figcaption>Water – Bild: Karl Schulschenk (CC BY-NC-ND 4.0)</figcaption>
+</figure>
 
 Commoning ist der **operative Kern und die soziale Praxis**, die sowohl dem Plattform-Kooperativismus als auch dem
 Library Socialism zugrunde liegt. Es ist das gemeinsame Kochen in einer Nachbarschaftsküche, die gemeinschaftliche
@@ -162,6 +223,11 @@ im Hier und Jetzt.
 ---
 
 ## Wartung und Pflege: Das Herzstück des Solarpunk
+
+<figure>
+  <img src="/static/images/solarpunk/Im-Maschinenraum-der-SEA-EYE-4-Martina-Morini-Sea-Eye.jpg" alt="Im Maschinenraum der SEA-EYE 4">
+  <figcaption>Im Maschinenraum der SEA-EYE 4 – Bild: Martina Morini (Sea-Eye)</figcaption>
+</figure>
 
 Im Solarpunk sind **Wartung und Pflege**^[[Shannon Mattern. Maintenance and Care: A working guide to the repair of rust,
 dust, cracks, and corrupted code in our cities, our homes, and our social relations. Places Journal,
@@ -181,8 +247,13 @@ Repair)^[[Right to Repair Europe.](https://repair.eu)] und die von den Menschen,
 werden können. Es ist eine Abkehr von der Wegwerfgesellschaft hin zu einer Kultur der Wertschätzung und Dauerhaftigkeit,
 die eng mit den Prinzipien der Circular Economy und Degrowth verbunden ist.
 
-In diesem Kontext gewinnen auch **Sorgende Städte
-**^[[City of Barcelona. Strategy for a Caring City.](https://www.barcelona.cat/ciutatcuidadora/en/caring-city/strategy/goals)] (
+<figure>
+  <img src="/static/images/solarpunk/repurposed-mall.jpg" alt="Repurposed Mall">
+  <figcaption>A Repurposed Mall – Bild: The Lemonaut (CC BY-SA 4.0)</figcaption>
+</figure>
+
+In diesem Kontext gewinnen auch **Sorgende Städte**
+^[[City of Barcelona. Strategy for a Caring City.](https://www.barcelona.cat/ciutatcuidadora/en/caring-city/strategy/goals)] (
 Caring Cities) an Bedeutung. Sie sind urbane Räume, die bewusst so gestaltet und verwaltet werden, dass die Fürsorge für
 ihre Bewohnenden, für die sozialen Beziehungen und für die Umwelt im Vordergrund steht. Das bedeutet zugängliche
 öffentliche Dienste, unterstützende Nachbarschaften, grüne Infrastruktur und eine Infrastruktur, die dem Wohlbefinden
@@ -205,6 +276,11 @@ Lebensqualität verstanden, der direkt der Kapazität für Pflege und Erhalt zug
 
 ## Eine Zukunft, die wir selbst bauen
 
+<figure>
+  <img src="/static/images/solarpunk/Rettung-Leon-Salner-Sea-Eye.jpg" alt="Rettung">
+  <figcaption>Rettung – Bild: Leon Salner (Sea-Eye)</figcaption>
+</figure>
+
 Solarpunk ist ein **Aufruf zum Handeln**. Im Sinne einer revolutionären
 Realpolitik^[[Rosa Luxemburg. Marx. Vorwärts (Berlin) Nr. 62, 1903.](https://gramsci-tage.de/zu-dem-begriff-revolutionaere-realpolitik/)]
 lädt es uns ein, die Utopie nicht nur zu träumen, sondern sie aktiv konkret zu
@@ -213,6 +289,11 @@ Eine gemeinwohl-orientierte, demokratische, kooperative und zugangsgleiche Wirts
 fundamentale Praxis von Maintenance und Care sind die Blaupausen für diese Zukunft. Sie zeigen, wie wir uns von der
 Abhängigkeit von ausbeuterischen Systemen lösen und eine Gesellschaft aufbauen können, die auf Zusammenarbeit,
 Nachhaltigkeit und Gerechtigkeit basiert.
+
+<figure>
+  <img src="/static/images/solarpunk/Solarpunk-Anarchy-Sean-Bodley-CC-BY-SA-4.0.jpg" alt="Solarpunk Anarchy">
+  <figcaption>Solarpunk Anarchy – Bild: Sean Bodley (CC BY-SA 4.0)</figcaption>
+</figure>
 
 Daneben bleibt Solarpunk auch ein vitales künstlerisches und literarisches Genre. Es ist der Ort, an dem die **konkreten
 Utopien** in Geschichten, Bildern und Visionen lebendig werden. Autor\*innen und Künstler\*innen bieten uns die mentalen
