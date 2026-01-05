@@ -5,7 +5,7 @@ year: 2025
 date: 2025-11-22
 ---
 
-Dieser Artikel ist der zweite Teil unserer Auseinandersetzung mit **Solarpunk**, jenem radikal optimistischen
+Dieser Artikel ist der zweite Teil unserer Auseinandersetzung mit **Solarpunk**, dem radikal optimistischen
 Science-Fiction-Genre und der gleichzeitig wachsenden (Meta-)Bewegung, die sich mutig dem allgegenwärtigen Pessimismus
 entgegenstemmt. Aufbauend auf dem vorherigen
 Text^[[Christopher Reinbothe. Solarpunk — Positive Narrative helfen die Zukunft zu gestalten. OKNRW Barcamp – Science Track-Sammelband, 2023.](/solarpunk/solarpunk-narrative-oknrw-2023)],

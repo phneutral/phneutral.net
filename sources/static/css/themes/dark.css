@@ -16,5 +16,22 @@
   .logo svg path {
     color: color-mix(in srgb, var(--ignt-color-primary), var(--ignt-mix-color-up) 70%);
   }
+
+  /* Solarpunk */
+  .solarpunk {
+    & .sheet {
+      box-shadow: 20px 20px 0 color-mix(in srgb, var(--ignt-color-yellow-500), var(--ignt-mix-color-up) 20%) !important;
+
+    }
+    & .sheet > p,
+    & .sheet-paragraph > p {
+      &:first-of-type:first-letter {
+        color: black !important;
+        background-color: var(--ignt-color-yellow-500) !important;
+        border-left: 7px solid color-mix(in srgb, var(--ignt-color-yellow-500), var(--ignt-mix-color-down) 30%) !important;
+        text-shadow: 2px 2px 0 color-mix(in srgb, var(--ignt-color-yellow-500), var(--ignt-mix-color-down) 30%) !important;
+      }
+    }
+  }
 }
 

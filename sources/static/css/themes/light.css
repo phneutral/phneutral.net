@@ -16,4 +16,11 @@
   .logo svg path {
     color: color-mix(in srgb, var(--ignt-color-primary), var(--ignt-mix-color-up) 50%);
   }
+
+  @layer elements.solarpunk {
+    /* Solarpunk */
+    .solarpunk {
+      --ignt-surface-dark: color-mix(in srgb, var(--ignt-color-yellow-500), var(--ignt-mix-color-down) 30%);
+    }
+  }
 }
