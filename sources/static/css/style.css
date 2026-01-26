@@ -406,7 +406,7 @@
     aspect-ratio: 1 / 1;
     display: block;
     background-color: var(--ignt-color-text-invert);
-    &:after {
+    &:before {
       content: attr(title);
       color: var(--ignt-color-text-default);
       display: block;
@@ -427,7 +427,6 @@
     width: 100%;
     height: 100%;
     aspect-ratio: 1 / 1;
-    position: absolute;
     top: 0;
     object-fit: cover;
     transition: all .7s ease;
