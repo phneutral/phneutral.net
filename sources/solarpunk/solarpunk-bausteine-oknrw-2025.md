@@ -18,7 +18,10 @@ Solarpunk – verstanden als **Synkretismus**, also eine Synthese bestehender Id
 neuen Weltbild verbinden – ist der ultimative Aufruf zum **Empowerment**: gemeinsam die Welt zum Besseren zu verändern.
 
 <figure>
-  <img src="/static/images/solarpunk/berlin-utopia-2048.jpg" alt="Berlin Friedrichstraße Utopia 2048">
+  <img src="/static/images/solarpunk/berlin-utopia-2048.jpg" alt="Illustration einer utopischen Vision von Berlin im
+Jahr 2048: Eine grüne Stadtlandschaft mit terrassierten, bepflanzten Gebäuden, Solarpaneelen und einem modernen
+Schienennetz. Im Zentrum ist ein Bahnhof am Wasser zu sehen, im Hintergrund der Berliner Fernsehturm und ein Luftschiff
+am blauen Himmel.">
   <figcaption>Berlin Friedrichstraße Utopia 2048 – Bild: Lino Zeddies - Aerroscape - Alex Rommel (CC BY-SA 4.0)</figcaption>
 </figure>
 
@@ -48,7 +51,9 @@ Reformmodellen^[[André Gorz. Zur Strategie der Arbeiterbewegung im Neokapitalis
 ### Genossenschaften^[[Genoverband. Genossenschaft als Rechtsform.](https://www.genoverband.de/genossenschaft-gruenden/genossenschaft-als-rechtsform/)] ^[[\#GenoDigital](https://genossenschaften.digital)] (Cooperatives)
 
 <figure>
-  <img src="/static/images/solarpunk/KOLA-Leipzig-Folientunnel_Kohlrabiernte_Sommer2021-scaled.jpg" alt="Kohlrabiernte KOLA Leipzig">
+  <img src="/static/images/solarpunk/KOLA-Leipzig-Folientunnel_Kohlrabiernte_Sommer2021-scaled.jpg" alt="Zwei weiblich
+gelesene Personen knien in einem großen Folientunnel-Gewächshaus und ernten Kohlrabi. Im Hintergrund ist ein Hund auf
+der Anbaufläche zu sehen.">
   <figcaption>KOLA Leipzig Folientunnel Kohlrabiernte – Bild: KOLA Leipzig</figcaption>
 </figure>
 
@@ -61,7 +66,9 @@ Gestaltung einer gerechteren Wirtschaft.
 ### Plattform-Kooperativismus^[[Trebor Scholz. Uberworked and Underpaid: How Workers Are Shaping the Future of Work. Polity Press, 2016.](http://pombo.free.fr/treborscholz.pdf)] ^[[Trebor Scholz. Plattform-Kooperativismus: Wie wir uns die Sharing Economy zurückholen können. Rosa Luxemburg Stiftung, 2016.](https://www.rosalux.de/publikation/id/8813/plattform-kooperativismus)] ^[[Platform Coops eG](https://platformcoop.de)] ^[[Platform Cooperativism Consortium](https://platform.coop)] (Platform Cooperatives)
 
 <figure>
-  <img src="/static/images/solarpunk/wechange-eG.webp" alt="wechange eG">
+  <img src="/static/images/solarpunk/wechange-eG.webp" alt="Zwei Personen sitzen lächelnd an einem Holztisch vor
+einem Laptop. Im Hintergrund steht ein Roll-up-Banner des Unternehmens 'WECHANGE' mit den Schlagworten 'Sustainable'
+und 'Open Source'.">
   <figcaption>Bild: wechange eG</figcaption>
 </figure>
 
@@ -74,7 +81,10 @@ Wohle der Gemeinschaft einzusetzen.
 ### Solidarökonomie^[[Solidarity Economy Association, Rory Robertson-Shaw, Colm Massey, Jo Taylor. The Solidarity Economy (a visual guide). Dog Section Press, 2024.](https://roryrobertsonshaw.net/The-Solidarity-Economy-book)] (Solidarity Economy)
 
 <figure>
-  <img src="/static/images/solarpunk/Roryrobertson-Shaw+workers+migrant+struggles.jpg" alt="Workers Migrant Struggles">
+  <img src="/static/images/solarpunk/Roryrobertson-Shaw+workers+migrant+struggles.jpg" alt="Grafische Illustration in
+Blau- und Orangetönen, die eine Gruppe von Menschen zeigt, die entschlossen vorwärts drängen. Sie tragen Fahnen und
+Schilder; der Hintergrund ist in einem kräftigen Orange gehalten, was eine kämpferische oder aufbruchsorientierte
+Stimmung erzeugt.">
   <figcaption>Workers Migrant Struggel – Bild: Rory Robertson-Shaw</figcaption>
 </figure>
 
@@ -90,7 +100,10 @@ Umsetzung einer Wirtschaft, die dem Menschen dient, nicht umgekehrt.
 ### Geschenkwirtschaft^[[Lewis Hyde. The Gift: Creativity and the Artist in the Modern World. Vintage Books, 2007](https://newsgrist.typepad.com/files/hyde-the-gift-creativity-and-the-artist-in-the-modern-world-2007.pdf)] (Gift Economy)
 
 <figure>
-  <img src="/static/images/solarpunk/How-to-build-a-Solarpunk-City---Sean-Bodley-CC-BY-SA-4.0.jpg" alt="How to build a Solarpunk City">
+  <img src="/static/images/solarpunk/How-to-build-a-Solarpunk-City---Sean-Bodley-CC-BY-SA-4.0.jpg" alt="Farbenfrohe
+Illustration einer belebten Solarpunkt-Stadt in einer Hügellandschaft. Menschen bewegen sich durch eine breite
+Fußgängerzone mit Marktständen und Außenbereichen; im Hintergrund sind Windräder auf den Bergen und ein moderner
+Hochgeschwindigkeitszug zu sehen.">
   <figcaption>How to build a Solarpunk City – Bild: Sean Bodley (CC BY-SA 4.0)</figcaption>
 </figure>
 
@@ -103,7 +116,9 @@ Geben^[[Michael Hutter (Hg.), Birger P. Priddat (Hg.) et al. Geben, Nehmen, Teil
 ### Kreislaufwirtschaft^[[Ellen MacArthur Foundation. What is a circular economy?](https://www.ellenmacarthurfoundation.org/topics/circular-economy-introduction/overview)] (Circular Economy)
 
 <figure>
-  <img src="/static/images/solarpunk/tild6465-3863-4533-a639-653966653737__startups_gescol_show.jpg" alt="Gescol at Start Up DemoDay">
+  <img src="/static/images/solarpunk/tild6465-3863-4533-a639-653966653737__startups_gescol_show.jpg" alt="Vier Personen
+sitzen in einem modernen Büro an einem weißen Konferenztisch und begutachten einen Prototyp, der wie ein gelber Baustein
+aus recyceltem Material aussieht. Alle tragen Namensschilder an hellblauen Bändern.">
   <figcaption>Gescol at Start Up DemoDay – Bild: Pressematerial Circular Valley</figcaption>
 </figure>
 
@@ -115,7 +130,9 @@ für eine nachhaltige Solarpunk-Zukunft, in der Effizienz und Ressourcenschonung
 ### Postwachstum^[[Jason Hickel. Less Is More: How Degrowth Will Save the World. Windmill Books, 2020.](https://www.jasonhickel.org)] ^[[Nathan Barlow, Livia Regen et al. Degrowth & Strategy: how to bring about social-ecological transformation. Mayfly Books, 2022](https://www.degrowthstrategy.org)] ^[[Nick King. What Energy Paradigm Might Underpin Degrowth and Steady State Economies? Resilience.org, 2024.](https://www.resilience.org/stories/2024-02-06/what-energy-paradigm-might-underpin-degrowth-and-steady-state-economies/)] (Degrowth)
 
 <figure>
-  <img src="/static/images/solarpunk/Climate-Resilience-Yurt-Sean-Bodley-CC-BY-SA-4.0.jpg" alt="Climate Resilience Yurt">
+  <img src="/static/images/solarpunk/Climate-Resilience-Yurt-Sean-Bodley-CC-BY-SA-4.0.jpg" alt="Illustration einer
+kuppelförmigen Behausung (Yurt) in einer Landschaft mit großen Affenbrotbäumen. Das Gebäude ist mit Solarpaneelen und
+technischer Ausrüstung bestückt; im Hintergrund erstrecken sich neblige Berge unter einem pastellfarbenen Himmel.">
   <figcaption>Climate Resilience Yurt – Bild: Sean Bodley (CC BY-SA 4.0)</figcaption>
 </figure>
 
@@ -129,7 +146,10 @@ Neuordnung unserer Beziehung zu Ressourcen und Produktion anstrebt.
 ### Bibliothek-Sozialismus^[[Library Socialism 101. Foundational principles.](https://librarysocialism.org)] ^[[Aaron Moritz, Shawn Vulliez. Library Socialism & Usufruct. Srsly Wrong Podcast #189, 2019.](https://srslywrong.com/podcast/189-library-socialism-usufruct/)] ^[[Andrewism. We Need A Library Economy. Youtube, 2022.](https://www.youtube.com/watch?v=NOYa3YzVtyk)] (Library Socialism)
 
 <figure>
-  <img src="/static/images/solarpunk/library-of-everything.jpg" alt="The Library of Everything">
+  <img src="/static/images/solarpunk/library-of-everything.jpg"
+alt="Illustration einer monumentalen 'Library of Everything' (Bibliothek von allem) im neoklassizistischen Stil mit
+Solarmodulen auf dem Dach. Auf dem belebten Vorplatz befinden sich Menschen unterschiedlicher Herkunft, ein
+Rollstuhlfahrer, Marktbuden und ein Hinweisschild zur Metro 6.">
   <figcaption>The Library of Everything – Bild: Sean Bodley (CC BY-SA 4.0)</figcaption>
 </figure>
 
@@ -144,7 +164,8 @@ ausgeliehen werden können, um Überproduktion zu vermeiden und Bedürfnisse eff
 ### Öko-Sozialismus^[[Netzwerk Ökosozialismus.](https://netzwerk-oekosozialismus.de)] (Eco Socialism)
 
 <figure>
-  <img src="/static/images/solarpunk/European-Bison-Daniel-Mirlea-Rewilding-Europe.jpg" alt="European Bison">
+  <img src="/static/images/solarpunk/European-Bison-Daniel-Mirlea-Rewilding-Europe.jpg" alt="Drei europäische Wisente
+stehen in einer naturbelassenen Landschaft mit hohem, rötlichem Gras und grünen Bäumen im Hintergrund.">
   <figcaption>European Bison – Bild: Daniel Mirlea (Rewilding Europe)</figcaption>
 </figure>
 
@@ -158,7 +179,9 @@ bringt, basierend auf einer fairen Verteilung von Ressourcen und Verantwortung.
 ### Vergesellschaftung^[[Sabine Nuss. Wessen Freiheit, welche Gleichheit? Das Versprechen einer anderen Vergesellschaftung. Karl Dietz Verlag Berlin, 2024.](https://dietzberlin.de/produkt/wessen-freiheit-welche-gleichheit/)]
 
 <figure>
-  <img src="/static/images/solarpunk/Redebeitrag.JPG" alt="Redebeitrag">
+  <img src="/static/images/solarpunk/Redebeitrag.JPG" alt="Redebeitrag: Rückansicht einer Person bei einer Kundgebung,
+die eine violette Weste mit der gelben Aufschrift 'Deutsche Wohnen & Co enteignen! Hier unterschreiben' trägt.
+Im Hintergrund spricht eine weitere Person in ein Mikrofon vor einer gelb-violetten Fahne.">
   <figcaption>Redebeitrag – Bild: Pressematerial Deutsche Wohnen und Co. Enteignen</figcaption>
 </figure>
 
@@ -171,7 +194,9 @@ Spekulationsobjekt, sondern ein Gemeingut wird, das allen zugänglich ist.
 ### Verantwortungseigentum (Steward-Ownership)
 
 <figure>
-  <img src="/static/images/solarpunk/Ane-Caroline_Instituto-Espinhaço_Brazil.jpg" alt="Ane Caroline Instituto Espinhaço Brazil">
+  <img src="/static/images/solarpunk/Ane-Caroline_Instituto-Espinhaço_Brazil.jpg" alt="Eine junge weiblich gelesene Person
+arbeitet konzentriert in einer Baumschule oder einem Gewächshaus unter einem Schattiernetz. Sie trägt eine helle Arbeitsjacke
+mit dem Logo 'Instituto Espinhaço' und einer kleinen Brasilien-Flagge auf dem Ärmel.">
   <figcaption>Ane Caroline Instituto Espinhaço Brazil – Bild: Pressematerial Ecosia</figcaption>
 </figure>
 
@@ -189,7 +214,8 @@ aufrechterhalten.
 ## Commoning: Der Kern der Transformation
 
 <figure>
-  <img src="/static/images/solarpunk/Kenya_1.jpg" alt="Kenia">
+  <img src="/static/images/solarpunk/Kenya_1.jpg" alt="Nahaufnahme einer Person, die mit einer alten Metall-Gießkanne
+einen kleinen Setzling in dunkler Erde bewässert.">
   <figcaption>Kenia – Bild: Pressematerial Ecosia</figcaption>
 </figure>
 
@@ -203,7 +229,10 @@ verwirklichen. Entscheidungen werden dabei oft dezentral und konsensorientiert g
 Befriedigung von Bedürfnissen und nicht auf Profitmaximierung.
 
 <figure>
-  <img src="/static/images/solarpunk/Water-Karl-Schulschenk-CC-BY-NC-ND-4.0.jpg" alt="Water">
+  <img src="/static/images/solarpunk/Water-Karl-Schulschenk-CC-BY-NC-ND-4.0.jpg"
+	   alt="Illustration einer idyllischen Flusslandschaft mit Fokus auf nachhaltigem Leben: Im Vordergrund die Sicht aus
+einem Kanu mit einem Hund mit Schwimmweste; links ein weiteres Kanu mit Solarpanels; rechts ein schwimmender Marktstand
+mit der Aufschrift 'Fresh Goods' und Photovoltaik-Dach.">
   <figcaption>Water – Bild: Karl Schulschenk (CC BY-NC-ND 4.0)</figcaption>
 </figure>
 
@@ -225,7 +254,9 @@ im Hier und Jetzt.
 ## Wartung und Pflege: Das Herzstück des Solarpunk
 
 <figure>
-  <img src="/static/images/solarpunk/Im-Maschinenraum-der-SEA-EYE-4-Martina-Morini-Sea-Eye.jpg" alt="Im Maschinenraum der SEA-EYE 4">
+  <img src="/static/images/solarpunk/Im-Maschinenraum-der-SEA-EYE-4-Martina-Morini-Sea-Eye.jpg" alt="Eine Technikerin
+mit Atemschutzmaske, Gehörschutz und buntem Kopftuch steht im Maschinenraum des Schiffes SEA-EYE 4. Sie blickt auf
+einen Arbeitstisch mit Ordnern vor einer großen Tafel, auf der Betriebsdaten von Tanks notiert sind.">
   <figcaption>Im Maschinenraum der SEA-EYE 4 – Bild: Martina Morini (Sea-Eye)</figcaption>
 </figure>
 
@@ -248,7 +279,10 @@ werden können. Es ist eine Abkehr von der Wegwerfgesellschaft hin zu einer Kult
 die eng mit den Prinzipien der Circular Economy und Degrowth verbunden ist.
 
 <figure>
-  <img src="/static/images/solarpunk/repurposed-mall.jpg" alt="Repurposed Mall">
+  <img src="/static/images/solarpunk/repurposed-mall.jpg" alt="Illustration des Innenraums eines umgestalteten
+Einkaufszentrums, das nun als Gemeinschaftszentrum dient. Es gibt verschiedene Ebenen mit einer 'Tool Library',
+einem 'Clothes Swap'-Laden, einem Teegeschäft und Lesebereichen; zahlreiche Menschen beleben die zentrale Halle
+unter einer Glaskuppel.">
   <figcaption>A Repurposed Mall – Bild: The Lemonaut (CC BY-SA 4.0)</figcaption>
 </figure>
 
@@ -277,7 +311,9 @@ Lebensqualität verstanden, der direkt der Kapazität für Pflege und Erhalt zug
 ## Eine Zukunft, die wir selbst bauen
 
 <figure>
-  <img src="/static/images/solarpunk/Rettung-Leon-Salner-Sea-Eye.jpg" alt="Rettung">
+  <img src="/static/images/solarpunk/Rettung-Leon-Salner-Sea-Eye.jpg" alt="Blick von oben auf eine Rettungsaktion auf
+hoher See: Crewmitglieder der Organisation 'Sea-Eye' in dunkelblauen Uniformen und orangefarbenen Helmen helfen einer
+Person von einem Schlauchboot auf ein größeres Schiff.">
   <figcaption>Rettung – Bild: Leon Salner (Sea-Eye)</figcaption>
 </figure>
 
@@ -291,7 +327,10 @@ Abhängigkeit von ausbeuterischen Systemen lösen und eine Gesellschaft aufbauen
 Nachhaltigkeit und Gerechtigkeit basiert.
 
 <figure>
-  <img src="/static/images/solarpunk/Solarpunk-Anarchy-Sean-Bodley-CC-BY-SA-4.0.jpg" alt="Solarpunk Anarchy">
+  <img src="/static/images/solarpunk/Solarpunk-Anarchy-Sean-Bodley-CC-BY-SA-4.0.jpg" alt="Illustration einer
+nächtlichen Szene auf einer begrünten Dachterrasse: Eine Gruppe von Menschen speist an einer langen Tafel,
+tanzt und macht Musik unter einem Sternenhimmel. Im Hintergrund erstreckt sich eine beleuchtete Stadt mit einer
+Magnetschwebebahn und Windrädern am Horizont.">
   <figcaption>Solarpunk Anarchy – Bild: Sean Bodley (CC BY-SA 4.0)</figcaption>
 </figure>
 
